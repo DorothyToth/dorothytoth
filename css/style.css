@@ -1,0 +1,271 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Fraunces', serif;
+  width: 100%;
+  margin: 0px;
+}
+
+
+
+
+/* Grid CSS */
+
+#heroGrid {
+  margin: 0px;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: 
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA";
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-image: url("https://dorothytoth.github.io/Repo18/images/furniture1.png");
+}
+
+#secondaryProduct {
+  grid-area: secondaryProduct;
+  background-image: url("../images/furniture2.png");
+}
+
+#CTA {
+  grid-area: CTA;
+  background-image: url("../images/woodbg.png");
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 20px;
+}
+
+#CTA img {
+  width: 30px;
+  padding: 10px;
+}
+
+#headline {
+  border: solid #3e80aa;
+  border-width: 0px 0px 0px 10px;
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  right: -75px;
+  top: 210px;
+  z-index: 1;
+  padding: 20px;
+}
+
+
+
+
+/* Category Grid CSS */
+
+.subHeading {
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: repeat(3, 300px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "travel education garden"
+  "health health garden"
+  "food food food";
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#travel {
+  grid-area: travel;
+  background-image: url("../images/bookcases.png");
+}
+
+#education {
+  grid-area: education;
+  background-image: url("../images/beds.png");
+}
+
+#garden {
+  grid-area: garden;
+  background-image: url("../images/patio.png");
+}
+
+#health {
+  grid-area: health;
+  background-image: url("../images/couch.png");
+}
+
+#food {
+  grid-area: food;
+  background-image: url("../images/desks.png");
+}
+
+.heading {
+  background-color: rgba(255,255,255,0.8);
+  padding: 15px;
+  height: 25px;
+  font-size: 18px;
+  border: solid #3e80aa;
+  border-width: 0px 0px 0px 10px;
+}
+
+
+
+
+/* Navigation CSS */
+
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
+#navBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  flex-direction: row;
+  margin: 0px;
+  height: 75px;
+  z-index: 2;
+  background-color: rgba(255,255,255,0.9);
+  align-items: center;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+
+#navigation {
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navigation h1 {
+  font-family: 'Kanit', sans-serif;
+  width: 25%;
+  font-weight: 500;
+}
+
+#navigation a:visited, a:link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#navigation a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3e80aa;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+
+.icons img {
+  margin: 15px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.carrot {
+  width: 30px;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #3e80aa;
+  font-weight: 700;
+}
+
+
+
+
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px;
+  color: #3e80aa;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px;
+  color: #636364;
+}
+
+
+
+/* media queries */
+
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas: 
+    "featuredProduct featuredProduct"
+    "secondaryProduct CTA"
+  }
+}
+  
+@media only screen and (max-width: 880px) {
+  #navigation {
+    display: none;
+  }
+  .icons{
+    margin-left: auto;
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "travel"
+    "education"
+    "garden"
+    "health"
+    "food"
+  }
+}
