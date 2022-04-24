@@ -18,14 +18,31 @@ h2 {
 
 h3 {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0px;
+  color: #636364;
+
 }
 
 h4 {
   color: white;
   font-weight: 400;
   font-size: 22px;
+}
+
+h5 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0px;
+  color: #636364;
+}
+
+h6 {
+  font-family: 'Kanit';
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  color: #636364;
 }
 
 #headline p {
@@ -182,9 +199,9 @@ h4 {
   grid-template-rows: repeat(3, 300px);
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 
-  "travel education garden"
-  "health health garden"
-  "food food food";
+  " education education final"
+  "garden travel travel"
+  "health health food"
 }
 
 .categoryGridArea {
@@ -195,10 +212,16 @@ h4 {
   cursor: pointer;
   display: grid;
   align-content: end;
+  border-radius: 10px;  
 }
 
 #travel {
   grid-area: travel;
+  background-image: url("../images/bookcases.png");
+}
+
+#final {
+  grid-area: final;
   background-image: url("../images/bookcases.png");
 }
 
@@ -223,12 +246,10 @@ h4 {
 }
 
 .heading {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   padding: 15px;
   height: 25px;
   font-size: 18px;
-  border: solid #3e80aa;
-  border-width: 0px 0px 0px 10px;
 }
 
 
@@ -244,6 +265,15 @@ h4 {
   /* change height? */
 }
 
+#vertScroll {
+  background-color:none;
+  height: 375px;
+  width: 350px;  
+  overflow-y:scroll;
+ }
+ #vertScroll::-webkit-scrollbar {
+  display: none;
+ }
 
 
 
@@ -256,7 +286,6 @@ h4 {
   border: solid 2px #3e80aa;
   height: 50vh;
     /* change height? */
-
 }
 
 
@@ -278,7 +307,7 @@ h4 {
   }
 }
   
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1010px) {
   #navigation {
     display: none;
   }
@@ -286,12 +315,13 @@ h4 {
     margin-left: auto;
   }
   #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "travel"
     "education"
+    "final"
     "garden"
+    "travel"
     "health"
     "food"
   }
