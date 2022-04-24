@@ -33,7 +33,6 @@ h4 {
 h5 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0px;
   color: #636364;
 }
 
@@ -41,17 +40,18 @@ h6 {
   font-family: 'Kanit';
   font-size: 14px;
   font-weight: 400;
-  margin: 0px;
+  margin-bottom: 5px;
   color: #636364;
 }
 
-#headline p {
-  max-width: 350px;
+
+p {
   font-size: 16px;
   font-weight: 300;
   margin: 0px;
-  color: #636364;
+  color:black;
 }
+
 
 .subHeading {
   text-align: center;
@@ -79,17 +79,18 @@ h6 {
 }
 
 #navigation {
-  font-family: 'Kanit', sans-serif;
   display: flex;
   width: 50%;
   align-items: center;
   justify-content: space-evenly;
+  border: red solid;
 }
 
-#navigation h1 {
+#navigation p {
   font-family: 'Kanit', sans-serif;
-  width: 25%;
   font-weight: 500;
+  color: black;
+
 }
 
 #navigation a:visited, a:link {
@@ -101,8 +102,8 @@ h6 {
 #navigation a:hover {
   cursor: pointer;
   text-decoration: none;
+  font-weight: 700;
   color: #3e80aa;
-  font-weight: 500;
 }
 
 .icons {
@@ -176,6 +177,7 @@ h6 {
 }
 
 #headline {
+  border-radius: 10px;
   border: solid #3e80aa;
   border-width: 0px 0px 0px 10px;
   background-color: rgba(255,255,255,0.8);
@@ -183,7 +185,15 @@ h6 {
   right: -75px;
   top: 210px;
   z-index: 1;
-  padding: 20px;
+  padding: 50px;
+}
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px;
+  color: #636364;
 }
 
 
@@ -262,7 +272,9 @@ h6 {
   display: flex;
   border: solid 2px #3e80aa;
   height: 50vh;
-  /* change height? */
+  min-height: 500px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #vertScroll {
@@ -275,7 +287,16 @@ h6 {
   display: none;
  }
 
+#aboutCopy {
+  display: flex;
+  width: 300px;
+  justify-content: flex-start;
+}
 
+#aboutSkill {
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 /* Connect Section CSS */
@@ -285,7 +306,7 @@ h6 {
   display: flex;
   border: solid 2px #3e80aa;
   height: 50vh;
-    /* change height? */
+  min-height: 500px;
 }
 
 
