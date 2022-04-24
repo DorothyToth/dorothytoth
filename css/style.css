@@ -112,6 +112,8 @@ p {
   justify-content: flex-end;
   align-items: center;
   width: 25%;
+  margin-right: 5%;
+
 }
 
 .icons img {
