@@ -33,7 +33,8 @@ h4 {
 h5 {
   font-size: 26px;
   font-weight: 400;
-  color: #636364;
+  color: red;
+  margin-bottom: 0px;
 }
 
 h6 {
@@ -89,7 +90,7 @@ p {
 #navigation p {
   font-family: 'Kanit', sans-serif;
   font-weight: 500;
-  color: black;
+  color:red;
 
 }
 
@@ -270,11 +271,24 @@ p {
 #aboutSection {
   margin: 0px 5%;
   display: flex;
-  border: solid 2px #3e80aa;
+  border: solid 2px red;
   height: 50vh;
   min-height: 500px;
   align-items: center;
   justify-content: space-between;
+}
+
+
+#aboutCopy {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  margin-left: 5%;
+}
+
+#aboutSkill {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #vertScroll {
@@ -287,16 +301,6 @@ p {
   display: none;
  }
 
-#aboutCopy {
-  display: flex;
-  width: 300px;
-  justify-content: flex-start;
-}
-
-#aboutSkill {
-  display: flex;
-  justify-content: flex-end;
-}
 
 
 /* Connect Section CSS */
@@ -304,7 +308,7 @@ p {
 #connSection {
   margin: 0px 5%;
   display: flex;
-  border: solid 2px #3e80aa;
+  border: solid 2px red;
   height: 50vh;
   min-height: 500px;
 }
@@ -316,7 +320,13 @@ p {
 
 /* media queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  #navigation {
+    display: none;
+  }
+  .icons{
+    margin-left: auto;
+  }
   #headline {
     position: static;
     margin: 20px;
@@ -325,15 +335,6 @@ p {
     grid-template-areas: 
     "featuredProduct featuredProduct"
     "secondaryProduct CTA"
-  }
-}
-  
-@media only screen and (max-width: 1010px) {
-  #navigation {
-    display: none;
-  }
-  .icons{
-    margin-left: auto;
   }
   #categoryGrid {
     grid-template-rows: 300px 300px 300px 300px 300px 300px;
@@ -345,5 +346,16 @@ p {
     "travel"
     "health"
     "food"
+  }
+  #aboutSection {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #aboutSkill {
+    margin-left: 5%;
+  }
+  #connSection {
+    flex-wrap: wrap;
+    height: auto;
   }
 }
