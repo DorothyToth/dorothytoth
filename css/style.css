@@ -8,7 +8,110 @@ body {
 
 
 
-/* Grid CSS */
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px;
+  color: #3e80aa;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px;
+  color: #636364;
+}
+
+.subHeading {
+  text-align: center;
+  margin: 60px auto;
+}
+
+
+
+
+/* Navigation CSS */
+
+#navBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  flex-direction: row;
+  margin: 0px;
+  height: 75px;
+  z-index: 2;
+  background-color: rgba(255,255,255,0.9);
+  align-items: center;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+
+#navigation {
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navigation h1 {
+  font-family: 'Kanit', sans-serif;
+  width: 25%;
+  font-weight: 500;
+}
+
+#navigation a:visited, a:link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#navigation a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3e80aa;
+  font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+
+.icons img {
+  margin: 15px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.carrot {
+  width: 30px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Hero Grid CSS */
 
 #heroGrid {
   margin: 0px;
@@ -69,13 +172,9 @@ body {
 
 
 
+
 /* Category Grid CSS */
 
-.subHeading {
-  text-align: center;
-  width: 300px;
-  margin: 50px auto;
-}
 
 #categoryGrid {
   margin: 0px 5%;
@@ -135,109 +234,37 @@ body {
 
 
 
-/* Navigation CSS */
+/* About Section CSS */
 
-/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
-
-#navBar {
+#aboutSection {
+  margin: 0px 5%;
   display: flex;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  flex-direction: row;
-  margin: 0px;
-  height: 75px;
-  z-index: 2;
-  background-color: rgba(255,255,255,0.9);
-  align-items: center;
-  padding-right: 15px;
-  justify-content: space-between;
+  border: solid 2px #3e80aa;
+  height: 50vh;
+  /* change height? */
 }
 
-#navigation {
-  font-family: 'Kanit', sans-serif;
+
+
+
+
+/* Connect Section CSS */
+
+#connSection {
+  margin: 0px 5%;
   display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: space-evenly;
-}
+  border: solid 2px #3e80aa;
+  height: 50vh;
+    /* change height? */
 
-#navigation h1 {
-  font-family: 'Kanit', sans-serif;
-  width: 25%;
-  font-weight: 500;
-}
-
-#navigation a:visited, a:link {
-  cursor: pointer;
-  text-decoration: none;
-  color: black;
-}
-
-#navigation a:hover {
-  cursor: pointer;
-  text-decoration: none;
-  color: #3e80aa;
-}
-
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 25%;
-}
-
-.icons img {
-  margin: 15px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.carrot {
-  width: 30px;
-  cursor: pointer;
-}
-
-.highlight {
-  color: #3e80aa;
-  font-weight: 700;
 }
 
 
 
-
-/* Typography CSS */
-
-h2 {
-  font-size: 60px;
-  margin: 0px;
-  color: #3e80aa;
-}
-
-h3 {
-  font-size: 32px;
-  font-weight: 300;
-  margin: 0px;
-}
-
-h4 {
-  color: white;
-  font-weight: 400;
-  font-size: 22px;
-}
-
-#headline p {
-  max-width: 350px;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0px;
-  color: #636364;
-}
 
 
 
 /* media queries */
-
 
 @media only screen and (max-width: 600px) {
   #headline {
