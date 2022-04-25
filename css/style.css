@@ -41,7 +41,7 @@ h6 {
   font-family: 'Kanit';
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #636364;
 }
 
@@ -54,10 +54,20 @@ p {
   color:black;
 }
 
+li {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px;
+  margin-left: -20px;
+  margin-bottom: 5px;
+  color:black;
+}
+
 
 .subHeading {
   text-align: center;
   margin: 60px auto;
+  margin-top: 150px;
 }
 
 
@@ -283,8 +293,9 @@ p {
 
 #aboutCopy {
   display: flex;
-  width: 350px;
-  align-items: center;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
   margin-left: 5%;
 }
 
@@ -294,14 +305,13 @@ p {
 }
 
 #vertScroll {
-  background-color:none;
   height: 375px;
   width: 350px;  
   overflow-y:scroll;
  }
- #vertScroll::-webkit-scrollbar {
+#vertScroll::-webkit-scrollbar {
   display: none;
- }
+}
 
 #aboutGrid {
   margin: 0px 5%;
@@ -327,14 +337,21 @@ p {
   height: 50vh;
   min-height: 500px;
   border: solid 2px red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+
 
 #quote {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-end;
+  margin: 0px 5%;
+  height: 200px;
   border: solid red;
-  height: 30%;
 }
 
 .blockquote {
@@ -350,6 +367,18 @@ p {
   color: #636364;
 }
 
+
+#connCopy {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+#links {
+width: 350px;
+}
 
 
 /* media queries */
@@ -397,5 +426,8 @@ p {
   #connSection {
     flex-wrap: wrap;
     height: auto;
+  }
+  #links {
+    margin-left: 5%;
   }
 }
