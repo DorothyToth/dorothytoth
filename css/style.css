@@ -313,6 +313,13 @@ li {
   display: none;
 }
 
+#scrollHead {
+  display:inline;
+}
+.scrollIcon {
+  height: 20px;
+}
+
 #aboutGrid {
   margin: 0px 5%;
   display: grid;
