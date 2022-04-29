@@ -3,6 +3,11 @@ body {
   font-family: 'Fraunces', serif;
   width: 100%;
   margin: 0px;
+  background-image: url("/images/45degreee_fabric.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+  /* background-color: #f2f2f2; */
 }
 
 
@@ -17,11 +22,13 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
-  font-weight: 400;
-  margin: 0px;
+  text-align:justify;
+  font-family: Kanit;
+  font-weight: 500;
+  font-size: 28px;
   color: #636364;
-
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 h4 {
@@ -33,8 +40,9 @@ h4 {
 h5 {
   font-size: 26px;
   font-weight: 400;
-  color: red;
-  margin-bottom: 0px;
+  color: #636364;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
 }
 
 h6 {
@@ -43,19 +51,23 @@ h6 {
   font-weight: 400;
   margin-bottom: 10px;
   color: #636364;
+  margin-block-start: .5em;
+  margin-block-end: .5em;
 }
 
-
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   margin: 0px;
   margin-bottom: 10px;
   color:black;
 }
+ul {
+  margin-top: 0px;
 
+}
 li {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   margin: 0px;
   margin-left: -20px;
@@ -63,11 +75,9 @@ li {
   color:black;
 }
 
-
-.subHeading {
-  text-align: center;
-  margin: 60px auto;
-  margin-top: 150px;
+.sectionStart {
+  margin: 50px 5%;
+  margin-top: 175px;
 }
 
 
@@ -88,6 +98,8 @@ li {
   align-items: center;
   padding-right: 15px;
   justify-content: space-between;
+  filter: drop-shadow(0px 0px 5px rgba(99,99,99,0.2));
+
 }
 
 #navigation {
@@ -95,25 +107,23 @@ li {
   width: 50%;
   align-items: center;
   justify-content: space-evenly;
-  border: red solid;
 }
 
 #navigation p {
   font-family: 'Kanit', sans-serif;
   font-weight: 500;
-
+  color: #636364;
 }
 
 #navigation a:visited, a:link {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: #636364
 }
 
-#navigation a:hover {
+#navigation p:hover {
   cursor: pointer;
   text-decoration: none;
-  font-weight: 700;
   color: #3e80aa;
 }
 
@@ -215,14 +225,14 @@ li {
 
 /* Category Grid CSS */
 
-
 #categoryGrid {
   margin: 0px 5%;
   display: grid;
   grid-template-rows: repeat(3, 300px);
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
   grid-template-areas: 
-  " education education final"
+  "education education final"
   "garden travel travel"
   "health health food"
 }
@@ -235,7 +245,8 @@ li {
   cursor: pointer;
   display: grid;
   align-content: end;
-  border-radius: 10px;  
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 3px #b4afaf);
 }
 
 #travel {
@@ -273,6 +284,7 @@ li {
   padding: 15px;
   height: 25px;
   font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 
@@ -280,23 +292,40 @@ li {
 
 /* About Section CSS */
 
+#aboutBack {
+  display: block;
+  height: 150%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 #aboutSection {
   margin: 0px 5%;
   display: flex;
-  border: solid 2px red;
+  border-radius: 10px;
   height: 50vh;
-  min-height: 500px;
+  min-height: 600px;
   align-items: center;
   justify-content: space-between;
 }
 
+.aboutBox {
+  background-color: cadetblue;
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+
+}
 
 #aboutCopy {
   display: flex;
   width: 320px;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 5%;
+  z-index: 1;
+  position: absolute;
+  left: 250px;
+  top: 170px;
 }
 
 #aboutSkill {
@@ -308,16 +337,18 @@ li {
   height: 375px;
   width: 350px;  
   overflow-y:scroll;
- }
+}
 #vertScroll::-webkit-scrollbar {
   display: none;
 }
 
-#scrollHead {
-  display:inline;
+#scrollHead{
+  display:flex;
+  align-items: center;
 }
 .scrollIcon {
-  height: 0px;
+  height: 20px;
+  margin-right: 8px;
 }
 
 #aboutGrid {
@@ -328,56 +359,51 @@ li {
   grid-template-areas:
   "user content project toolbox";
   grid-gap: 50px;
-  border: solid black;
+  margin-bottom: 50px;
+ }
+
+.aboutGridCopy {
+   margin-bottom: 60px;
  }
 
 
 
 
 
- .aboutGridArea {
-/* do I need this??  */
-}
-
-
 /* Connect Section CSS */
 
 #connSection {
-  margin: 0px 5%;
+  margin: 0px;
   display: flex;
-  height: 50vh;
+  height: 35vh;
   min-height: 500px;
-  border: solid 2px red;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-
-
 #quote {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:flex-end;
+  text-align: left;
   margin: 0px 5%;
-  height: 200px;
-  border: solid red;
+  height: 170px;
 }
 
 .blockquote {
   font-size: 44px;
   font-weight: 400;
-  color: #636364;
+  color: #3e80aa;
 }
 
 .author {
   font-size: 32px;
   font-style: italic;
   font-weight: 300;
-  color: #636364;
+  color: #3e80aa;
+  margin-left: 50px;
 }
-
 
 #connCopy {
   display: flex;
@@ -389,7 +415,21 @@ li {
 
 #links {
 width: 350px;
+margin-right: 5%;
 }
+
+
+
+
+
+/* footer */
+
+.footer {
+  background-color: #636364;
+  display: flex;
+  height: 75px;
+}
+
 
 
 /* media queries */
@@ -398,18 +438,22 @@ width: 350px;
   #navigation {
     display: none;
   }
+
   .icons{
     margin-left: auto;
   }
+
   #headline {
     position: static;
     margin: 20px;
   }
+
   #heroGrid {
     grid-template-areas: 
     "featuredProduct featuredProduct"
     "secondaryProduct CTA"
   }
+
   #categoryGrid {
     grid-template-rows: 300px 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
@@ -421,23 +465,38 @@ width: 350px;
     "health"
     "food"
   }
+
   #aboutSection {
     flex-wrap: wrap;
     height: auto;
   }
+
   #aboutSkill {
-    margin-left: 5%;
+    margin-top: 50px;
+    margin-left: 0%;
   }
+
   #aboutGrid {
-    grid-template-columns: repeat(2, 1fr);;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
     grid-template-areas: 
     "user content"
     "project toolbox"
   }
+
+  #aboutCopy {
+    left: 50px;
+  }
+
+  #quote {
+    margin-bottom: 50px;
+  }
+
   #connSection {
     flex-wrap: wrap;
     height: auto;
   }
+
   #links {
     margin-left: 5%;
   }
