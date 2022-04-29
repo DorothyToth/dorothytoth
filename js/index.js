@@ -1,6 +1,9 @@
 
     console.log("is this working??");
 
+    console.log("Yes it is!!");
+
+
 
 $(document).ready(function(){
 

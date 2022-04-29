@@ -317,7 +317,7 @@ li {
   display:inline;
 }
 .scrollIcon {
-  height: 20px;
+  height: 0px;
 }
 
 #aboutGrid {
@@ -330,6 +330,10 @@ li {
   grid-gap: 50px;
   border: solid black;
  }
+
+
+
+
 
  .aboutGridArea {
 /* do I need this??  */
