@@ -415,9 +415,8 @@ li {
 }
 
 #links {
-width: 350px;
-margin-right: 5%;
-text-align: right;
+  margin-right: 5%;
+  text-align: right;
 }
 
 
@@ -498,13 +497,11 @@ text-align: right;
 
   #connSection {
     flex-wrap: wrap;
+    display: block;
     height: auto;
-    
   }
 
   #links {
-    margin-left: 5%;
-    display: block;
-    /* ????? */
+    margin-top: 70px;
   }
 }
