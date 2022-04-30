@@ -6,8 +6,6 @@ body {
   background-image: url("/images/45degreee_fabric.png");
   background-repeat: repeat;
   background-attachment: fixed;
-
-  /* background-color: #f2f2f2; */
 }
 
 
@@ -53,6 +51,7 @@ h6 {
   color: #636364;
   margin-block-start: .5em;
   margin-block-end: .5em;
+  line-height: 1.25em;
 }
 
 p {
@@ -99,7 +98,6 @@ li {
   padding-right: 15px;
   justify-content: space-between;
   filter: drop-shadow(0px 0px 5px rgba(99,99,99,0.2));
-
 }
 
 #navigation {
@@ -133,7 +131,6 @@ li {
   align-items: center;
   width: 25%;
   margin-right: 5%;
-
 }
 
 .icons img {
@@ -147,6 +144,14 @@ li {
   cursor: pointer;
 }
 
+#upToTop {
+  width: 30px;
+  cursor: pointer;
+  position:fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+}
 
 
 
@@ -201,20 +206,20 @@ li {
 
 #headline {
   border-radius: 10px;
-  border: solid #3e80aa;
-  border-width: 0px 0px 0px 10px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   position: absolute;
-  right: -75px;
+  right: -170px;
   top: 210px;
   z-index: 1;
   padding: 50px;
+  /* filter: drop-shadow(0px 0px 5px rgba(99,99,99,0.2)); */
+
 }
 
 #headline p {
-  max-width: 350px;
-  font-size: 16px;
-  font-weight: 300;
+  max-width: 375px;
+  font-size: 18px;
+  font-weight: 500;
   margin: 0px;
   color: #636364;
 }
@@ -246,7 +251,7 @@ li {
   display: grid;
   align-content: end;
   border-radius: 10px;
-  filter: drop-shadow(0px 0px 3px #b4afaf);
+  /* filter: drop-shadow(0px 0px 5px rgba(99,99,99,0.2)); */
 }
 
 #travel {
@@ -387,7 +392,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  text-align: right;
   margin: 0px 5%;
   height: 170px;
 }
@@ -419,6 +424,19 @@ li {
   text-align: right;
 }
 
+#links a:visited, a:link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #636364
+}
+
+#links h5:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3e80aa;
+}
+
+
 
 
 
@@ -426,10 +444,20 @@ li {
 /* footer */
 
 .footer {
-  background-color: #636364;
+  background-color: #6363648c;
   display: flex;
   height: 75px;
+  background-image: url("/images/45degreee_fabric.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-blend-mode:multiply;
+
 }
+
+
+
+
+
 
 
 
