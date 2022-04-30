@@ -3,7 +3,7 @@ body {
   font-family: 'Fraunces', serif;
   width: 100%;
   margin: 0px;
-  background-image: url("/images/45degreee_fabric.png");
+  background-image: url("/images/fabric.png");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -256,32 +256,32 @@ li {
 
 #travel {
   grid-area: travel;
-  background-image: url("../images/bookcases.png");
+  background-image: url("../images/card-travel.jpeg");
 }
 
 #final {
   grid-area: final;
-  background-image: url("../images/bookcases.png");
+  background-image: url("../images/card-hike.jpeg");
 }
 
 #education {
   grid-area: education;
-  background-image: url("../images/beds.png");
+  background-image: url("../images/card-doe.jpg");
 }
 
 #garden {
   grid-area: garden;
-  background-image: url("../images/patio.png");
+  background-image: url("../images/card-horticare.jpg");
 }
 
 #health {
   grid-area: health;
-  background-image: url("../images/couch.png");
+  background-image: url("../images/card-family.jpg");
 }
 
 #food {
   grid-area: food;
-  background-image: url("../images/desks.png");
+  background-image: url("../images/card-food.png");
 }
 
 .heading {
@@ -328,7 +328,7 @@ li {
   align-items: flex-start;
   z-index: 1;
   position: absolute;
-  left: 250px;
+  left: 400px;
   top: 170px;
 }
 
