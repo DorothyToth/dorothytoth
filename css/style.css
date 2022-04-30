@@ -314,7 +314,6 @@ li {
   width: 500px;
   border-radius: 10px;
   position: relative;
-
 }
 
 #aboutCopy {
@@ -329,8 +328,9 @@ li {
 }
 
 #aboutSkill {
-  display: flex;
+  display:flex;
   justify-content: flex-end;
+  text-align: right;
 }
 
 #vertScroll {
@@ -345,6 +345,7 @@ li {
 #scrollHead{
   display:flex;
   align-items: center;
+  justify-content:flex-end;
 }
 .scrollIcon {
   height: 20px;
@@ -416,6 +417,7 @@ li {
 #links {
 width: 350px;
 margin-right: 5%;
+text-align: right;
 }
 
 
@@ -468,12 +470,12 @@ margin-right: 5%;
 
   #aboutSection {
     flex-wrap: wrap;
+    display: block;
     height: auto;
   }
 
   #aboutSkill {
-    margin-top: 50px;
-    margin-left: 0%;
+    margin-top: 70px;
   }
 
   #aboutGrid {
@@ -484,6 +486,8 @@ margin-right: 5%;
     "project toolbox"
   }
 
+  #aboutBox {
+  }
   #aboutCopy {
     left: 50px;
   }
@@ -495,9 +499,12 @@ margin-right: 5%;
   #connSection {
     flex-wrap: wrap;
     height: auto;
+    
   }
 
   #links {
     margin-left: 5%;
+    display: block;
+    /* ????? */
   }
 }
