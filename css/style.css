@@ -183,7 +183,7 @@ li {
 
 #featuredProduct {
   grid-area: featuredProduct;
-  background-image: url("https://dorothytoth.github.io/Repo18/images/furniture1.png");
+  background-image: url("../images/furniture1.png");
 }
 
 #secondaryProduct {
@@ -453,7 +453,7 @@ li {
   background-color: #6363648c;
   display: flex;
   height: 75px;
-  background-image: url("/images/45degreee_fabric.png");
+  background-image: url("../images/fabric.png");
   background-repeat: repeat;
   background-attachment: fixed;
   background-blend-mode:multiply;
