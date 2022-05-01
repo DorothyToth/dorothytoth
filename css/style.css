@@ -3,7 +3,7 @@ body {
   font-family: 'Fraunces', serif;
   width: 100%;
   margin: 0px;
-  background-image: url("/images/fabric.png");
+  background-image: url("../images/fabric.png");
   background-repeat: repeat;
   background-attachment: fixed;
 }
