@@ -3,7 +3,7 @@ body {
   font-family: 'Fraunces', serif;
   width: 100%;
   margin: 0px;
-  background-image: url("../images/fabric.png");
+  background-image: url("/images/fabric.png");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -291,6 +291,9 @@ li {
   font-size: 18px;
   border-radius: 0px 0px 10px 10px;
 }
+.heading:hover {
+  color: #3e80aa;
+}
 
 
 
@@ -314,7 +317,10 @@ li {
 }
 
 .aboutBox {
-  background-color: cadetblue;
+  /* background-image: url("../images/DT-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color:rgba(255, 255, 255, 0.5);
   height: 500px;
   width: 500px;
   border-radius: 10px;
@@ -329,7 +335,7 @@ li {
   z-index: 1;
   position: absolute;
   left: 400px;
-  top: 170px;
+  top: 50px;
 }
 
 #aboutSkill {
@@ -514,9 +520,12 @@ li {
   }
 
   #aboutBox {
+
   }
+
   #aboutCopy {
     left: 50px;
+    top: 150px;
   }
 
   #quote {
