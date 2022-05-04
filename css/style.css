@@ -281,19 +281,21 @@ li {
 }
 
 #test{
-  grid-area: travel;
+  /* grid-area: travel; */
   /* background-image: url("../images/card-travel.jpeg"); */
-
 }
 
 img {
   /* display: block; */
-  width: 100%;
+  /* width: 100%;
   height: 70%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px; */
 }
+
 #travel {
+  grid-area: travel;
+  background-image: url("../images/card-travel.jpeg");
 }
 
 #final {
