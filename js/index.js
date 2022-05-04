@@ -7,6 +7,30 @@
 
 $(document).ready(function(){
 
+  $("div").on('click', function () {
+    var idName = '#' + $(this).attr('id');
+    if (idName == '#travel') {
+      window.open("files/CS-GoTogether-Mobile-App.pdf", '_blank');
+    }
+    else if (idName == '#final') {
+      window.open("#", '_blank');
+    }
+    else if (idName == '#education') {
+      window.open('files/CS-Dept-of-Ed-Website-Redesign.pdf', '_blank');
+    }
+    else if (idName == '#garden') {
+      window.open("files/CS-Horticare-Garden-Care-Mobile-App.pdf", '_blank');
+    }
+    else if (idName == '#health') {
+      window.open("files/CS-SCFMN-Website-Redesign.pdf", '_blank');
+    }
+    else if (idName == '#food') {
+      window.open("#", '_blank');
+    }
+    if (acceptableInput) {
+      scrollLocation(idName);
+    }
+  })
 
     // Add smooth scrolling to all links
     $(".navLink").on('click', function(event) {
