@@ -249,7 +249,7 @@ li {
 #categoryGrid {
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: repeat(3, 300px);
+  grid-template-rows: repeat(3, 350px);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   grid-template-areas: 
