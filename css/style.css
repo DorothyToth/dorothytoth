@@ -3,17 +3,17 @@ body {
   font-family: 'Fraunces', serif;
   width: 100%;
   margin: 0px;
-  background-image: url("../images/fabric.png");
+  /* background-image: url("../images/fabric.png");
   background-repeat: repeat;
-  background-attachment: fixed;
-  /* background-color: #ebebeb; */
+  background-attachment: fixed; */
+  background-color: #ebebeb;
 }
 
 
 
 
 /* Typography CSS */
-a{
+a {
   display: block;
 }
 
@@ -40,7 +40,7 @@ h4 {
 }
 
 h5 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 400;
   color: #636364;
   margin-block-start: 0em;
@@ -168,7 +168,7 @@ li {
   margin: 0px;
   display: grid;
   min-height: 500px;
-  height: 50vh;
+  height: 70vh;
   grid-template-rows: 75% 25%;
   grid-template-columns: 75% 25%;
   grid-template-areas: 
@@ -246,84 +246,118 @@ li {
 
 /* Category Grid CSS */
 
+#case{
+  height:max-content;
+}
 #categoryGrid {
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: repeat(3, 350px);
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
   grid-template-areas: 
-  "education education final"
-  "garden travel travel"
-  "health health food"
+  "education final"
+  "travel garden"
+  "health food"
 }
 
 .categoryGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* margin: 5px; */
   display: grid;
-  align-content: end;
-  border-radius: 10px;
-  transition: 0.3s;
-  box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
+  align-content: flex-start;
 }
-.categoryGridArea:hover {
-  color: #3e80aa;
-  box-shadow: 0px 0px 15px rgba(99,99,99,0.5);
+/* .categoryGridArea:hover {
+  /* color: #3e80aa; */
+  /* box-shadow: 0px 0px 15px rgba(99,99,99,0.5);
   transform: scale(1.01);
-}
+} */ */
 .categoryGridArea a:visited, a:link {
   cursor: pointer;
   text-decoration: none;
   color: black;
 }
 
-#test{
-  /* grid-area: travel; */
-  /* background-image: url("../images/card-travel.jpeg"); */
+.categoryGridArea img{
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  transition: 0.3s;
+  margin-bottom: -10px;
+}
+.categoryGridArea img:hover {
+  /* box-shadow: 0px 0px 15px rgba(99,99,99,0.5); */
+  transform: scale(1.02);
 }
 
-img {
-  /* display: block; */
-  /* width: 100%;
-  height: 70%;
-  overflow: hidden;
-  border-radius: 10px; */
+.categoryGridArea h5 {
+  margin-block-start: 0.85em;
+  margin-block-end: 0em;
 }
 
 #travel {
   grid-area: travel;
-  background-image: url("../images/card-travel.jpeg");
 }
+/* #travel img{
+  grid-area: travel;
+  background-image: url("../images/card-travel.jpeg");
+} */
 
 #final {
   grid-area: final;
-  background-image: url("../images/card-hike.jpeg");
+  /* background-image: url("../images/card-hike.jpeg"); */
 }
 
 #education {
   grid-area: education;
-  background-image: url("../images/card-doe.jpg");
+  /* background-image: url("../images/card-doe.jpg"); */
 }
 
 #garden {
   grid-area: garden;
-  background-image: url("../images/card-horticare.jpg");
+  /* background-image: url("../images/card-horticare.jpg"); */
 }
 
 #health {
   grid-area: health;
-  background-image: url("../images/card-family.jpg");
+  /* background-image: url("../images/card-family.jpg"); */
 }
 
 #food {
   grid-area: food;
-  background-image: url("../images/card-food.png");
+  /* background-image: url("../images/card-food.png"); */
 }
 
-.heading {
+/* .tag {
+  font-size: 14px;
+  color: #636364;
+  text-transform: uppercase;
+} */
+
+button{
+  background-color:#6363647c;
+  border: none;
+  border-radius: 10px;
+  width: fit-content;
+  max-height: fit-content;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+button h6 {
+  color: white;
+  font-size: 14px;
+  padding: 0px 6px;
+}
+button:hover{
+  background-color:#636364;
+}
+
+
+
+/* .heading {
   background-color: rgba(255,255,255,0.9);
   padding: 15px;
   height: 25px;
@@ -334,7 +368,10 @@ img {
 }
 a .heading:hover{
   color: #3e80aa;
-}
+} */
+
+
+
 
 
 
@@ -381,12 +418,14 @@ a .heading:hover{
   background-color: rgba(255,255,255,0.9);
   padding: 20px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 #aboutSkill {
   display:flex;
   justify-content: flex-end;
   text-align: right;
+  transition: 0.3s;
 }
 
 #vertScroll {
@@ -421,7 +460,8 @@ a .heading:hover{
 
 .aboutGridCopy {
    margin-bottom: 60px;
- }
+   transition: 0.3s;
+  }
 
 
 
@@ -473,6 +513,7 @@ a .heading:hover{
 #links {
   margin-right: 5%;
   text-align: right;
+  transition: 0.3s;
 }
 
 #links a:visited, a:link {
@@ -485,6 +526,56 @@ a .heading:hover{
   cursor: pointer;
   text-decoration: none;
   color: #3e80aa;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* Card Carousel */
+
+.uxuiHeading{
+  margin: 0px 5%;
+}
+
+.uxuiScroll{
+  display: flex;
+  overflow-x: scroll;
+  padding-top: 20px;
+}
+.uxuiScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.start{
+  padding-left: 5%;
+}
+
+.end{
+  padding-right: 5%;
+}
+
+.projectCard{
+  min-width: 450px;
+  margin: 0px 60px 60px 0px;
+}
+
+.projectImage{
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.3s;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+
+img:hover{
+  transform: scale(1.01);
 }
 
 
@@ -498,14 +589,11 @@ a .heading:hover{
   background-color: #6363648c;
   display: flex;
   height: 75px;
-  background-image: url("../images/fabric.png");
+  /* background-image: url("../images/fabric.png");
   background-repeat: repeat;
   background-attachment: fixed;
-  background-blend-mode:multiply;
-
+  background-blend-mode:multiply; */
 }
-
-
 
 
 
@@ -557,7 +645,7 @@ a .heading:hover{
   }
 
   #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 1fr;
     grid-template-areas:
     "education"
@@ -568,6 +656,15 @@ a .heading:hover{
     "food"
   }
 
+  .categoryGridArea img {
+    height: 400px;
+  }
+
+  .aboutBox{
+    height: 300px;
+    width: 300px;
+  
+  }
   #aboutCopy {
     left: 70px;
   }
@@ -577,7 +674,7 @@ a .heading:hover{
   }
 
   #connSection {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     display: block;
     height: auto;
   }
