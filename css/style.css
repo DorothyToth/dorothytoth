@@ -639,3 +639,76 @@ img:hover{
     margin-top: 70px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+  #navigation {
+    width: 100%;
+  }
+
+  #navigation p {
+    font-size: 14px;
+    /* font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    color: #636364;
+    transition: 0.3s; */
+  }
+
+  #heroGrid {
+    margin: 0px;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 50% 30% 20%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "featuredProduct"
+      "secondaryProduct"
+      "CTA";
+  }
+
+  #headline {
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9);
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
+  }
+
+  #headline p {
+    max-width: 225px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+    color: #636364;
+  }  
+
+  #headline h2 {
+    font-size: 32px;
+  }
+  
+  #aboutGrid {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+    grid-template-areas: 
+    "user"
+    "content"
+    "project"
+    "toolbox"
+  }
+
+  #aboutBox {
+    height: auto;
+    width: 100%;
+  }
+
+  #aboutCopy {
+    width: 200px;
+    left: 10%;
+    top: 240px;
+  }  
+
+}
