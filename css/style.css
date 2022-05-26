@@ -139,6 +139,11 @@ li {
   margin: 15px;
   width: 30px;
   cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s
+}
+.icons img:hover {
+  opacity: .9;
 }
 
 .carrot {
@@ -153,6 +158,11 @@ li {
   z-index: 99;
   bottom: 20px;
   right: 20px;
+  opacity: 0.5;
+  transition: 0.3s
+}
+#upToTop:hover {
+  opacity: .9;
 }
 
 
@@ -187,10 +197,19 @@ li {
 
 #featuredProduct {
   grid-area: featuredProduct;
-  background-image: url("../images/whiteboard.jpg");
-  background-color: #a3a8bf81;
-  background-blend-mode: multiply;
+  /* background-image: url("../images/whiteboard.jpg"); */
+  background-color: #a3a8bf;
 }
+video {
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 
 #secondaryProduct {
   grid-area: secondaryProduct;
@@ -205,14 +224,20 @@ li {
   justify-content: flex-start;
   cursor: pointer;
   padding: 20px;
+  transition: 0.3s;
 }
 
 #CTA h4 {
   font-size: 28px;
-  transition: 0.3s;
 }
-#CTA h4:hover{
-  color: #d4d4d4;
+
+.CTAlink {
+  opacity: 1;
+  transition: 0.3s;
+  display: flex;
+}
+.CTAlink:hover {
+  opacity: .7;
 }
 
 #CTA img {
@@ -312,12 +337,6 @@ li {
   grid-area: food;
 }
 
-/* .tag {
-  font-size: 14px;
-  color: #636364;
-  text-transform: uppercase;
-} */
-
 button{
   background-color:#6363647c;
   border: none;
@@ -326,6 +345,7 @@ button{
   max-height: fit-content;
   transition: 0.3s;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 button h6 {
   color: white;
@@ -335,8 +355,15 @@ button h6 {
 button:hover{
   background-color:#636364;
 }
-
-
+.blue {
+  background-color:#3e81aabe;
+}
+.blue:hover {
+  background-color:#3e81aa;
+}
+.buttons {
+  display: flex;
+}
 
 
 
