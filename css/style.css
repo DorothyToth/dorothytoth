@@ -715,6 +715,7 @@ img:hover{
   #aboutBox {
     height: auto;
     width: 200px;
+    position: relative;
   }
 
   #aboutCopy {
@@ -723,4 +724,26 @@ img:hover{
     top: 240px;
   }  
 
+  #vertScroll {
+    height: 375px;
+    width: 200px;  
+    overflow-y:scroll;
+  }
+  #vertScroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #scrollHead{
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+  }
+  .scrollIcon {
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  #aboutSkill {
+    margin-top: 500px;
+  }
 }
