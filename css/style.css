@@ -285,9 +285,9 @@ video {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 60px;
   grid-template-areas: 
-  "education final"
-  "travel garden"
-  "health food"
+  "final final"
+  "education garden"
+  "travel health"
 }
 
 .categoryGridArea {
@@ -631,15 +631,14 @@ img:hover{
   }
 
   #categoryGrid {
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
     grid-template-areas:
-    "education"
     "final"
+    "education"
     "garden"
     "travel"
     "health"
-    "food"
   }
 
   .categoryGridArea img {
