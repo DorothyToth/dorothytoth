@@ -64,8 +64,8 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
-        with:
-          static_site_generator: next
+        # with:
+        #   static_site_generator: next
       - name: Build with Next.js
         run: |
           ls -la
