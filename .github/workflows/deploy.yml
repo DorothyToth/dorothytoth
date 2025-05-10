@@ -36,7 +36,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 22
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
@@ -71,7 +71,7 @@ jobs:
       - name: Static HTML export with Next.js
         run: pnpm next export
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
