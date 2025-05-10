@@ -69,7 +69,7 @@ jobs:
       - name: Build with Next.js
         run: |
           pnpm next build
-          ls -la
+          ls -la .next
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
