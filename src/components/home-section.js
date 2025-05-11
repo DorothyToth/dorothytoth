@@ -23,7 +23,7 @@ export default function HomeSection() {
                     <a className="navLink" href="#case" onClick={ e => scrollToElement( e ) }>
                         <span className="CTAlink">
                             <h4>see work</h4>
-                            <Image src="/images/DT-carrot-white.svg" width={ 30 } height={ 90 } />
+                            <Image src="images/DT-carrot-white.svg" width={ 30 } height={ 90 } />
                         </span>
                     </a>
                 </div>
