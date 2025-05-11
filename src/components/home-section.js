@@ -7,8 +7,8 @@ export default function HomeSection() {
             <section id="heroGrid">
 
                 <div id="featuredProduct" className="heroGridArea">
-                    <video playsInline autoPlay muted loop poster="/images/video-still.jpg">
-                        <source src="/videos/wireframe-video.mp4" />
+                    <video playsInline autoPlay muted loop poster="images/video-still.jpg">
+                        <source src="videos/wireframe-video.mp4" />
                     </video>
                     <div id="headline">
                         <h3>UX/UI Portfolio</h3>
