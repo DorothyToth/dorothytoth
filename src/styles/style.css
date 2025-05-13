@@ -1,9 +1,14 @@
+html {
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: 'Kanit', sans-serif;
   font-family: 'Fraunces', serif;
   width: 100%;
   margin: 0px;
   background-color: #ebebeb;
+  scroll-behavior: smooth
 }
 
 
@@ -217,7 +222,7 @@ video {
 
 #secondaryProduct {
   grid-area: secondaryProduct;
-  background-image: url("../images/screens.jpg");
+  background-image: url("/images/screens.jpg");
   background-color: #a3a8bf;
   background-blend-mode: multiply;
 }
@@ -392,7 +397,7 @@ button:hover{
 }
 
 .aboutBox {
-  background-image: url("../images/pencils.jpeg");
+  background-image: url("/images/pencils.jpeg");
   background-position:right;
   background-size: cover;
   background-repeat: no-repeat;
