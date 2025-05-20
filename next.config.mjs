@@ -13,7 +13,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: process.env.CI ? "/dorothytoth-site" : "",
+  basePath: process.env.CI ? "/UXUI-Portfolio" : "",
 
   /**
    * Disable server-based image optimization. Next.js does not support
