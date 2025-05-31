@@ -1,11 +1,19 @@
+import Head from 'next/head'
+
 import "@/styles/style.css";
 
 import Layout from '../components/layout'
 
 export default function App({ Component, pageProps }) {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  )
+	return (
+		<>
+			<Head>
+				<title>Dorothy&apos;s UX/UI Portfolio</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			</Head>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</>
+	)
 }
