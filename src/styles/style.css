@@ -303,6 +303,7 @@ video {
   cursor: pointer;
   text-decoration: none;
   color: black;
+  overflow: hidden;
 }
 
 .categoryGridArea img{
