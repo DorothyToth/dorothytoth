@@ -3,23 +3,23 @@ export default function About() {
         <>
             <div id="aboutBack">
 
-                <div class="sectionStart" id="about"></div>
+                <div className="sectionStart" id="about"></div>
 
                 <div>
 
                     <div id="aboutSection">
 
-                        <div class="aboutBox">
+                        <div className="aboutBox">
                             <div id="aboutCopy">
                                 <h3>about me</h3>
-                                <p>As a dynamic UX/UI designer and creative director, I pride myself in providing smart, meaningful, and unique design that solves problems and adds value to the human experience.</p><p>With over twenty years of experience in both the advertising and publishing industries, I am excited to share my passion and expertise as a <span class="bold">user champion</span>, <span class="bold">creative partner</span>, and <span class="bold">brand expert</span>.</p>
+                                <p>As a dynamic UX/UI designer and creative director, I pride myself in providing smart, meaningful, and unique design that solves problems and adds value to the human experience.</p><p>With over twenty years of experience in both the advertising and publishing industries, I am excited to share my passion and expertise as a <span className="bold">user champion</span>, <span className="bold">creative partner</span>, and <span className="bold">brand expert</span>.</p>
                             </div>
                         </div>
 
                         <div id="aboutSkill">
                             <span>
                                 <div id="scrollHead">
-                                    <img class="scrollIcon" src="images/DT-carrot-grayDown50.svg" />
+                                    <img className="scrollIcon" src="images/DT-carrot-grayDown50.svg" />
                                     <h6>scroll skill set</h6>
                                 </div>
                                 <div id="vertScroll">
@@ -63,19 +63,19 @@ export default function About() {
 
                     <div id="aboutGrid">
 
-                        <div class="aboutGridCopy" id="user">
+                        <div className="aboutGridCopy" id="user">
                             <h6>user empathy + user flows</h6>
                             <p>I encompass and understand user goals for all projects in order to create deliverables that provide exceptional user experience, information discovery, and delight.</p>
                         </div>
-                        <div class="aboutGridCopy" id="content">
+                        <div className="aboutGridCopy" id="content">
                             <h6>content + user interface design</h6>
                             <p>With strong organizational skills, I build information architecture and navigation designed to serve, then use creative content and layouts to bring messaging to life.</p><p>Beautifully crafted, branded, and comprehensive UI give the user a complete experience.</p>
                         </div>
-                        <div class="aboutGridCopy" id="project">
+                        <div className="aboutGridCopy" id="project">
                             <h6>project management + collaboration</h6>
                             <p>Following all aspects of a project keep expectations and deadlines met.</p><p>Because each project is unique, I collaborate with industry experts to produce exceptional work while keeping direction aligned and deliverables cohesive.</p>
                         </div>
-                        <div class="aboutGridCopy" id="toolbox">
+                        <div className="aboutGridCopy" id="toolbox">
                             <h6>toolbox</h6>
                             <ul>
                                 <li>Listening</li>

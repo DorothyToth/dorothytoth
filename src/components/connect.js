@@ -1,11 +1,11 @@
 export default function Connect() {
     return (
         <>
-            <div class="sectionStart" id="connect"></div>
+            <div className="sectionStart" id="connect"></div>
 
             <div id="quote">
-                <div class="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>
-                <div class="author">— Jane Goodall</div>
+                <div className="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>
+                <div className="author">— Jane Goodall</div>
             </div>
 
             <section id="connSection">
