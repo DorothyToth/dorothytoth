@@ -13,7 +13,7 @@ export default function HomeSection() {
                     <div id="headline">
                         <h3>UX/UI Portfolio</h3>
                         <h2>Dorothy Toth</h2>
-                        <p>UX/UI + Creative Direction + Visual Design</p>
+                        <p>UX/UI + Creative Strategy</p>
                     </div>
                 </div>
 

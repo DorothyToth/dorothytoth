@@ -16,7 +16,6 @@ export default function Layout({ children }) {
 					</div>
 
 					<div className="icons">
-						<a href="https://reasonandrhyme.co" target="_blank"><img src="images/DT-comm-web-gray.svg" /></a>
 						<a href="mailto:dorothytoth@me.com"><img src="images/DT-comm-email-gray.svg" /></a>
 						<a href="https://www.linkedin.com/in/dorothy-toth/" target="_blank"><img src="images/DT-comm-linkedin-gray.svg" /></a>
 					</div>

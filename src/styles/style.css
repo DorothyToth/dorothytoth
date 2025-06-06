@@ -306,7 +306,7 @@ video {
   overflow: hidden;
 }
 
-.categoryGridArea img{
+.categoryGridArea img {
   border-radius: 10px;
   object-fit: cover;
   width: 100%;
@@ -315,6 +315,7 @@ video {
   margin-bottom: -10px;
 }
 .categoryGridArea img:hover {
+  border-radius: 10px;
   transform: scale(1.02);
 }
 
