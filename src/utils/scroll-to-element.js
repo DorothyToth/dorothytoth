@@ -5,7 +5,7 @@ export default function scrollToElement( e ) {
     
     if (!element) return;
     
-    const duration = 3000; // Duration in milliseconds - adjust this to control speed
+    const duration = 1000; // Duration in milliseconds - adjust this to control speed
     const start = window.scrollY;
     const end = element.offsetTop;
     const change = end - start;
