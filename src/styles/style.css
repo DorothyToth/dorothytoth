@@ -299,11 +299,12 @@ video {
   display: grid;
   align-content: flex-start;
 }
+
 .categoryGridArea a:visited, a:link {
   cursor: pointer;
   text-decoration: none;
-  color: black;
-  overflow: hidden;
+  /*color: black;
+  overflow: hidden;*/
 }
 
 .categoryGridArea img {
@@ -314,8 +315,8 @@ video {
   transition: 0.3s;
   margin-bottom: -10px;
 }
+
 .categoryGridArea img:hover {
-  border-radius: 10px;
   transform: scale(1.02);
 }
 
