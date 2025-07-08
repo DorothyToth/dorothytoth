@@ -1,7 +1,7 @@
 export default function ProjectCard( { slugPartial, title, subtitle, content, buttons, heroImg } ) {
     return (
         <div id={ slugPartial } className="categoryGridArea">
-            <a href={ buttons[ 0 ].resource } target="_blank"><img src={ heroImg } /></a>
+            <a href={ buttons[ 0 ].url } target="_blank"><img src={ heroImg } /></a>
             <h5>{ title }</h5>
             <h6>{ subtitle }</h6>
             <div dangerouslySetInnerHTML={ { __html: content } } />
