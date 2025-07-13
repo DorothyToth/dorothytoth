@@ -12,17 +12,6 @@ export default function CaseStudies({ projects }) {
 				{
 					projects.map( p => <ProjectCard key={ p.slugPartial } { ...p } />)
 				}
-				<div id="final" className="categoryGridArea">
-					<a href="files/CS-MN-Hiking-Club-App.pdf" target="_blank"><img src="images/hero-hiking.jpg" /></a>
-					<h5>Minnesota State Parks Hiking Club</h5>
-					<h6>Hiking Log App / 3 weeks</h6>
-					<p>Team venture that brings the Minnesota Hiking Club program to a feature-rich app environment</p>
-					<div className="buttons">
-						<a href="files/CS-MN-Hiking-Club-App.pdf" target="_blank"><button className="blue"><h6>case study</h6></button></a>
-						<a href="https://xd.adobe.com/view/26d5b4e0-35de-4964-81a8-63e8819e9877-7386/" target="_blank"><button><h6>XD prototype</h6></button></a>
-						<a href="https://mnhikingclub.glideapp.io" target="_blank"><button><h6>Glide Apps prototype</h6></button></a>
-					</div>
-				</div>
 				<div id="garden" className="categoryGridArea">
 					<a href="files/CS-Horticare-Garden-Care-Mobile-App.pdf" target="_blank"><img src="images/hero-garden.jpg" /></a>
 					<h5>Horticare</h5>
