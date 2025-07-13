@@ -32,6 +32,6 @@ export default async function getAllProjects() {
     } ) )
 
     // return any defined entries sorted by date to have newest first although right now we're comparing dates as strings which could break later
-    return projectEntries.filter( Boolean ).sort( ( a, b ) => b.date.localeCompare( a.date ) );
+    return projectEntries.filter( Boolean ).sort( ( a, b ) => a.order < b.order );
 
 }
