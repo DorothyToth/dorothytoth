@@ -12,7 +12,7 @@ export default function About() {
                         <div className="aboutBox">
                             <div id="aboutCopy">
                                 <h3>hey yo!</h3>
-                                <p>I’m a dynamic UX/UI designer and creative thinker with an interest in accessibility. I pride myself in providing <span className="bold">smart, meaningful, and unique design</span> that champions user needs and solves problems before they happen.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of recognition solutions.</p>
+                                <p>I’m a dynamic UX/UI designer and creative thinker with an interest in accessibility. I pride myself in providing smart, meaningful, and unique design that <span className="bold">champions user needs and solves problems before they happen</span>.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of recognition solutions.</p>
                             </div>
                         </div>
 
