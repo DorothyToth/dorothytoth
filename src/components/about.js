@@ -19,7 +19,7 @@ export default function About() {
                         <div id="aboutSkill">
                             <span>
                                 <div id="scrollHead">
-                                    <img className="scrollIcon" src="images/DT-carrot-grayDown50.svg" />
+                                    <img className="scrollIcon" src="images/DT-carrot-367095.svg" />
                                     <h6>scroll skill set</h6>
                                 </div>
                                 <div id="vertScroll">

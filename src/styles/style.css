@@ -222,13 +222,13 @@ video {
 #secondaryProduct {
   grid-area: secondaryProduct;
   background-image: url("/images/screens.jpg");
-  background-color: #a3a8bf;
+  background-color: #3670959b;
   background-blend-mode: multiply;
 }
 
 #CTA {
   grid-area: CTA;
-  background-image: linear-gradient(70deg, #3e80aa, #a3a8bf);
+  background-image: linear-gradient(70deg, #367095, #a3a8bf);
   justify-content: flex-start;
   cursor: pointer;
   padding: 20px;
