@@ -20,7 +20,7 @@ export default function CaseStudies({ projects }) {
 					<div className="buttons">
 						<a href="files/CS-MN-Hiking-Club-App.pdf" target="_blank"><button className="blue"><h6>case study</h6></button></a>
 						<a href="https://xd.adobe.com/view/26d5b4e0-35de-4964-81a8-63e8819e9877-7386/" target="_blank"><button><h6>XD prototype</h6></button></a>
-						<a href="https://mnhikingclub.glideapp.io" target="_blank"><button><h6>Glide Apps prototype</h6></button></a>
+						<a href="http://mn-hiking.love/trails" target="_blank"><button><h6>app prototype</h6></button></a>
 					</div>
 				</div>
 				<div id="garden" className="categoryGridArea">
