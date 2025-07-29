@@ -11,8 +11,8 @@ export default function Connect() {
             <section id="connSection">
 
                 <div id="connCopy">
-                    <h3>let's work together</h3>
-                    <p>For forward-thinking and purpose-driven ux/ui design, please reach out to me. I’d love to hear about your passion and collaborate with you on your next endeavor.</p>
+                    <h3>let's connect!</h3>
+                    <p>For forward-thinking and purpose-driven ux/ui design, please reach out to me. I’d love to hear about your passion and collaborate with you on bringing ideas to life.</p>
                 </div>
                 <div id="links">
                     <a href="mailto:dorothytoth@me.com"><h5>Email</h5></a>

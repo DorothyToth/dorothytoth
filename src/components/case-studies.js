@@ -5,7 +5,7 @@ export default function CaseStudies({ projects }) {
 	return (
 		<>
 			<div className="sectionStart" id="case">
-				{/* <h3>UX/UI case studies</h3> */}
+				<h6>More Content Coming Soon!</h6>
 			</div>
 
 			<section id="categoryGrid">

@@ -11,8 +11,8 @@ export default function About() {
 
                         <div className="aboutBox">
                             <div id="aboutCopy">
-                                <h3>about me</h3>
-                                <p>As a dynamic UX/UI designer and creative director, I pride myself in providing smart, meaningful, and unique design that solves problems and adds value to the human experience.</p><p>With over twenty years of experience in both the advertising and publishing industries, I am excited to share my passion and expertise as a <span className="bold">user champion</span>, <span className="bold">creative partner</span>, and <span className="bold">brand expert</span>.</p>
+                                <h3>hey yo!</h3>
+                                <p>I’m a dynamic UX/UI designer and creative thinker with an interest in accessibility. I pride myself in providing <span className="bold">smart, meaningful, and unique design</span> that solves problems before they happen and adds value to the human experience.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of recognition solutions.</p>
                             </div>
                         </div>
 
