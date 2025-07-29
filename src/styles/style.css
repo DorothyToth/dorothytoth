@@ -206,7 +206,6 @@ li {
 
 #featuredProduct {
   grid-area: featuredProduct;
-  /* background-image: url("../images/whiteboard.jpg"); */
   background-color: #a3a8bf;
 }
 video {
@@ -350,7 +349,7 @@ video {
 }
 
 button{
-  background-color:#6363647c;
+  background-color:#636364;
   border: none;
   border-radius: 10px;
   width: fit-content;
@@ -365,7 +364,7 @@ button h6 {
   padding: 0px 6px;
 }
 button:hover{
-  background-color:#636364;
+  background-color:#6363649e;
 }
 .blue {
   background-color:#367095;
