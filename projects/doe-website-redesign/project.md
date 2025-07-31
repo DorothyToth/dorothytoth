@@ -11,4 +11,4 @@ buttons:
     url: https://xd.adobe.com/view/1c70f438-aa7e-4f21-afbc-5130b111f901-4923/
 ---
 
-Overhaul of website with a focus on information architecture, comprehensive UI, and responsive design
+Overhaul of website with a focus on information architecture, comprehensive UI, and responsive design.
