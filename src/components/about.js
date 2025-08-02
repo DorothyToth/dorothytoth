@@ -3,7 +3,7 @@ export default function About() {
         <>
             <div id="aboutBack">
 
-                <div className="sectionStart" id="about"></div>
+                <div className="section-start" id="about"></div>
 
                 <div>
 
