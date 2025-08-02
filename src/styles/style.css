@@ -22,7 +22,7 @@ a {
 h2 {
   font-size: 60px;
   margin: 0px;
-  color: #3e80aa;
+  color: #367095;
 }
 
 h3 {
@@ -54,7 +54,7 @@ h6 {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
-  color: #3e80aa;
+  color: #367095;
   margin-block-start: .5em;
   margin-block-end: .5em;
   line-height: 1.25em;
@@ -86,7 +86,7 @@ li {
 }
 
 .bold {
-  color: #3e80aa;
+  color: #367095;
   font-weight:500
 }
 
@@ -133,7 +133,7 @@ li {
 #navigation p:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #3e80aa;
+  color: #367095;
 }
 
 .icons {
@@ -206,7 +206,6 @@ li {
 
 #featuredProduct {
   grid-area: featuredProduct;
-  /* background-image: url("../images/whiteboard.jpg"); */
   background-color: #a3a8bf;
 }
 video {
@@ -223,13 +222,13 @@ video {
 #secondaryProduct {
   grid-area: secondaryProduct;
   background-image: url("/images/screens.jpg");
-  background-color: #a3a8bf;
+  background-color: #3670959b;
   background-blend-mode: multiply;
 }
 
 #CTA {
   grid-area: CTA;
-  background-image: linear-gradient(70deg, #3e80aa, #a3a8bf);
+  background-image: linear-gradient(70deg, #367095, #a3a8bf);
   justify-content: flex-start;
   cursor: pointer;
   padding: 20px;
@@ -389,14 +388,14 @@ video {
 .blockquote {
   font-size: 44px;
   font-weight: 400;
-  color: #3e80aa;
+  color: #367095;
 }
 
 .author {
   font-size: 32px;
   font-style: italic;
   font-weight: 300;
-  color: #3e80aa;
+  color: #367095;
   margin-right: 50px;
 }
 
@@ -423,7 +422,7 @@ video {
 #links h5:hover {
   cursor: pointer;
   text-decoration: none;
-  color: #3e80aa;
+  color: #367095;
   transition: 0.3s;
 }
 

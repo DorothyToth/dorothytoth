@@ -11,9 +11,8 @@ export default function HomeSection() {
                         <source src="videos/wireframe-video.mp4" />
                     </video>
                     <div id="headline">
-                        <h3>UX/UI Portfolio</h3>
                         <h2>Dorothy Toth</h2>
-                        <p>UX/UI + Creative Strategy</p>
+                        <p>UX/UI + Strategy + Creative</p>
                     </div>
                 </div>
 

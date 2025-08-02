@@ -5,7 +5,7 @@ export default function CaseStudies({ projects }) {
 	return (
 		<>
 			<div className="section-start" id="case">
-				<h3>UX/UI case studies</h3>
+				<h6>More Content Coming Soon!</h6>
 			</div>
 
 			<section className="case-studies-homepage">
@@ -13,8 +13,6 @@ export default function CaseStudies({ projects }) {
 					projects.map( ( p, cardIdx ) => <ProjectCard key={ p.slugPartial } cardIdx={ cardIdx } { ...p } />)
 				}
 			</section>
-
-
 		</>
 	)
 }

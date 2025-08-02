@@ -11,13 +11,13 @@ export default function Connect() {
             <section id="connSection">
 
                 <div id="connCopy">
-                    <h3>let's work together</h3>
-                    <p>For forward-thinking and purpose-driven ux/ui design, please reach out to me. I’d love to hear about your passion and collaborate with you on your next endeavor.</p>
+                    <h3>let's connect!</h3>
+                    <p>For forward-thinking and purpose-driven ux/ui design, please reach out to me. I’d love to hear about your passion and collaborate with you on bringing ideas to life.</p>
                 </div>
                 <div id="links">
                     <a href="mailto:dorothytoth@me.com"><h5>Email</h5></a>
                     <a href="https://www.linkedin.com/in/dorothy-toth/" target="_blank"><h5>LinkedIn</h5></a>
-                    <a href="https://drive.google.com/file/d/1Y6q6Zz-T6l7ZNx2BhY8wsSAg--y6fgcK/view?usp=sharing" target="_blank"><h5>Resume</h5></a>
+                    <a href="https://drive.google.com/file/d/1mlE8bfHJMiPIeZJE9e2bhgbLpriBsd1g/view?usp=sharing" target="_blank"><h5>Resume</h5></a>
                 </div>
 
             </section>

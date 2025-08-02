@@ -11,23 +11,24 @@ export default function About() {
 
                         <div className="aboutBox">
                             <div id="aboutCopy">
-                                <h3>about me</h3>
-                                <p>As a dynamic UX/UI designer and creative director, I pride myself in providing smart, meaningful, and unique design that solves problems and adds value to the human experience.</p><p>With over twenty years of experience in both the advertising and publishing industries, I am excited to share my passion and expertise as a <span className="bold">user champion</span>, <span className="bold">creative partner</span>, and <span className="bold">brand expert</span>.</p>
+                                <h3>hey yo!</h3>
+                                <p>I’m a dynamic UX/UI designer and creative thinker with a growing interest in accessibility. I strive to provide smart, meaningful, and unique design that <span className="bold">champions user needs and solves problems before they happen</span>.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of employee engagement and recognition solutions.</p>
                             </div>
                         </div>
 
                         <div id="aboutSkill">
                             <span>
                                 <div id="scrollHead">
-                                    <img className="scrollIcon" src="images/DT-carrot-grayDown50.svg" />
-                                    <h6>scroll skill set</h6>
+                                    <img className="scrollIcon" src="images/DT-carrot-367095.svg" />
+                                    <h6>scroll skills</h6>
                                 </div>
                                 <div id="vertScroll">
-                                    <h5>Empathy</h5>
-                                    <h5>A/B Testing</h5>
+                                    <h5>Listening & Empathy</h5>
+                                    <h5>Good ol&apos; Pencil & Paper</h5>
+                                    <h5>Figma</h5>
                                     <h5>Affinity Diagrams</h5>
                                     <h5>Card Sorting</h5>
-                                    <h5>Task Analysis</h5>
+                                    <h5>Adobe Creative Cloud</h5>
                                     <h5>User Interview Planning</h5>
                                     <h5>User Interviews</h5>
                                     <h5>Usability Testing</h5>
@@ -37,9 +38,9 @@ export default function About() {
                                     <h5>Collaboration</h5>
                                     <h5>Site Mapping</h5>
                                     <h5>Wireframing</h5>
+                                    <h5>A/B Testing</h5>
                                     <h5>HTML</h5>
                                     <h5>CSS</h5>
-                                    <h5>Bootstrap</h5>
                                     <h5>Page Layout</h5>
                                     <h5>Mockups</h5>
                                     <h5>Sketching</h5>
@@ -64,26 +65,29 @@ export default function About() {
                     <div id="aboutGrid">
 
                         <div className="aboutGridCopy" id="user">
-                            <h6>user empathy + user flows</h6>
-                            <p>I encompass and understand user goals for all projects in order to create deliverables that provide exceptional user experience, information discovery, and delight.</p>
+                            <h6>dynamic design</h6>
+                            <p>I’ve always had an interest in the design of all things, probably well before I knew it. I used to collect baseball cards, not for the players, but to pour over the differences in the logos and branding for each team, and how that made every card feel so unique.</p>
+                            <p>Now, I love the challenge and excitement of creating the best on-screen experiences for all kinds of users, from the details that make design systems seamless and cohesive, to providing frictionless flows so people can do what they need to do.</p>
                         </div>
                         <div className="aboutGridCopy" id="content">
-                            <h6>content + user interface design</h6>
-                            <p>With strong organizational skills, I build information architecture and navigation designed to serve, then use creative content and layouts to bring messaging to life.</p><p>Beautifully crafted, branded, and comprehensive UI give the user a complete experience.</p>
+                            <h6>accessibility & allyship</h6>
+                            <p>The more I learn about accessibility issues and how things can be better, the more I want to evolve design systems, solve color problems, or collaborate with developers on code. There is so much more to learn from people and do for users, but each update is a win for all. Working toward more accessible experiences for everyone is something I am finding a lot of passion in.</p>
                         </div>
                         <div className="aboutGridCopy" id="project">
-                            <h6>project management + collaboration</h6>
-                            <p>Following all aspects of a project keep expectations and deadlines met.</p><p>Because each project is unique, I collaborate with industry experts to produce exceptional work while keeping direction aligned and deliverables cohesive.</p>
+                            <h6>lifelong learning</h6>
+                            <p>Whether it’s learning new design techniques, better ways to transplant perennials, or trying a yummy new recipe for family dinner, I’ll jump in. It is a blessing to be able to lean into interests, turn them into hobbies, and share passion projects with others.</p>
                         </div>
                         <div className="aboutGridCopy" id="toolbox">
-                            <h6>toolbox</h6>
+                            <h6>work hard / play hard</h6>
                             <ul>
-                                <li>Listening</li>
-                                <li>Good ol&apos; Pencil & Paper</li>
-                                <li>Adobe Creative Cloud: XD, Illustrator, InDesign, Photoshop</li>
-                                <li>Figma + Figjam</li>
-                                <li>Jira + Trello</li>
-                                <li>Miro</li>
+                                <li>running, biking</li>
+                                <li>hiking MN state parks</li>
+                                <li>treehouse building</li>
+                                <li>gardening, knitting</li>
+                                <li>cocktailing, cooking</li>
+                                <li>nesting, home restoration</li>
+                                <li>bonfires, movie nights</li>
+                                <li>karma, kindness</li>
                             </ul>
                         </div>
 
