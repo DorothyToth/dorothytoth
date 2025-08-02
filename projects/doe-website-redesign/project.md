@@ -2,6 +2,7 @@
 title: Department of Education
 subtitle: Responsive Website Redesign / 5 weeks
 heroImg: images/hero-doe.jpg
+order: 2
 buttons:
   - label: case study
     url: files/CS-Dept-of-Ed-Website-Redesign.pdf

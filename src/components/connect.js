@@ -1,7 +1,7 @@
 export default function Connect() {
     return (
         <>
-            <div className="sectionStart" id="connect"></div>
+            <div className="section-start" id="connect"></div>
 
             <div id="quote">
                 <div className="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>

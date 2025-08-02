@@ -1,6 +1,14 @@
-export default function ProjectCard( { slugPartial, title, subtitle, content, buttons, heroImg } ) {
+import classNames from "classnames";
+
+export default function ProjectCard( { slugPartial, title, subtitle, content, buttons, heroImg, cardIdx } ) {
+
+    const classes = classNames( {
+        'case-study-card': true,
+        'case-study-card-primary': cardIdx === 0 // add this class to the first project in the listing
+    })
+
     return (
-        <div id={ slugPartial } className="categoryGridArea">
+        <div id={ slugPartial } className={ classes }>
             <a href={ buttons[ 0 ].url } target="_blank"><img src={ heroImg } /></a>
             <h5>{ title }</h5>
             <h6>{ subtitle }</h6>
