@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.4.5",
     "classnames": "^2.5.1",
     "gray-matter": "^4.0.3",
     "next": "15.3.1",
