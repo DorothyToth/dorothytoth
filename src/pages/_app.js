@@ -4,8 +4,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import "@/styles/style.css";
 
 import "@/styles/case-studies.scss"
-import "@/styles/hero.scss"
-import "@/styles/nav.scss"
 
 import Layout from '../components/layout'
 
