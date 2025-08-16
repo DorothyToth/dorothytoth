@@ -7,7 +7,6 @@ export default function BuildNotes() {
             <li>NEXT_PUBLIC_GITHUB_RUN_ID: { process.env.NEXT_PUBLIC_GITHUB_RUN_ID }</li>
             <li>NEXT_PUBLIC_REPO_UPDATED_AT: { process.env.NEXT_PUBLIC_REPO_UPDATED_AT }</li>
             <li>NEXT_PUBLIC_GITHUB_REF_NAME: { process.env.NEXT_PUBLIC_GITHUB_REF_NAME }</li>
-            <li>GITHUB_REF_NAME: { process.env.GITHUB_REF_NAME }</li>
         </ul>
     )
 }
