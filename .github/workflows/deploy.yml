@@ -67,12 +67,15 @@ jobs:
         # with:
         #   static_site_generator: next
       - name: Build with Next.js
+        env: 
+          REPO_UPDATED_AT: ${{ github.event.repository.updated_at}}
         run: |
           ls -la
           pnpm next build
           ls -la
           ls -la .next
           ls -la out
+          env | grep REPO
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
