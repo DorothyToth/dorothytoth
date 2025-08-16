@@ -69,12 +69,18 @@ jobs:
       - name: Build with Next.js
         env: 
           NEXT_PUBLIC_REPO_UPDATED_AT: ${{ github.event.repository.updated_at}}
+          NEXT_PUBLIC_GITHUB_SHA: $GITHUB_SHA
+          NEXT_PUBLIC_GITHUB_RUN_ID: $GITHUB_RUN_ID
+          NEXT_PUBLIC_GITHUB_REF_NAME: $GITHUB_REF_NAME
         run: |
           pnpm next build
           echo $GITHUB_SHA
           echo $GITHUB_RUN_ID
-          echo $NEXT_PUBLIC_REPO_UPDATED_AT
           echo $GITHUB_REF_NAME
+          echo $NEXT_PUBLIC_REPO_UPDATED_AT
+          echo $NEXT_PUBLIC_GITHUB_SHA
+          echo $NEXT_PUBLIC_GITHUB_RUN_ID
+          echo $NEXT_PUBLIC_GITHUB_REF_NAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
