@@ -70,13 +70,11 @@ jobs:
         env: 
           REPO_UPDATED_AT: ${{ github.event.repository.updated_at}}
         run: |
-          ls -la
           pnpm next build
-          ls -la
-          ls -la .next
-          ls -la out
-          env | grep REPO
-          env | grep GITHUB
+          echo $GITHUB_SHA
+          echo $GITHUB_RUN_ID
+          echo $REPO_UPDATED_AT
+          echo $GITHUB_REF_NAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
