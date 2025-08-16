@@ -76,6 +76,7 @@ jobs:
           ls -la .next
           ls -la out
           env | grep REPO
+          env | grep GITHUB
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
