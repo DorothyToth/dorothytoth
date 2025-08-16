@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#616161;fill-opacity:0.5;}
+</style>
+<g>
+	<rect x="-36.7" y="64.8" className="st0" width="20.2" height="12.8"/>
+	<polyline className="st0" points="-41,61.6 -26.6,72.1 -12.1,61.6 	"/>
+</g>
+<polyline className="st1" points="9.9,64 21,72.1 32.1,64 "/>
+<path className="st2" d="M42,21c0,11.6-9.4,21-21,21S0,32.6,0,21S9.4,0,21,0S42,9.4,42,21z M32.6,17.19c0.3-0.3,0.3-0.8,0-1.1
+	c-0.3-0.3-0.8-0.3-1.1,0L21,26.69l-10.5-10.5c-0.3-0.3-0.8-0.3-1.1,0s-0.3,0.8,0,1.1L21,28.79L32.6,17.19z"/>
+<polyline className="st1" points="-15.5,17.9 -26.6,28.9 -37.6,17.9 "/>
+</svg>
