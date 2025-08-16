@@ -14,7 +14,7 @@ const nextConfig = {
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
 
-  basePath: process.env.PR_NUMBER ? `/pr-preview/pr-${ process.env.PR_NUMBER }/` : "",
+  basePath: process.env.PR_NUMBER ? `/pr-preview/pr-${ process.env.PR_NUMBER }` : "",
 
   /**
    * Disable server-based image optimization. Next.js does not support
