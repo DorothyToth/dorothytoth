@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BuildNotes from "./build-notes";
 import scrollToElement from "@/utils/scroll-to-element";
 
 export default function Layout({ children }) {
@@ -26,7 +27,9 @@ export default function Layout({ children }) {
 
 			</header>
 			{ children }
-			<div className="footer"></div>
+			<div className="footer">
+				<BuildNotes />
+			</div>
 		</>
 	)
 }
