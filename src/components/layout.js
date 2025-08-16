@@ -9,7 +9,7 @@ export default function Layout({ children }) {
 				<nav id="navBar">
     
 					<div id="navigation">
-						<Link className="navLink" href="#home" onClick={ e => scrollToElement( e ) }><p>home</p></Link>
+						<Link className="navLink" href="#home" onClick={ e => scrollToElement( e ) }><p>home2</p></Link>
 						<Link className="navLink" href="#case" onClick={ e => scrollToElement( e ) }><p>projects</p></Link>
 						<Link className="navLink" href="#about" onClick={ e => scrollToElement( e ) }><p>about</p></Link>
 						<Link className="navLink" href="#connect" onClick={ e => scrollToElement( e ) }><p>connect</p></Link>
