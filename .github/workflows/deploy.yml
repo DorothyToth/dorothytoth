@@ -68,12 +68,12 @@ jobs:
         #   static_site_generator: next
       - name: Build with Next.js
         env: 
-          REPO_UPDATED_AT: ${{ github.event.repository.updated_at}}
+          NEXT_PUBLIC_REPO_UPDATED_AT: ${{ github.event.repository.updated_at}}
         run: |
           pnpm next build
           echo $GITHUB_SHA
           echo $GITHUB_RUN_ID
-          echo $REPO_UPDATED_AT
+          echo $NEXT_PUBLIC_REPO_UPDATED_AT
           echo $GITHUB_REF_NAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

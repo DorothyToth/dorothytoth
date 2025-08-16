@@ -5,6 +5,10 @@ export default function BuildNotes() {
         'GITHUB_RUN_ID',
         'REPO_UPDATED_AT',
         'GITHUB_REF_NAME',
+        'NEXT_PUBLIC_GITHUB_SHA',
+        'NEXT_PUBLIC_GITHUB_RUN_ID',
+        'NEXT_PUBLIC_REPO_UPDATED_AT',
+        'NEXT_PUBLIC_GITHUB_REF_NAME',
     ]
 
 
