@@ -65,6 +65,9 @@ jobs:
         # with:
         #   static_site_generator: next
       - name: Build with Next.js
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+
         run: |
           ls -la
           pnpm next build
