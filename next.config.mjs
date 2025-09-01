@@ -1,6 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  /**
+   * Rewrites https://nextjs.org/docs/app/api-reference/config/next-config-js/rewrites
+   * because to support PR previews we need a multi-zone deployment
+   * https://nextjs.org/docs/pages/guides/multi-zones
+   */
+  async rewrites() {
+    return [
+      {
+        source: '/pr-preview/pr-26',
+        destination: `https://dorothytoth.com/pr-preview/pr-26/:path+`,
+      },
+    ]
+  },
+
   /**
    * Enable static exports.
    *
