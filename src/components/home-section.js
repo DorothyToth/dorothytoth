@@ -6,7 +6,7 @@ export default function HomeSection() {
         <div id="home">
             <section id="heroGrid">
 
-                <div id="featuredProduct" className="heroGridArea">
+                <div id="featuredProduct" className="hero-grid-area">
                     <video playsInline autoPlay muted loop poster="images/video-still.jpg">
                         <source src="videos/wireframe-video.mp4" />
                     </video>
@@ -16,9 +16,9 @@ export default function HomeSection() {
                     </div>
                 </div>
 
-                <div id="secondaryProduct" className="heroGridArea"></div>
+                <div id="secondaryProduct" className="hero-grid-area"></div>
 
-                <div id="CTA" className="heroGridArea">
+                <div id="CTA" className="hero-grid-area">
                     <a className="navLink" href="#case" onClick={ e => scrollToElement( e ) }>
                         <span className="CTAlink">
                             <h4>see work</h4>
