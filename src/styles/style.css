@@ -530,21 +530,6 @@ img:hover{
     "CTA CTA"
   }
 
-  #categoryGrid {
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "final"
-    "education"
-    "garden"
-    "travel"
-    "health"
-  }
-
-  .case-study-card img {
-    height: 400px;
-  }
-
   .aboutBox{
     height: 300px;
     width: 300px;

@@ -2,7 +2,8 @@
 title: Minnesota State Parks Hiking Club
 subtitle: Hiking Log App / 3 weeks
 heroImg: images/hero-hiking.jpg
-order: 1
+homepageLocation: featured
+projectListingOrder: 1
 buttons:
   - label: case study
     url: files/CS-MN-Hiking-Club-App.pdf
