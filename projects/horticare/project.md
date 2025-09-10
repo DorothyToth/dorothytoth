@@ -2,7 +2,8 @@
 title: Horticare
 subtitle: Garden Care App / 3 weeks
 heroImg: images/hero-garden.jpg
-order: 3
+homepageLocation: secondary-2
+projectListingOrder: 3
 buttons:
   - label: case study
     url: files/CS-Horticare-Garden-Care-Mobile-App.pdf

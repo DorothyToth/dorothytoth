@@ -1,10 +1,10 @@
 import classNames from "classnames";
 
-export default function ProjectCard( { slugPartial, title, subtitle, content, buttons, heroImg, cardIdx } ) {
+export default function ProjectCard( { slugPartial, title, subtitle, content, buttons, heroImg, homepageLocation } ) {
 
     const classes = classNames( {
         'case-study-card': true,
-        'case-study-card-primary': cardIdx === 0 // add this class to the first project in the listing
+        [ `case-study-card-location-${ homepageLocation }` ]: true
     })
 
     return (

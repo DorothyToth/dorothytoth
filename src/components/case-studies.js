@@ -2,6 +2,8 @@ import ProjectCard from "./project-card"
 
 export default function CaseStudies({ projects }) {
 
+	const featuredProjects = projects.filter( p => p.homepageLocation );
+
 	return (
 		<>
 			<div className="section-start" id="case">
@@ -10,7 +12,7 @@ export default function CaseStudies({ projects }) {
 
 			<section className="case-studies-homepage">
 				{
-					projects.map( ( p, cardIdx ) => <ProjectCard key={ p.slugPartial } cardIdx={ cardIdx } { ...p } />)
+					featuredProjects.map( p => <ProjectCard key={ p.slugPartial } { ...p } />)
 				}
 			</section>
 		</>
