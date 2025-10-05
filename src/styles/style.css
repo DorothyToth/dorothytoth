@@ -132,7 +132,7 @@ li {
 
 #navigation p:hover {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   color: #367095;
 }
 
@@ -421,7 +421,7 @@ video {
 
 #links h5:hover {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   color: #367095;
   transition: 0.3s;
 }
