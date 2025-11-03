@@ -6,7 +6,7 @@ export default function About() {
                 <div className="section-start" id="about"></div>
 
                 <div>
-
+                    
                     <div id="aboutSection">
 
                         <div className="aboutBox">
