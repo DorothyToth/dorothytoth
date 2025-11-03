@@ -359,25 +359,9 @@ video {
  }
 
 .aboutGridCopy {
-   margin-bottom: 60px;
+   margin-bottom: 50px;
    transition: 0.3s;
   }
-
-
-
-
-
-/* Connect Section CSS */
-
-#connSection {
-  margin: 0px;
-  display: flex;
-  height: 35vh;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 #quote {
   display: flex;
@@ -385,7 +369,8 @@ video {
   justify-content: center;
   text-align: right;
   margin: 0px 5%;
-  height: 170px;
+  height: auto;
+  margin-bottom: 100px;
 }
 
 .blockquote {
@@ -400,6 +385,20 @@ video {
   font-weight: 300;
   color: #367095;
   margin-right: 50px;
+  margin-top: 20px;
+}
+
+
+/* Connect Section CSS */
+
+#connSection {
+  margin: 0px;
+  display: flex;
+  height: 15vh;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #connCopy {
@@ -545,6 +544,7 @@ img:hover{
 
   #quote {
     margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   #connSection {

@@ -94,6 +94,11 @@ export default function About() {
                     </div>
 
                 </div>
+                
+                <div id="quote">
+                     <div className="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>
+                     <div className="author">— Jane Goodall</div>
+                </div>
 
             </div>
         </>

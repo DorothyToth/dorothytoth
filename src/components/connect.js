@@ -3,11 +3,6 @@ export default function Connect() {
         <>
             <div className="section-start" id="connect"></div>
 
-            <div id="quote">
-                <div className="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>
-                <div className="author">— Jane Goodall</div>
-            </div>
-
             <section id="connSection">
 
                 <div id="connCopy">
