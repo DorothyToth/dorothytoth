@@ -1,5 +1,6 @@
 import Link from "next/link";
 import scrollToElement from "@/utils/scroll-to-element";
+import Footer from '@/components/connect';
 
 export default function Layout({ children }) {
 
@@ -9,10 +10,9 @@ export default function Layout({ children }) {
 				<nav id="navBar">
     
 					<div id="navigation">
-						<Link className="navLink" href="#home" onClick={ e => scrollToElement( e ) }><p>home</p></Link>
-						<Link className="navLink" href="#case" onClick={ e => scrollToElement( e ) }><p>projects</p></Link>
-						<Link className="navLink" href="/about" ><p>about</p></Link>
-						<Link className="navLink" href="#connect" onClick={ e => scrollToElement( e ) }><p>connect</p></Link>
+						<Link className="navLink" href="/"><p>home</p></Link>
+						<Link className="navLink" href="/projects"><p>projects</p></Link>
+						<Link className="navLink" href="/about"><p>about</p></Link>
 					</div>
 
 					<div className="icons">
