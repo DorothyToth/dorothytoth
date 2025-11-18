@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-import "@/styles/style.css";
-
-import "@/styles/case-studies.scss"
+import "@/styles/about.scss"
+import "@/styles/footer.scss"
+import "@/styles/home.scss"
+import "@/styles/layout.scss";
+import "@/styles/nav.scss"
+import "@/styles/projects.scss"
+import "@/styles/typography.scss"
 
 import Layout from '../components/layout'
 

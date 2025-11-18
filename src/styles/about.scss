@@ -1,0 +1,199 @@
+/* About Section CSS */
+
+#aboutBack {
+  display: block;
+  height: 150%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#aboutSection {
+  margin: 0px 5%;
+  display: flex;
+  border-radius: 10px;
+  height: 50vh;
+  min-height: 600px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutBox {
+  background-image: url("/images/pencils.jpeg");
+  background-position:right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:rgba(255, 255, 255, 0.5);
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#aboutCopy {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  position: absolute;
+  left: 73%;
+  top: 60px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  transition: 0.3s;
+}
+
+#aboutSkill {
+  display:flex;
+  justify-content: flex-end;
+  text-align: right;
+  transition: 0.3s;
+}
+
+#vertScroll {
+  height: 375px;
+  width: 350px;  
+  overflow-y:scroll;
+}
+#vertScroll::-webkit-scrollbar {
+  display: none;
+}
+
+#scrollHead{
+  display:flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+.scrollIcon {
+  height: 20px;
+  margin-right: 8px;
+}
+
+#aboutGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "user content project toolbox";
+  grid-gap: 50px;
+  margin-bottom: 50px;
+ }
+
+.aboutGridCopy {
+   margin-bottom: 50px;
+   transition: 0.3s;
+  }
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  margin: 0px 5%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.blockquote {
+  font-size: 44px;
+  font-weight: 400;
+  color: #367095;
+}
+
+.author {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  color: #367095;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #aboutGrid {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+    grid-template-areas: 
+    "user"
+    "content"
+    "project"
+    "toolbox"
+  }
+
+  #aboutBox {
+    height: auto;
+    width: 200px;
+    position: relative;
+  }
+
+  #aboutCopy {
+    width: 200px;
+    left: 10%;
+    top: 240px;
+  }  
+
+  #vertScroll {
+    height: 375px;
+    width: 200px;  
+    overflow-y:scroll;
+  }
+  #vertScroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #scrollHead{
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+  }
+  .scrollIcon {
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  #aboutSkill {
+    margin-top: 500px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  #aboutSection {
+    flex-wrap: wrap;
+    display: block;
+    height: auto;
+    padding-top: 50px;
+  }
+
+  #aboutSkill {
+    margin-top: 70px;
+  }
+
+  #aboutGrid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    grid-template-areas: 
+    "user content"
+    "project toolbox"
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .aboutBox{
+    height: 300px;
+    width: 300px;
+  
+  }
+  #aboutCopy {
+    top: 50px;
+    /* left: 70px; */
+  }
+
+  #quote {
+    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+}

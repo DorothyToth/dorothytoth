@@ -1,0 +1,57 @@
+/* Footer Section CSS */
+
+#connSection {
+  margin: 0px;
+  display: flex;
+  height: 15vh;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#connCopy {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+#links {
+  margin-right: 5%;
+  text-align: right;
+  transition: 0.3s;
+}
+
+#links a:visited, a:link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #636364
+}
+
+#links h5:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #367095;
+  transition: 0.3s;
+}
+
+/* footer */
+
+.footer {
+  background-color: #6363648c;
+  display: flex;
+  height: 75px;
+}
+
+@media only screen and (max-width: 800px) {
+  #connSection {
+    display: block;
+    height: auto;
+  }
+
+  #links {
+    margin-top: 70px;
+  }
+}
