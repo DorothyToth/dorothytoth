@@ -1,5 +1,5 @@
 import HomeSection from "@/components/home-section";
-import CaseStudies from "@/components/case-studies";
+import FeaturedProjects from "@/components/featured-projects";
 
 import getAllProjects from "@/utils/get-all-projects"
 
@@ -7,7 +7,7 @@ export default function Home({ projects }) {
 	return (
 		<>
 			<HomeSection />
-			<CaseStudies projects={ projects } />
+			<FeaturedProjects projects={ projects } />
 		</>
 	);
 }
