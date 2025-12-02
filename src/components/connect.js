@@ -3,9 +3,9 @@ export default function Connect() {
         <>
             <div className="section-start" id="connect"></div>
 
-            <section id="connSection">
+            <section id="footerSection">
 
-                <div id="connCopy">
+                <div id="footerCopy">
                     <h3>Dorothy Toth</h3>
                     <p>forward-thinking, purpose-driven ux/ui design</p>
                 </div>

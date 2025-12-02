@@ -1,26 +1,34 @@
-/* Footer Section CSS */
 
-#connSection {
-  margin: 0px;
-  height: 2vh;
+#footerSection {
+  //height: 1vh;
   //min-height: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
+  //margin-top: 50px;
+  margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  @media only screen and (max-width: 800px) {
+      display: block;
+  }
 }
 
-#connCopy {
+#footerCopy {
   display: flex;
-  width: 320px;
+  max-width: 320px;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 5%;
+  //background-color: red;
 }
 
 #links {
-  margin-right: 5%;
   text-align: right;
   transition: 0.3s;
+  //background-color: red;
+  @media only screen and (max-width: 800px) {
+      margin-top: 50px;
+      text-align: left;
+  }
 }
 
 #links a:visited, a:link {
@@ -34,23 +42,4 @@
   text-decoration: underline;
   color: #367095;
   transition: 0.3s;
-}
-
-/* footer */
-
-.footer {
-  background-color: #6363648c;
-  display: flex;
-  height: 75px;
-}
-
-@media only screen and (max-width: 800px) {
-  #connSection {
-    display: block;
-    height: auto;
-  }
-
-  #links {
-    margin-top: 70px;
-  }
 }
