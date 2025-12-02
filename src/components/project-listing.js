@@ -10,10 +10,15 @@ export default function ProjectListing( { projects, filters } ) {
     }
 
     return (
+
+        <div id="projectSection">
+
         <div className="case-studies-homepage">
             {
                 filteredProjects.map( p => <ProjectCard key={ p.slugPartial } { ...p } /> ) 
             }
+        </div>
+        
         </div>
     )
 }

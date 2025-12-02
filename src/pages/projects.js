@@ -14,7 +14,6 @@ export default function Projects({ projects }) {
 
     return (
         <>
-            <h2>Projects</h2>
             <ProjectListing projects={ projects } filters={ filters } />
         </>
     );
