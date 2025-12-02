@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import scrollToElement from "@/utils/scroll-to-element";
 
-export default function HomeSection() {
+export default function IntroSection() {
     return (
         <div id="home">
             <section id="heroGrid">
