@@ -9,7 +9,6 @@
   box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
   transition: 0.3s;
   backdrop-filter: blur(3px);
-
 }
 
 #headline p {
@@ -50,6 +49,7 @@
   grid-area: featuredProduct;
   background-color: #a3a8bf;
 }
+
 video {
   mix-blend-mode: multiply;
   object-fit: cover;
@@ -59,7 +59,6 @@ video {
   height: 100%;
   width: 100%;
 }
-
 
 #secondaryProduct {
   grid-area: secondaryProduct;
@@ -86,6 +85,7 @@ video {
   transition: 0.3s;
   display: flex;
 }
+
 .CTAlink:hover {
   opacity: .7;
 }

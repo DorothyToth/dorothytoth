@@ -15,10 +15,13 @@
 }
 
 #navigation {
+  margin-left: 5%;
   display: flex;
   width: 75%;
   align-items: center;
-  justify-content: space-evenly;
+  background-color: red;
+  gap: 50px;
+  //justify-content: space-evenly;
 }
 
 #navigation p {
@@ -46,6 +49,9 @@
   align-items: center;
   width: 25%;
   margin-right: 5%;
+  @media only screen and (max-width: 600px) {
+      display: none;
+  }
 }
 
 .icons img {
@@ -55,6 +61,7 @@
   opacity: 0.5;
   transition: 0.3s
 }
+
 .icons img:hover {
   opacity: .9;
 }
@@ -78,23 +85,4 @@
   opacity: .9;
 }
 
-@media only screen and (max-width: 600px) {
 
-  #navigation {
-    width: 100%;
-  }
-
-  #navigation p {
-    font-size: 14px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  #navigation {
-    width: 100%;
-  }
-
-  .icons{
-    display: none;
-  }
-}

@@ -1,8 +1,6 @@
 export default function Footer() {
     return (
         <>
-            <div className="section-start" id="connect"></div>
-
             <section id="footerSection">
 
                 <div id="footerCopy">
@@ -16,7 +14,6 @@ export default function Footer() {
                 </div>
 
             </section>
-
         </>
     )
 }

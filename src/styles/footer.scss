@@ -1,11 +1,9 @@
 
 #footerSection {
-  //height: 1vh;
-  //min-height: 200px;
   margin-left: 5%;
   margin-right: 5%;
-  //margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 50px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -18,13 +16,11 @@
   display: flex;
   max-width: 320px;
   flex-direction: column;
-  //background-color: red;
 }
 
 #links {
   text-align: right;
   transition: 0.3s;
-  //background-color: red;
   @media only screen and (max-width: 800px) {
       margin-top: 50px;
       text-align: left;
