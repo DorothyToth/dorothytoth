@@ -1,4 +1,4 @@
-export default function Connect() {
+export default function Footer() {
     return (
         <>
             <div className="section-start" id="connect"></div>
