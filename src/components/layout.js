@@ -1,5 +1,5 @@
 import Link from "next/link";
-//import scrollToElement from "@/utils/scroll-to-element";
+import scrollToElement from "@/utils/scroll-to-element";
 import Footer from "@/components/footer";
 
 export default function Layout({ children }) {

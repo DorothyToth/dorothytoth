@@ -7,7 +7,6 @@ export default function CaseStudies({ projects }) {
 	return (
 		<>
 			<div className="section-start" id="case">
-				<h6>More Content Coming Soon!</h6>
 			</div>
 
 			<section className="case-studies-homepage">
