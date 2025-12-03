@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import scrollToElement from "@/utils/scroll-to-element";
+//import scrollToElement from "@/utils/scroll-to-element";
 
 export default function IntroSection() {
     return (
