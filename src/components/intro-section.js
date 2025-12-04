@@ -21,7 +21,7 @@ export default function IntroSection() {
                 <div id="CTA" className="hero-grid-area">
                     <a className="navLink" href="#case" onClick={ e => scrollToElement( e ) }>
                         <span className="CTAlink">
-                            <h4>featured</h4>
+                            <h4>featured projects</h4>
                             <Image src="images/DT-carrot-white.svg" width={ 30 } height={ 90 } />
                         </span>
                     </a>
