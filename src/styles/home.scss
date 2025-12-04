@@ -2,7 +2,7 @@
   border-radius: 10px;
   background-color: rgba(255,255,255,0.9);
   position: absolute;
-  left: 5%;
+  left: 7%;
   top: 150px;
   z-index: 1;
   padding: 50px;
@@ -12,11 +12,37 @@
 }
 
 #headline p {
-  max-width: 375px;
+  //max-width: 375px;
   font-size: 18px;
   font-weight: 500;
   margin: 0px;
   color: #636364;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #headline {
+    //border-radius: 10px;
+    //background-color: rgba(255,255,255,0.9);
+    //position: absolute;
+    //right: -71px;
+    //top: 30%;
+    //z-index: 1;
+    //padding: 20px;
+    //box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
+  }
+
+  #headline p {
+    //max-width: 225px;
+    //font-size: 18px;
+    //font-weight: 500;
+    //color: #636364;
+  }  
+
+  #headline h2 {
+    font-size: 32px;
+  }
+
 }
 
 #heroGrid {
@@ -39,7 +65,7 @@
   display: flex;
   position: relative;
   justify-content: flex-start;
-  transition: 0.3s;
+  //transition: 0.3s;
 }
 
 #featuredProduct {
@@ -92,31 +118,7 @@ video {
   padding: 10px;
 }
 
-@media only screen and (max-width: 600px) {
 
-  #headline {
-    border-radius: 10px;
-    background-color: rgba(255,255,255,0.9);
-    position: absolute;
-    right: -71px;
-    top: 30%;
-    z-index: 1;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(99,99,99,0.1);
-  }
-
-  #headline p {
-    max-width: 225px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #636364;
-  }  
-
-  #headline h2 {
-    font-size: 32px;
-  }
-
-}
 
 //---------------------- Featured Projects Grid ----------------------//
 
