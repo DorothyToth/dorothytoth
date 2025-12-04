@@ -6,7 +6,7 @@ export default function CaseStudies({ projects }) {
 
 	return (
 		<>
-			<div className="section-start" id="case">
+			<div className="section-start">
 			</div>
 
 			<section className="case-studies-homepage">
