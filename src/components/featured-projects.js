@@ -9,7 +9,7 @@ export default function CaseStudies({ projects }) {
 			<div className="section-start">
 			</div>
 
-			<section className="case-studies-homepage">
+			<section className="case-studies-homepage" id="case">
 				{
 					featuredProjects.map( p => <ProjectCard key={ p.slugPartial } { ...p } />)
 				}
