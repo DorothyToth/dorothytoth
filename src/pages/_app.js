@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 import "@/styles/about.scss"
+import "@/styles/featured-projects.scss"
 import "@/styles/footer.scss"
 import "@/styles/home.scss"
 import "@/styles/layout.scss";
