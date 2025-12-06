@@ -13,7 +13,7 @@ export default function HomeIntro() {
                     </video>
 
                     <div id="headline">
-                        <h2>Dorothy Toth</h2>
+                        <h1>Dorothy Toth</h1>
                         <p>UX/UI + Strategy + Creative</p>
                     </div>
 

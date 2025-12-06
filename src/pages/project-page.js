@@ -2,10 +2,23 @@
 export default function projectPage({ projects }) {
 	return (
 		<>
-			<div id="projectPage">
+			<div id="project-page">
 
-                <h3>hey yo!</h3>
-                <p>I’m a dynamic UX/UI designer and creative thinker with a growing interest in accessibility. I strive to provide smart, meaningful, and unique design that <span className="bold">champions user needs and solves problems before they happen</span>.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of employee engagement and recognition solutions.</p>
+                <div className="proj-margin">
+
+					<a href="/projects"><p>back</p></a>
+
+                    <h1>Title of Project</h1>
+
+                    <h3>subtitle</h3>
+
+                     <p>Lorem ipsum dolor sit amet, <span className="bold">consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                     
+                     <p>Lorem ipsum dolor sit amet, <span className="bold">consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+
+                    <img src="/public/images/card-hike.jpeg" className="proj-margin"></img>
+
+                </div>
             </div>
 		</>
 	);

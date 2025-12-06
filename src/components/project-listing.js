@@ -18,7 +18,9 @@ export default function ProjectListing( { projects, filters } ) {
                 filteredProjects.map( p => <ProjectCard key={ p.slugPartial } { ...p } /> ) 
             }
         </div> */}
+
 						<a href="/project-page"><p>Link to project page</p></a>
+
         </div>
     )
 }

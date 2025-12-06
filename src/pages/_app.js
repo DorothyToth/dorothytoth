@@ -7,7 +7,8 @@ import "@/styles/footer.scss"
 import "@/styles/home.scss"
 import "@/styles/layout.scss";
 import "@/styles/nav.scss"
-import "@/styles/projects.scss"
+import "@/styles/project-listing.scss"
+import "@/styles/project-page.scss"
 import "@/styles/typography.scss"
 
 import Layout from '../components/layout'
