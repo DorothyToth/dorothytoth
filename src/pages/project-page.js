@@ -16,9 +16,10 @@ export default function projectPage({ projects }) {
                      
                      <p>Lorem ipsum dolor sit amet, <span className="bold">consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 
-                    <img src="/public/images/card-hike.jpeg" className="proj-margin"></img>
+                    <img src="/images/card-hike.jpeg" alt="alt text here" className="proj-image" />
 
                 </div>
+
             </div>
 		</>
 	);
