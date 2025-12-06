@@ -1,13 +1,13 @@
-import IntroSection from "@/components/intro-section";
-import FeaturedProjects from "@/components/featured-projects";
+import HomeIntro from "@/components/home-intro";
+import HomeFeatured from "@/components/home-featured";
 
 import getAllProjects from "@/utils/get-all-projects"
 
 export default function Home({ projects }) {
 	return (
 		<>
-			<IntroSection />
-			<FeaturedProjects projects={ projects } />
+			<HomeIntro />
+			<HomeFeatured projects={ projects } />
 		</>
 	);
 }

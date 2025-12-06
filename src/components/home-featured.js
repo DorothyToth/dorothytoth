@@ -1,6 +1,6 @@
 import ProjectCard from "./project-card"
 
-export default function CaseStudies({ projects }) {
+export default function HomeFeatured({ projects }) {
 
 	const featuredProjects = projects.filter( p => p.homepageLocation );
 
