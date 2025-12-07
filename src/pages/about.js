@@ -1,3 +1,4 @@
+import scrollToElement from "@/utils/scroll-to-element";
 
 export default function About({ projects }) {
 	return (

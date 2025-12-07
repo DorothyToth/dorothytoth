@@ -22,7 +22,7 @@ export default function Layout({ children }) {
 					
 				</nav>
 
-				<Link className="navLink" href="#home" onClick={ e => scrollToElement( e ) }><img id="upToTop" src="images/DT-carrot-grayUp.svg" /></Link>
+				<Link className="navLink" href="#navBar" onClick={ e => scrollToElement( e ) }><img id="upToTop" src="images/DT-carrot-grayUp.svg" /></Link>
 
 			</header>
 			{ children }
