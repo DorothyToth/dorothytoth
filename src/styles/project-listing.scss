@@ -1,8 +1,13 @@
 
-#projectSection {
-    display: block;
-    align-items: center;
-    justify-content: space-between;
+#project-Listing {
+    //display: block;
+    //align-items: center;
+    //justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 200px 0px 100px 0px;
+    padding: 150px 0;
+}
+
+.proj-list-content {
+  margin: 0 15%;
+  transition: 0.3s;
 }
