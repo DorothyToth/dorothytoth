@@ -28,7 +28,7 @@
 
 .proj-highlight {
   max-width: 100%;
-  background-color: #367095;
+  background-color: #dbdbdb;
   padding: 100px 15%;
   margin: 100px 0px;
   transition: 0.3s;
@@ -38,6 +38,21 @@
 }
 
 .highlight-text {
+  font-size: 24px;
+}
+
+.proj-solution {
+  max-width: 100%;
+  background-color: #367095;
+  padding: 100px 15%;
+  margin: 100px 0px;
+  transition: 0.3s;
+  @media only screen and (max-width: 1000px) {
+    padding: 100px 5%;
+  }
+}
+
+.solution-text {
   color:white;
   font-size: 24px;
 }
