@@ -13,16 +13,23 @@ export default function ProjectListing( { projects, filters } ) {
 
         <div id="project-Listing">
 
-            <div className='proj-list-content'>
+            <div className="proj-list-content">
 
-                <h1>Project Listing Page</h1>
+                <h1>Projects</h1>
+            
+                <div className='proj-card-area'>
 
-                <p>This is where the list of projects will go.</p>
+                    <a className="proj-card" href="/project-page"><p>Link to project page</p></a>
+                    <div className="proj-card">#</div>
+                    <div className="proj-card">#</div>
+                    <div className="proj-card">#</div>
+                    <div className="proj-card">#</div>
+                    <div className="proj-card">#</div>
 
-                <a href="/project-page"><p>Link to project page</p></a>
+                </div>
 
             </div>
-            
+
         {/* <div className="case-studies-homepage">
             {
                 filteredProjects.map( p => <ProjectCard key={ p.slugPartial } { ...p } /> ) 
