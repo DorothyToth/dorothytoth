@@ -46,12 +46,19 @@ export default function projectPage({ projects }) {
                      
                     <p>Lorem ipsum dolor sit amet, <span className="bold">consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                
-               </div>
+                </div>
 
 
                 <div className="proj-solution">
 
                     <p className="solution-text">The solution lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+
+                </div>
+
+
+                <div className="proj-nav">
+                    
+                    <h3>[prev project]</h3><h3>[next project]</h3>
 
                 </div>
 
