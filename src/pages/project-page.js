@@ -10,11 +10,11 @@ export default function projectPage({ projects }) {
 
                     <h1>Title of Project</h1>
 
-                    <h3>subtitle</h3>
+                    <h5>Summary lorem ipsum dolor sit amet jorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h5>
 
-                    <p>Lorem ipsum dolor sit amet, <span className="bold">consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                     
                 </div>
+
+                <img src="/images/hero-doe.jpg" alt="alt text here" className="proj-image-full"/>
 
 
                 <div className="proj-highlight">
@@ -33,9 +33,6 @@ export default function projectPage({ projects }) {
                     <img src="/images/card-hike.jpeg" alt="alt text here" className="proj-image" />
 
                 </div>
-
-
-                <img src="/images/hero-hiking.jpg" alt="alt text here" className="proj-image-full"/>
 
 
                 <div className="proj-margin">
