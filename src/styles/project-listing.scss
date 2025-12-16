@@ -15,16 +15,30 @@
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 50px;
+    transition: 0.3s;
 }
 
 .proj-card {
-    border-radius: 10px;
     width: 300px;
-    height: 300px;
-    padding: 20px;
+    aspect-ratio: 4 / 3;
     background-color: silver;
+    border-radius: 10px;
     transition: 0.3s;
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        transition: 0.3s;
+
+        //&:hover {
+            //transform: scale(1.02);
+        //}
+    }
     &:hover {
         transform: scale(1.02);
     }
+
 }

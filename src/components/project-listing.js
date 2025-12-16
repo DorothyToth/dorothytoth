@@ -19,8 +19,12 @@ export default function ProjectListing( { projects, filters } ) {
             
                 <div className='proj-card-area'>
 
-                    <a className="proj-card" href="/project-page"><p>Link to project page</p></a>
-                    <div className="proj-card">#</div>
+                    <div className="proj-card"><p>#</p></div>
+                    
+                    <a href="/project-page" className="proj-card">
+                        <img src='/images/hero-doe.jpg' alt='alt text'/>
+                    </a>
+
                     <div className="proj-card">#</div>
                     <div className="proj-card">#</div>
                     <div className="proj-card">#</div>
