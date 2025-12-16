@@ -4,7 +4,7 @@ export default function projectPage({ projects }) {
 		<>
 			<div id="project-page">
 
-                <div className="proj-margin">
+                <div className="proj-heading">
 
 					<a href="/projects"><p>- all projects</p></a>
 
@@ -17,12 +17,26 @@ export default function projectPage({ projects }) {
 
                 <div className="proj-author">
 
-                    <p>by Author Name | Role | Date</p>
+                     <div>
+                    <h6>Team</h6>
+                    <p><b>Adam Dehnel</b> Product Architecture</p>
+                    <p><b>Dorothy Toth</b> User Experience Design</p>
+                    </div>
+
+                    {/* <div>
+                    <h6>Role</h6>
+                    <p>User Experience & Interface Design</p>
+                    </div> */}
+
                     <div>
                     <h6>Client</h6>
                     <p>BI Worldwide</p>
                     </div>
 
+                    <div>
+                    <h6>Timeframe</h6>
+                    <p>4 Months</p>
+                    </div>
                 </div>
 
 
