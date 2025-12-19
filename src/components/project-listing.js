@@ -17,15 +17,13 @@ export default function ProjectListing( { projects, filters } ) {
 
                 <h1>Projects</h1>
             
-                <div className='proj-card-area'>
-
-                    <div className="proj-card"><p>#</p></div>
+                <div className='proj-card-row'>
                     
                     <a href="/project-page" className="proj-card">
                         <img src='/images/hero-doe.jpg' alt='alt text'/>
+                        <h5>Project Name</h5>
                     </a>
 
-                    <div className="proj-card">#</div>
                     <div className="proj-card">#</div>
                     <div className="proj-card">#</div>
                     <div className="proj-card">#</div>
