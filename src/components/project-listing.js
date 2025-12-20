@@ -19,30 +19,40 @@ export default function ProjectListing( { projects, filters } ) {
             
                 <div className='proj-card-row'>
                     
+                    <div className="proj-card-column">
                     <a href="/project-page" className="proj-card">
                         <img src='/images/hero-doe.jpg' alt='alt text'/>
-                        <h5>Project Name</h5>
+                        <h5>Project Name 1</h5>
                     </a>
+                    </div>
 
+                    <div className="proj-card-column">
                     <a href="/project-page" className="proj-card">
                         <img src='/images/hero-doe.jpg' alt='alt text'/>
-                        <h5>Project Name</h5>
+                        <h5>Project Name 2</h5>
                     </a>
+                    </div>
                     
+                    <div className="proj-card-column">
                     <a href="/project-page" className="proj-card">
                         <img src='/images/hero-doe.jpg' alt='alt text'/>
-                        <h5>Project Name</h5>
+                        <h5>Project Name 3</h5>
                     </a>
+                    </div>
                     
+                    <div className="proj-card-column">
                     <a href="/project-page" className="proj-card">
                         <img src='/images/hero-doe.jpg' alt='alt text'/>
-                        <h5>Project Name</h5>
+                        <h5>Project Name 4</h5>
                     </a>
+                    </div>
                     
+                    <div className="proj-card-column">
                     <a href="/project-page" className="proj-card">
                         <img src='/images/hero-doe.jpg' alt='alt text'/>
-                        <h5>Project Name</h5>
+                        <h5>Project Name 5</h5>
                     </a>
+                    </div>
 
                 </div>
 
