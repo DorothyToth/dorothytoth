@@ -13,23 +13,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
+    //justify-content: space-between;
+    margin-top: 40px;
+    gap: 40px;
     //transition: 0.3s;
 }
 
 .proj-card {
-    width: 20%;
-    //aspect-ratio: 4 / 3;
-    //background-color: silver;
-    //border-radius: 10px;
-    //transition: 0.3s;
-
+    max-width: 23%;
+    //max-width: 400px;
+    min-width: 280px;
+    //margin-right: 20px;
     img {
         aspect-ratio: 4 / 3;
         border-radius: 10px;
         width: 100%;
-        //height: 100%;
+        height: auto;
         object-fit: cover;
         overflow: hidden;
         transition: 0.3s;
