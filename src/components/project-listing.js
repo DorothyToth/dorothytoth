@@ -30,7 +30,7 @@ export default function ProjectListing( { projects, filters } ) {
                     <a href="/project-page" className="proj-card">
                         <img src='/images/hero-doe.jpg' alt='alt text'/>
                         <h5>Project Template</h5>
-                    </a>
+                    </a>                    
                     </div>
                     
                     <div className="proj-card-column">
@@ -51,6 +51,13 @@ export default function ProjectListing( { projects, filters } ) {
                     <a href="/#" className="proj-card">
                         <img src='/images/hero-health.jpg' alt='alt text'/>
                         <h5>Project Name 5</h5>
+                    </a>
+                    </div>
+
+                    <div className="proj-card-column">
+                    <a href="/#" className="proj-card">
+                        <div className='img-container'><img src='/images/hero-health.jpg' alt='alt text'/></div>
+                        <h5>Project Name 6</h5>
                     </a>
                     </div>
 
