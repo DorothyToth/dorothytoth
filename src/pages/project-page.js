@@ -37,6 +37,11 @@ export default function projectPage({ projects }) {
                     <h6>Timeframe</h6>
                     <p>4 Months</p>
                     </div>
+
+                    <div>
+                    <h6>Prototype</h6>
+                    <p>Figma</p>
+                    </div>
                 </div>
 
 
