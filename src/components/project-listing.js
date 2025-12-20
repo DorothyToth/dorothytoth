@@ -56,7 +56,7 @@ export default function ProjectListing( { projects, filters } ) {
 
                     <div className="proj-card-column">
                     <a href="/#" className="proj-card">
-                        <div className='img-container'><img src='/images/hero-health.jpg' alt='alt text'/></div>
+                        <div className='img-container'><img src='/images/card-food.png' alt='alt text'/></div>
                         <h5>Project Name 6</h5>
                     </a>
                     </div>
