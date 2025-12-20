@@ -21,35 +21,35 @@ export default function ProjectListing( { projects, filters } ) {
                     
                     <div className="proj-card-column">
                     <a href="/#" className="proj-card">
-                        <img src='/images/card-hike.jpeg' alt='alt text'/>
+                        <div className='img-container'><img src='/images/card-hike.jpeg' alt='alt text'/></div>
                         <h5>Project Name 1</h5>
                     </a>
                     </div>
 
                     <div className="proj-card-column">
                     <a href="/project-page" className="proj-card">
-                        <img src='/images/hero-doe.jpg' alt='alt text'/>
+                        <div className='img-container'><img src='/images/hero-doe.jpg' alt='alt text'/></div>
                         <h5>Project Template</h5>
                     </a>                    
                     </div>
                     
                     <div className="proj-card-column">
                     <a href="/#" className="proj-card">
-                        <img src='/images/hero-travel.jpg' alt='alt text'/>
+                        <div className='img-container'><img src='/images/hero-travel.jpg' alt='alt text'/></div>
                         <h5>Project Name 3</h5>
                     </a>
                     </div>
                     
                     <div className="proj-card-column">
                     <a href="/#" className="proj-card">
-                        <img src='/images/hero-garden.jpg' alt='alt text'/>
+                        <div className='img-container'><img src='/images/hero-garden.jpg' alt='alt text'/></div>
                         <h5>Project Name 4</h5>
                     </a>
                     </div>
                     
                     <div className="proj-card-column">
                     <a href="/#" className="proj-card">
-                        <img src='/images/hero-health.jpg' alt='alt text'/>
+                        <div className='img-container'><img src='/images/hero-health.jpg' alt='alt text'/></div>
                         <h5>Project Name 5</h5>
                     </a>
                     </div>
