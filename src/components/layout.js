@@ -16,13 +16,13 @@ export default function Layout({ children }) {
 					</div>
 
 					<div className="icons">
-						<a href="mailto:dorothytoth@me.com"><img src="images/DT-comm-email-gray.svg" /></a>
-						<a href="https://www.linkedin.com/in/dorothy-toth/" target="_blank"><img src="images/DT-comm-linkedin-gray.svg" /></a>
+						<a href="mailto:dorothytoth@me.com"><img src="/images/DT-comm-email-gray.svg" /></a>
+						<a href="https://www.linkedin.com/in/dorothy-toth/" target="_blank"><img src="/images/DT-comm-linkedin-gray.svg" /></a>
 					</div>
 					
 				</nav>
 
-				<Link className="navLink" href="#navBar" onClick={ e => scrollToElement( e ) }><img id="upToTop" src="images/DT-carrot-grayUp.svg" /></Link>
+				<Link className="navLink" href="#navBar" onClick={ e => scrollToElement( e ) }><img id="upToTop" src="/images/DT-carrot-grayUp.svg" /></Link>
 
 			</header>
 			{ children }
