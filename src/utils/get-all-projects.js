@@ -11,22 +11,13 @@ export default async function getAllProjects() {
 
     const projectEntries = await Promise.all( projectsFiles.map( async dirEntry => { 
 
-        const stats = await fs.lstat( path.join( projectsDirectory, dirEntry ) );
-        const isDir = stats.isDirectory();
-
-        // catching things like .DS_store and other non-entry-files
-        if( !isDir && !dirEntry.endsWith( '.md' ) ) {
-            return;
-        }
-
-        const slugPartial = isDir ? dirEntry : dirEntry.replace( '.md', '' );
-        const project = await parseProject(slugPartial)
+        const project = await parseProject(dirEntry)
 
         return {
-            slugPartial,
+            slugPartial: dirEntry,
             filename: dirEntry,
             ...project,
-            slug: `/projects/${slugPartial}`,
+            slug: `/projects/${dirEntry}`,
         }
 
     } ) )
