@@ -20,7 +20,7 @@ export default function ProjectListing( { projects, filters } ) {
                     {
                         filteredProjects.map( p => {
                             return (
-                                <div className="proj-card-column">
+                                <div key={ p.slug } className="proj-card-column">
                                     <a href={ p.slug } className="proj-card">
                                         <div className='img-container'><img src={ p.heroImg } alt='alt text'/></div>
                                         <h5>{ p.title }</h5>
