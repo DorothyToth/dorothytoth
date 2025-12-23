@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import Link from "next/link";
 
-export default function ProjectCard( { slugPartial, title, subtitle, content, buttons, heroImg, homepageLocation } ) {
+export default function HomeFeaturedCard( { slugPartial, title, subtitle, buttons, heroImg, homepageLocation } ) {
 
     const classes = classNames( {
         'case-study-card': true,

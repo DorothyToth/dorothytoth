@@ -1,4 +1,4 @@
-import ProjectCard from "./project-card"
+import HomeFeaturedCard from "./home-featured-card"
 
 export default function HomeFeatured({ projects }) {
 
@@ -11,7 +11,7 @@ export default function HomeFeatured({ projects }) {
 
 			<section className="case-studies-homepage" id="case">
 				{
-					featuredProjects.map( p => <ProjectCard key={ p.slugPartial } { ...p } />)
+					featuredProjects.map( p => <HomeFeaturedCard key={ p.slugPartial } { ...p } />)
 				}
 			</section>
 		</>
