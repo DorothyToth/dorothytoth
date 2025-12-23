@@ -53,4 +53,5 @@ jobs:
         id: custom-ci-checks
         shell: bash
         run: |
+          ls -la
           node src/ci/project-order-check/main.js
