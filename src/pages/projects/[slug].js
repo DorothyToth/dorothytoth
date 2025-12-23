@@ -1,3 +1,5 @@
+import { AiOutlineLeft } from "react-icons/ai";
+
 import parseProject from '@/utils/parse-project';
 import getAllProjects from '@/utils/get-all-projects';
 
@@ -8,7 +10,7 @@ export default function Project({ title, subtitle, content }) {
 
                 <div className="proj-heading">
 
-					<a href="/projects"><p>- all projects</p></a>
+					<a href="/projects"><p><AiOutlineLeft /> all projects</p></a>
 
                     <h1>{ title }</h1>
 
