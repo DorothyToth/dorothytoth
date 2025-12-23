@@ -3,7 +3,7 @@ import { AiOutlineLeft } from "react-icons/ai";
 import parseProject from '@/utils/parse-project';
 import getAllProjects from '@/utils/get-all-projects';
 
-export default function Project({ title, subtitle, content }) {
+export default function Project({ title, subtitle, content, prevProject, nextProject }) {
 	return (
 		<>
 			<div id="project-page">
@@ -22,7 +22,20 @@ export default function Project({ title, subtitle, content }) {
 
 				 <div className="proj-nav">
                     
-                    <h3>[- prev project]</h3><h3>[next project -]</h3>
+                    <h3>
+						{
+							prevProject &&
+							prevProject.slug &&
+							<a href={ prevProject.slug }>{ prevProject.title }</a>
+						}
+					</h3>
+					<h3>
+						{
+							nextProject &&
+							nextProject.slug &&
+							<a href={ nextProject.slug }>{ nextProject.title }</a>
+						}
+					</h3>
 
                 </div>
 
@@ -45,9 +58,18 @@ export async function getStaticProps({ params }) {
 
 	const project = await parseProject(params.slug)
 
+	const crntProjOrder = project.projectListingOrder;
+
+	const projects = await getAllProjects();
+
+	const prevProject = projects.find( p => p.projectListingOrder === (crntProjOrder - 1) ) || {};
+	const nextProject = projects.find( p => p.projectListingOrder === (crntProjOrder + 1) ) || {};
+
 	return {
 		props: {
-			...project
+			...project,
+			prevProject,
+			nextProject
 		},
 	}
 }
