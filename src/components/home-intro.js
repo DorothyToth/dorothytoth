@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import scrollToElement from "@/utils/scroll-to-element";
 
 export default function HomeIntro() {
@@ -26,7 +25,6 @@ export default function HomeIntro() {
                     <a className="navLink" href="#case" onClick={ e => scrollToElement( e ) }>
                         <span className="CTAlink">
                             <h4>featured projects</h4>
-                            <Image src="images/DT-carrot-white.svg" width={ 30 } height={ 90 } />
                         </span>
                     </a>
                     
