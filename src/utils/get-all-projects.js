@@ -11,6 +11,14 @@ export default async function getAllProjects() {
 
     const projectEntries = await Promise.all( projectsFiles.map( async dirEntry => { 
 
+        const stats = await fs.lstat( path.join( projectsDirectory, dirEntry ) );
+
+        // catching things like .DS_store and other non-entry-files
+        if( !stats.isDirectory()  ) {
+            console.log( `Skipping non-directory entry in projects folder: ${dirEntry}` )
+            return;
+        }
+
         const project = await parseProject(dirEntry)
 
         return {
