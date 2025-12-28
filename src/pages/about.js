@@ -3,9 +3,10 @@ import scrollToElement from "@/utils/scroll-to-element";
 export default function About({ projects }) {
 	return (
 		<>
-			<div id="aboutBack">
+			<div id="about-page">
 
                 <div className="section-start"></div>
+                <h1>hey yo!</h1>
 
                 <div>
                     
