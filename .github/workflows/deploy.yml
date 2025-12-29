@@ -64,15 +64,11 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
-        # with:
-        #   static_site_generator: next
       - name: Build with Next.js
         env: 
           NEXT_PUBLIC_REPO_UPDATED_AT: ${{ github.event.repository.updated_at}}
         run: |
-          export NEXT_PUBLIC_GITHUB_SHA=$GITHUB_SHA
-          export NEXT_PUBLIC_GITHUB_RUN_ID=$GITHUB_RUN_ID
-          export NEXT_PUBLIC_GITHUB_REF_NAME=$GITHUB_REF_NAME
+          pnpm sync-project-assets
           pnpm next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

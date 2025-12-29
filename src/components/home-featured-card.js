@@ -8,9 +8,11 @@ export default function HomeFeaturedCard( { slugPartial, title, subtitle, button
         [ `case-study-card-location-${ homepageLocation }` ]: true
     })
 
+    const imageLocation = `/projects/${ slugPartial }/${ homepageLocation === "featured" ? doubleWideImg : heroImg }`;
+
     return (
         <div id={ slugPartial } className={ classes }>
-            <Link href={ `/projects/${ slugPartial }` }><img src={ homepageLocation === "featured" ? doubleWideImg : heroImg } /></Link>
+            <Link href={ `/projects/${ slugPartial }` }><img src={ imageLocation } /></Link>
             <h5>{ title }</h5>
             <h6>{ subtitle }</h6>
             <div className="buttons">

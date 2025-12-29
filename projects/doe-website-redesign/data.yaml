@@ -1,11 +1,11 @@
 title: Department of Education
 subtitle: Responsive Website Redesign / 5 weeks
-heroImg: images/hero-doe.jpg
+heroImg: hero-doe.jpg
 homepageLocation: secondary-1
 projectListingOrder: 2
 buttons:
   - label: case study
-    url: files/CS-Dept-of-Ed-Website-Redesign.pdf
+    url: CS-Dept-of-Ed-Website-Redesign.pdf
   - label: desktop prototype
     url: https://xd.adobe.com/view/ceeece15-ee31-41ff-a7fd-fabca427864c-9bbd/
   - label: mobile prototype
