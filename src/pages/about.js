@@ -4,13 +4,10 @@ export default function About({ projects }) {
 	return (
 		<>
 			<div id="about-page">
-
-                <div className="section-start"></div>
-                <h1>hey yo!</h1>
-
-                <div>
                     
-                    <div id="aboutSection">
+                <div id="about-section">
+                    
+                    <h1>hey yo!</h1>
 
                         <div className="aboutBox">
                             <div id="aboutCopy">
@@ -96,7 +93,6 @@ export default function About({ projects }) {
 
                     </div>
 
-                </div>
                 
                 <div id="quote">
                      <div className="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>
