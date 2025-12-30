@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  ci-checks:
     runs-on: ubuntu-latest
 
     steps:
@@ -50,3 +50,10 @@ jobs:
         shell: bash
         run: |
           node src/ci/project-order-check/main.js
+
+      - name: test build
+        id: test-build
+        shell: bash
+        run: |
+          pnpm sync-project-assets
+          pnpm next build          
