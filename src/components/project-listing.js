@@ -13,7 +13,7 @@ export default function ProjectListing( { projects, filters } ) {
 
             <div className="proj-list-content">
 
-                <h1>Projects</h1>
+                <h1>projects</h1>
             
                 <div className='proj-card-row'>
 
