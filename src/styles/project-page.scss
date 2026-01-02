@@ -8,6 +8,9 @@
   transition: 0.3s;
   @media only screen and (max-width: 1000px) {
     margin: 0 5% 30px 5%;
+    h1 {
+      font-size: 48px;
+    }
   }
 }
 
