@@ -1,4 +1,4 @@
-import { FaAngleLeft } from "react-icons/fa6";
+import { FaAngleLeft,FaAngleRight } from "react-icons/fa6";
 
 import parseProject from '@/utils/parse-project';
 import getAllProjects from '@/utils/get-all-projects';
@@ -21,8 +21,10 @@ export default function Project({ title, subtitle, content, prevProject, nextPro
 
 				<article dangerouslySetInnerHTML={{ __html: content }} />
 
-				 <div className="proj-nav">
+				<div className="proj-nav">
                     
+					<div className="proj-nav-right">
+					<FaAngleLeft />
                     <h3>
 						{
 							prevProject &&
@@ -30,6 +32,9 @@ export default function Project({ title, subtitle, content, prevProject, nextPro
 							<a href={ prevProject.slug }>{ prevProject.title }</a>
 						}
 					</h3>
+					</div>
+
+					<div className="proj-nav-left">
 					<h3>
 						{
 							nextProject &&
@@ -37,6 +42,8 @@ export default function Project({ title, subtitle, content, prevProject, nextPro
 							<a href={ nextProject.slug }>{ nextProject.title }</a>
 						}
 					</h3>
+					<FaAngleRight />
+					</div>
 
                 </div>
 
