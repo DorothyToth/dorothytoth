@@ -15,7 +15,7 @@ export default function HomeFeaturedCard( { slugPartial, title, subtitle, button
             <Link href={ `/projects/${ slugPartial }` }><img src={ imageLocation } /></Link>
             <h5>{ title }</h5>
             <h6>{ subtitle }</h6>
-            <div className="buttons">
+            {/* <div className="buttons">
                 {
                     buttons &&
                     buttons.map( ( btnObj, idx ) => {
@@ -26,7 +26,7 @@ export default function HomeFeaturedCard( { slugPartial, title, subtitle, button
                         )
                     })
                 }
-            </div>
+            </div> */}
         </div>
     )
 }
