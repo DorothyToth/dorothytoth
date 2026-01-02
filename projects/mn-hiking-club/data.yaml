@@ -1,12 +1,12 @@
 title: Minnesota State Parks Hiking Club
 subtitle: Team venture that brings the Minnesota Hiking Club program to a feature-rich app environment
-heroImg: card-food.png
-doubleWideImg: hero-hiking.jpg
+heroImg: hero-hiking.jpg
+doubleWideImg: hero-double-hiking.jpg
 cardImgAltText: alt text for mn hiking club card image
 homepageLocation: featured
 projectListingOrder: 1
-buttons:
-  - label: case study
-    url: CS-MN-Hiking-Club-App.pdf
-  - label: XD prototype
-    url: https://xd.adobe.com/view/26d5b4e0-35de-4964-81a8-63e8819e9877-7386/
+# buttons:
+#   - label: case study
+#     url: CS-MN-Hiking-Club-App.pdf
+#   - label: XD prototype
+#     url: https://xd.adobe.com/view/26d5b4e0-35de-4964-81a8-63e8819e9877-7386/

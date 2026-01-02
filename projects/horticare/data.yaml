@@ -4,8 +4,8 @@ heroImg: hero-garden.jpg
 cardImgAltText: alt text for horticare card image
 homepageLocation: secondary-2
 projectListingOrder: 3
-buttons:
-  - label: case study
-    url: CS-Horticare-Garden-Care-Mobile-App.pdf
-  - label: XD prototype
-    url: https://xd.adobe.com/view/9a5946f8-d81c-4768-9b76-5d3b316d4d7f-cf0a/
+# buttons:
+#   - label: case study
+#     url: CS-Horticare-Garden-Care-Mobile-App.pdf
+#   - label: XD prototype
+#     url: https://xd.adobe.com/view/9a5946f8-d81c-4768-9b76-5d3b316d4d7f-cf0a/
