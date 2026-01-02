@@ -11,7 +11,7 @@ export default function Project({ title, subtitle, content, prevProject, nextPro
 
                 <div className="proj-heading">
 
-					<Link href="/projects"><p><FaAngleLeft /> all projects</p></Link>
+					<Link href="/projects"><button className="tert"><FaAngleLeft /><h6>all projects</h6></button></Link>
 
                     <h1>{ title }</h1>
 

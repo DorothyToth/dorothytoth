@@ -14,6 +14,7 @@ import "@/styles/nav.scss"
 import "@/styles/project-listing.scss"
 import "@/styles/project-page.scss"
 import "@/styles/typography.scss"
+import "@/styles/buttons.scss"
 
 export default function App({ Component, pageProps }) {
 	return (
