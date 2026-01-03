@@ -4,7 +4,7 @@ import parseProject from '@/utils/parse-project';
 import getAllProjects from '@/utils/get-all-projects';
 import Link from "next/link";
 
-export default function Project({ title, subtitle, content, prevProject, nextProject }) {
+export default function Project({ title, description, content, prevProject, nextProject }) {
 	return (
 		<>
 			<div id="project-page">
@@ -15,7 +15,7 @@ export default function Project({ title, subtitle, content, prevProject, nextPro
 
                     <h1>{ title }</h1>
 
-                    <h5>{ subtitle }</h5>
+                    <h5>{ description }</h5>
 
                 </div>
 
