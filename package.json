@@ -22,7 +22,9 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.1"
+    "eslint-config-next": "15.3.1",
+    "html-validate": "^10.5.0",
+    "husky": "^9.1.7"
   },
   "packageManager": "pnpm@10.14.0"
 }
