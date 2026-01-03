@@ -48,16 +48,14 @@
   
   .text-wrapper {
     display: flex;
-    flex-direction: row;
     gap: 60px;
     transition: 0.3s;
-      @media only screen and (max-width: 1000px) {
+    div {
+      flex-grow: 1;
+      }
+    @media only screen and (max-width: 1000px) {
       flex-direction: column;
       gap: 10px;
-      }
-      .div {
-        //display: flex;
-        flex-grow: 1;
       }
   }
 
