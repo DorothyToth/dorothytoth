@@ -29,13 +29,10 @@
   }
   p {
     margin-bottom: 2px;
-    color: #636364;
+    //color: #636364;
     b {
       font-weight: 600;
     }
-  }
-  h6 {
-    margin-bottom: 2px;
   }
 }
 
@@ -45,12 +42,28 @@
   padding: 80px 15%;
   margin: -84px 0 80px 0;
   transition: 0.3s;
-  display: flex;
-  gap: 60px;
   @media only screen and (max-width: 1000px) {
     padding: 80px 5%;
-    flex-direction: column;
-    gap: 10px;
+  }
+  
+  .text-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    transition: 0.3s;
+      @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      gap: 10px;
+      }
+      .div {
+        //display: flex;
+        flex-grow: 1;
+      }
+  }
+
+  .buttons // more styling in buttons.scss
+  {
+    margin-top: 40px;
   }
 }
 
