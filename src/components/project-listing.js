@@ -22,7 +22,9 @@ export default function ProjectListing( { projects, filters } ) {
                             return (
                                 <div key={ p.slug } className="proj-card-column">
                                     <a href={ p.slug } className="proj-card">
-                                        <div className='img-container'><img src={ `${ p.slug }/${ p.heroImg }` } alt='alt text'/></div>
+                                        <div className='img-container'>
+                                            <img src={ `${ p.slug }/${ p.heroImg }` } alt={ p.cardImgAltText}/>
+                                        </div>
                                         <h5>{ p.title }</h5>
                                     </a>
                                 </div>
