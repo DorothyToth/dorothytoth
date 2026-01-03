@@ -117,16 +117,16 @@
     gap: 20px;
   }
 }
-
+.proj-nav-right {
+  justify-content: end;
+}
 .proj-nav-left, .proj-nav-right {
   display: flex;
-  align-items: center;
+  flex: 1 0 50%;
   gap: 10px;
   color: #636364;
   transition: 0.2s;
-  h3 {
-    font-size: 22px;
-  }
+  font-size: 22px;
   &:hover {
     color: #367095;
   }

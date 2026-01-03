@@ -25,30 +25,24 @@ export default function Project({ title, description, cardImgAltText, heroImg, c
 
 				<div className="proj-nav">
                     
-					<div className="proj-nav-right">
-					<FaAngleLeft />
-                    <h3>
-						{
-							prevProject &&
-							prevProject.slug &&
-							<a href={ prevProject.slug }>{ prevProject.title }</a>
-						}
-					</h3>
-					</div>
-
-					<div className="proj-nav-left">
-					<h3>
-						{
-							nextProject &&
-							nextProject.slug &&
-							<a href={ nextProject.slug }>{ nextProject.title }</a>
-						}
-					</h3>
-					<FaAngleRight />
-					</div>
+					{
+						prevProject &&
+						prevProject.slug &&
+						<div className="proj-nav-left">
+							<FaAngleLeft />
+							<Link href={ prevProject.slug }>{ prevProject.title }</Link>
+						</div>
+					}
+					{
+						nextProject &&
+						nextProject.slug &&
+						<div className="proj-nav-right">
+							<Link href={ nextProject.slug }>{ nextProject.title }</Link>
+							<FaAngleRight />
+						</div>
+					}
 
                 </div>
-
 
             </div>
 			
