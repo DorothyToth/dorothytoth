@@ -21,18 +21,6 @@ export default function HomeFeaturedCard( { slugPartial, title, description, car
             </Link>
             <h5>{ title }</h5>
             <h6>{ description }</h6>
-            {/* <div className="buttons">
-                {
-                    buttons &&
-                    buttons.map( ( btnObj, idx ) => {
-                        return (
-                            <a key={ idx } href={ `/projects/${ slugPartial }/${ btnObj.url }` } target="_blank">
-                                <button className={ idx === 0 ? "blue" : "" }><h6>{ btnObj.label }</h6></button>
-                            </a>
-                        )
-                    })
-                }
-            </div> */}
         </div>
     )
 }
