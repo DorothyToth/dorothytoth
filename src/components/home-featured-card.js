@@ -1,7 +1,8 @@
 import classNames from "classnames";
+import Image from 'next/image'
 import Link from "next/link";
 
-export default function HomeFeaturedCard( { slugPartial, title, description, buttons, heroImg, doubleWideImg,homepageLocation } ) {
+export default function HomeFeaturedCard( { slugPartial, title, description, cardImgAltText, heroImg, doubleWideImg,homepageLocation } ) {
 
     const classes = classNames( {
         'case-study-card': true,
@@ -12,7 +13,12 @@ export default function HomeFeaturedCard( { slugPartial, title, description, but
 
     return (
         <div id={ slugPartial } className={ classes }>
-            <Link href={ `/projects/${ slugPartial }` }><img src={ imageLocation } /></Link>
+            <Link href={ `/projects/${ slugPartial }` }>
+                <img 
+                    src={ imageLocation } 
+                    alt={ cardImgAltText }
+                />
+            </Link>
             <h5>{ title }</h5>
             <h6>{ description }</h6>
             {/* <div className="buttons">

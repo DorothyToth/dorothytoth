@@ -1,10 +1,12 @@
+import Link from "next/link";
 import { FaAngleLeft,FaAngleRight } from "react-icons/fa6";
 
 import parseProject from '@/utils/parse-project';
 import getAllProjects from '@/utils/get-all-projects';
-import Link from "next/link";
+import projectContentVariableReplacement from "@/utils/project-content-variable-replacement";
 
-export default function Project({ title, description, content, prevProject, nextProject }) {
+export default function Project({ title, description, cardImgAltText, heroImg, content, prevProject, nextProject }) {
+	const replacedContent = projectContentVariableReplacement(content, { title, description, cardImgAltText, heroImg });
 	return (
 		<>
 			<div id="project-page">
@@ -19,7 +21,7 @@ export default function Project({ title, description, content, prevProject, next
 
                 </div>
 
-				<article dangerouslySetInnerHTML={{ __html: content }} />
+				<article dangerouslySetInnerHTML={{ __html: replacedContent }} />
 
 				<div className="proj-nav">
                     
