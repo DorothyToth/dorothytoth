@@ -1,4 +1,5 @@
 import scrollToElement from "@/utils/scroll-to-element";
+import { FaAngleDown } from "react-icons/fa";
 
 export default function HomeIntro() {
     return (
@@ -24,7 +25,7 @@ export default function HomeIntro() {
 
                     <a className="navLink" href="#case" onClick={ e => scrollToElement( e ) }>
                         <span className="CTAlink">
-                            <h4>featured projects</h4>
+                            <h4>featured projects</h4><FaAngleDown />
                         </span>
                     </a>
                     

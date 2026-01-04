@@ -18,7 +18,7 @@
   flex-direction: row;
   margin: 40px 0;
   gap: 40px;
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 1000px) {
     flex-direction: column;
     gap: 0;
   }
@@ -34,7 +34,7 @@
   aspect-ratio: 1 / 1;
   border-radius: 10px;
   transition: .3s;
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 1000px) {
     height: 100%;
   }
 }
@@ -48,7 +48,7 @@
   width: 100%;
   //padding: 20px;
   //border-radius: 10px;
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 1000px) {
     margin-top: 70px;
     width: auto;
   }
@@ -79,7 +79,7 @@
   grid-gap: 50px;
   margin: 80px 0;
   transition: 0.3s;
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 1000px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "user content"
