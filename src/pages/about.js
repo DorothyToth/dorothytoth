@@ -1,4 +1,5 @@
 import scrollToElement from "@/utils/scroll-to-element";
+import { FaAngleDown } from "react-icons/fa6";
 
 export default function About({ projects }) {
 	return (
@@ -18,10 +19,8 @@ export default function About({ projects }) {
                     </div>
 
                     <div id="aboutSkill">
-                        <span>
-                            <div id="scrollHead">
-                                <img className="scrollIcon" src="images/DT-carrot-367095.svg" />
-                                <h6>scroll skills</h6>
+                            <div id="scroll-header">
+                                <FaAngleDown /><h6>scroll skills</h6>
                             </div>
                             <div id="vertScroll">
                                     <h5>Listening & Empathy</h5>
@@ -57,7 +56,6 @@ export default function About({ projects }) {
                                     <h5>Typography</h5>
                                     <h5>Project Management</h5>
                             </div>
-                        </span>
                     </div>
 
                 </div>

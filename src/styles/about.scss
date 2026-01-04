@@ -49,6 +49,7 @@
 
 #aboutSkill {
   display:flex;
+  flex-direction: column;
   justify-content: flex-end;
   text-align: right;
   transition: 0.3s;
@@ -64,15 +65,12 @@
   display: none;
 }
 
-#scrollHead{
-  display:flex;
+#scroll-header {
+  color: #367095;
+  display: flex;
+  gap: 8px;
   align-items: center;
-  justify-content:flex-end;
-}
-
-.scrollIcon {
-  height: 20px;
-  margin-right: 8px;
+  justify-content: flex-end;
 }
 
 #aboutGrid {
@@ -82,7 +80,7 @@
   grid-template-areas:
   "user content project toolbox";
   grid-gap: 50px;
-  margin-bottom: 50px;
+  margin: 40px 0;
   transition: 0.3s;
   @media only screen and (max-width: 1150px) {
     grid-template-columns: repeat(2, 1fr);
