@@ -3,13 +3,20 @@
   padding: 150px 0 100px 0;
 }
 
-#about-section {
+.about-page-content {
   margin: 0px 5%;
+}
+
+#about-intro {
   display: flex;
-  height: 50vh;
-  min-height: 600px;
+  margin: 40px 0;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 1150px) {
+    flex-wrap: wrap;
+    display: block;
+    height: auto;
+  }
 }
 
 .aboutBox {
@@ -69,7 +76,6 @@
 }
 
 #aboutGrid {
-  margin: 0px 5%;
   display: grid;
   grid-template-rows: 1;
   grid-template-columns: repeat(4, 1fr);
@@ -77,19 +83,28 @@
   "user content project toolbox";
   grid-gap: 50px;
   margin-bottom: 50px;
- }
-
-.aboutGridCopy {
-   margin-bottom: 50px;
-   transition: 0.3s;
+  transition: 0.3s;
+  @media only screen and (max-width: 1150px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "user content"
+    "project toolbox";
   }
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "user"
+    "content"
+    "project"
+    "toolbox";
+  }
+}
 
 #quote {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: right;
-  margin: 0px 5%;
   height: auto;
   margin-bottom: 100px;
 }
@@ -110,16 +125,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
-  #aboutGrid {
-    grid-template-columns: 1fr;
-    margin-top: 100px;
-    grid-template-areas: 
-    "user"
-    "content"
-    "project"
-    "toolbox"
-  }
 
   #aboutBox {
     height: auto;
@@ -138,6 +143,7 @@
     width: 200px;  
     overflow-y:scroll;
   }
+
   #vertScroll::-webkit-scrollbar {
     display: none;
   }
@@ -147,13 +153,10 @@
     align-items: center;
     justify-content:flex-end;
   }
+
   .scrollIcon {
     height: 20px;
     margin-right: 8px;
-  }
-
-  #aboutSkill {
-    margin-top: 500px;
   }
 }
 
@@ -168,14 +171,6 @@
   #aboutSkill {
     margin-top: 70px;
   }
-
-  #aboutGrid {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 100px;
-    grid-template-areas: 
-    "user content"
-    "project toolbox"
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -183,8 +178,8 @@
   .aboutBox{
     height: 300px;
     width: 300px;
-  
   }
+
   #aboutCopy {
     top: 50px;
     /* left: 70px; */

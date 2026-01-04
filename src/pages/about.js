@@ -4,25 +4,26 @@ export default function About({ projects }) {
 	return (
 		<>
 			<div id="about-page">
-                    
-                <div id="about-section">
-                    
-                    <h1>hey yo!</h1>
+                
+                <div className="about-page-content">
 
-                        <div className="aboutBox">
-                            <div id="aboutCopy">
-                                <h3>hey yo!</h3>
-                                <p>I’m a dynamic UX/UI designer and creative thinker with a growing interest in accessibility. I strive to provide smart, meaningful, and unique design that <span className="bold">champions user needs and solves problems before they happen</span>.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of employee engagement and recognition solutions.</p>
-                            </div>
+                <h1>hey yo!</h1>
+
+                <div id="about-intro">
+
+                    <div className="aboutBox">
+                        <div id="aboutCopy">
+                            <p>I’m a dynamic UX/UI designer and creative thinker with a growing interest in accessibility. I strive to provide smart, meaningful, and unique design that <span className="bold">champions user needs and solves problems before they happen</span>.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of employee engagement and recognition solutions.</p>
                         </div>
+                    </div>
 
-                        <div id="aboutSkill">
-                            <span>
-                                <div id="scrollHead">
-                                    <img className="scrollIcon" src="images/DT-carrot-367095.svg" />
-                                    <h6>scroll skills</h6>
-                                </div>
-                                <div id="vertScroll">
+                    <div id="aboutSkill">
+                        <span>
+                            <div id="scrollHead">
+                                <img className="scrollIcon" src="images/DT-carrot-367095.svg" />
+                                <h6>scroll skills</h6>
+                            </div>
+                            <div id="vertScroll">
                                     <h5>Listening & Empathy</h5>
                                     <h5>Good ol&apos; Pencil & Paper</h5>
                                     <h5>Figma</h5>
@@ -55,29 +56,28 @@ export default function About({ projects }) {
                                     <h5>Layout Design</h5>
                                     <h5>Typography</h5>
                                     <h5>Project Management</h5>
-                                </div>
-                            </span>
-                        </div>
-
+                            </div>
+                        </span>
                     </div>
 
+                </div>
 
-                    <div id="aboutGrid">
+                <div id="aboutGrid">
 
-                        <div className="aboutGridCopy" id="user">
+                        <div id="user">
                             <h6>dynamic design</h6>
                             <p>I’ve always had an interest in the design of all things, probably well before I knew it. I used to collect baseball cards, not for the players, but to pour over the differences in the logos and branding for each team, and how that made every card feel so unique.</p>
                             <p>Now, I love the challenge and excitement of creating the best on-screen experiences for all kinds of users, from the details that make design systems seamless and cohesive, to providing frictionless flows so people can do what they need to do.</p>
                         </div>
-                        <div className="aboutGridCopy" id="content">
+                        <div id="content">
                             <h6>accessibility & allyship</h6>
                             <p>The more I learn about accessibility issues and how things can be better, the more I want to evolve design systems, solve color problems, or collaborate with developers on code. There is so much more to learn from people and do for users, but each update is a win for all. Working toward more accessible experiences for everyone is something I am finding a lot of passion in.</p>
                         </div>
-                        <div className="aboutGridCopy" id="project">
+                        <div id="project">
                             <h6>lifelong learning</h6>
                             <p>Whether it’s learning new design techniques, better ways to transplant perennials, or trying a yummy new recipe for family dinner, I’ll jump in. It is a blessing to be able to lean into interests, turn them into hobbies, and share passion projects with others.</p>
                         </div>
-                        <div className="aboutGridCopy" id="toolbox">
+                        <div id="toolbox">
                             <h6>work hard / play hard</h6>
                             <ul>
                                 <li>running, biking</li>
@@ -91,12 +91,13 @@ export default function About({ projects }) {
                             </ul>
                         </div>
 
-                    </div>
+                </div>
 
-                
                 <div id="quote">
-                     <div className="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>
-                     <div className="author">— Jane Goodall</div>
+                    <div className="blockquote">“Only if we understand can we care.<br />Only if we care can we help.”</div>
+                    <div className="author">— Jane Goodall</div>
+                </div>
+
                 </div>
 
             </div>
