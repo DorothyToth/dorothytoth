@@ -29,7 +29,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color:#ffffff80;
+  background-color:#ffffff;
   height: 500px;
   aspect-ratio: 1 / 1;
   border-radius: 10px;
@@ -44,10 +44,11 @@
   flex-direction: column;
   text-align: right;
   transition: 0.3s;
-  //background-color: #ffffffa0;
+  background-color: #ffffff92;
   width: 100%;
-  //padding: 20px;
-  //border-radius: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  //border: 1px solid #63636443;
   @media only screen and (max-width: 1000px) {
     margin-top: 70px;
     width: auto;
@@ -63,7 +64,7 @@
 }
 
 #vert-scroll {
-  height: 450px;
+  height: 400px;
   overflow-y:scroll;
 }
 #vert-scroll::-webkit-scrollbar {
