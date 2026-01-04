@@ -7,6 +7,13 @@
   margin: 0px 5%;
 }
 
+.intro-text {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  //line-height: 1.6;
+}
+
 #about-intro {
   display: flex;
   margin: 40px 0;
@@ -29,6 +36,15 @@
   width: 500px;
   border-radius: 10px;
   position: relative;
+  @media only screen and (max-width: 800px) {
+    height: 300px;
+    width: 300px;
+  }
+  @media only screen and (max-width: 600px) {
+    height: auto;
+    width: 200px;
+    position: relative;
+  }
 }
 
 #about-copy {
@@ -45,6 +61,14 @@
   border-radius: 10px;
   backdrop-filter: blur(3px);
   transition: 0.3s;
+  @media only screen and (max-width: 800px) {
+    top: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 200px;
+    left: 10%;
+    top: 240px;
+  }
 }
 
 #aboutSkill {
@@ -85,7 +109,7 @@
   grid-template-areas:
   "user content project toolbox";
   grid-gap: 50px;
-  margin: 40px 0;
+  margin: 80px 0;
   transition: 0.3s;
   @media only screen and (max-width: 1150px) {
     grid-template-columns: repeat(2, 1fr);
@@ -127,37 +151,7 @@
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-
-  #aboutBox {
-    height: auto;
-    width: 200px;
-    position: relative;
-  }
-
-  #aboutCopy {
-    width: 200px;
-    left: 10%;
-    top: 240px;
-  }
-  
-  #scroll-header{
-    display:flex;
-    align-items: center;
-    justify-content:flex-end;
-  }
-}
-
 @media only screen and (max-width: 800px) {
-
-  .aboutBox{
-    height: 300px;
-    width: 300px;
-  }
-
-  #aboutCopy {
-    top: 50px;
-  }
 
   #quote {
     margin-bottom: 50px;
