@@ -16,8 +16,10 @@
 }
 
 .proj-card-column {
-    flex: 25%;
-    max-width: 25%;
+    flex: 33%;
+    max-width: 33%;
+    //flex: 25%; /additional for four columns
+    //max-width: 25%;
     transition: 0.3s;
     margin-top: 20px;
         @media screen and (max-width: 950px) {
