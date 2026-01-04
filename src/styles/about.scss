@@ -31,7 +31,7 @@
   position: relative;
 }
 
-#aboutCopy {
+#about-copy {
   display: flex;
   width: 320px;
   flex-direction: column;
@@ -66,7 +66,7 @@
   justify-content: flex-end;
 }
 
-#vertScroll {
+#vert-scroll {
   height: 375px;
   width: 350px;  
   overflow-y:scroll;
@@ -74,8 +74,7 @@
     width: 100%;
   }
 }
-
-#vertScroll::-webkit-scrollbar {
+#vert-scroll::-webkit-scrollbar {
   display: none;
 }
 
@@ -149,14 +148,14 @@
   }
 }
 
-@media only screen and (max-width: 1150px) {
-  #aboutSection {
-    flex-wrap: wrap;
-    display: block;
-    height: auto;
-    padding-top: 50px;
-  }
-}
+// @media only screen and (max-width: 1150px) {
+//   #aboutSection {
+//     flex-wrap: wrap;
+//     display: block;
+//     height: auto;
+//     padding-top: 50px;
+//   }
+// }
 
 @media only screen and (max-width: 800px) {
 

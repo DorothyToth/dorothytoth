@@ -13,7 +13,7 @@ export default function About({ projects }) {
                 <div id="about-intro">
 
                     <div className="aboutBox">
-                        <div id="aboutCopy">
+                        <div id="about-copy">
                             <p>I’m a dynamic UX/UI designer and creative thinker with a growing interest in accessibility. I strive to provide smart, meaningful, and unique design that <span className="bold">champions user needs and solves problems before they happen</span>.</p><p>Currently, I’m helping the corporate product team at <span className="bold">BI Worldwide</span> build the next generation of employee engagement and recognition solutions.</p>
                         </div>
                     </div>
@@ -22,7 +22,7 @@ export default function About({ projects }) {
                         <div id="scroll-header">
                             <FaAngleDown /><h6>scroll skills</h6>
                         </div>
-                        <div id="vertScroll">
+                        <div id="vert-scroll">
                                     <h5>Listening & Empathy</h5>
                                     <h5>Good ol&apos; Pencil & Paper</h5>
                                     <h5>Figma</h5>
