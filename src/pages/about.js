@@ -19,10 +19,10 @@ export default function About({ projects }) {
                     </div>
 
                     <div id="aboutSkill">
-                            <div id="scroll-header">
-                                <FaAngleDown /><h6>scroll skills</h6>
-                            </div>
-                            <div id="vertScroll">
+                        <div id="scroll-header">
+                            <FaAngleDown /><h6>scroll skills</h6>
+                        </div>
+                        <div id="vertScroll">
                                     <h5>Listening & Empathy</h5>
                                     <h5>Good ol&apos; Pencil & Paper</h5>
                                     <h5>Figma</h5>
@@ -55,7 +55,7 @@ export default function About({ projects }) {
                                     <h5>Layout Design</h5>
                                     <h5>Typography</h5>
                                     <h5>Project Management</h5>
-                            </div>
+                        </div>
                     </div>
 
                 </div>

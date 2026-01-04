@@ -48,21 +48,14 @@
 }
 
 #aboutSkill {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   text-align: right;
   transition: 0.3s;
-}
-
-#vertScroll {
-  height: 375px;
-  width: 350px;  
-  overflow-y:scroll;
-}
-
-#vertScroll::-webkit-scrollbar {
-  display: none;
+  @media only screen and (max-width: 1150px) {
+    margin-top: 70px;
+  }
 }
 
 #scroll-header {
@@ -71,6 +64,19 @@
   gap: 8px;
   align-items: center;
   justify-content: flex-end;
+}
+
+#vertScroll {
+  height: 375px;
+  width: 350px;  
+  overflow-y:scroll;
+  @media only screen and (max-width: 1150px) {
+    width: 100%;
+  }
+}
+
+#vertScroll::-webkit-scrollbar {
+  display: none;
 }
 
 #aboutGrid {
@@ -134,27 +140,12 @@
     width: 200px;
     left: 10%;
     top: 240px;
-  }  
-
-  #vertScroll {
-    height: 375px;
-    width: 200px;  
-    overflow-y:scroll;
-  }
-
-  #vertScroll::-webkit-scrollbar {
-    display: none;
   }
   
-  #scrollHead{
+  #scroll-header{
     display:flex;
     align-items: center;
     justify-content:flex-end;
-  }
-
-  .scrollIcon {
-    height: 20px;
-    margin-right: 8px;
   }
 }
 
@@ -164,10 +155,6 @@
     display: block;
     height: auto;
     padding-top: 50px;
-  }
-
-  #aboutSkill {
-    margin-top: 70px;
   }
 }
 
@@ -180,7 +167,6 @@
 
   #aboutCopy {
     top: 50px;
-    /* left: 70px; */
   }
 
   #quote {
