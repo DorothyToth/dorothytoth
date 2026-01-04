@@ -7,9 +7,13 @@ const projectsDirectory = path.join(process.cwd(), 'projects')
 
 export default async function getAllProjects() {
 
-    const projectsFiles = await fs.readdir(projectsDirectory)
+    let projectDirectories = await fs.readdir(projectsDirectory)
 
-    const projectEntries = await Promise.all( projectsFiles.map( async dirEntry => { 
+    if( process.env.INCLUDE_PROJECT_TEMPLATE !== 'true' ) {
+        projectDirectories = projectDirectories.filter( directory => !directory.startsWith('_') )
+    }
+
+    const projectEntries = await Promise.all( projectDirectories.map( async dirEntry => { 
 
         const stats = await fs.lstat( path.join( projectsDirectory, dirEntry ) );
 
