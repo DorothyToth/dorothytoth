@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "sync-project-assets": "node src/sync-project-assets.js"
+    "sync-project-assets": "node src/sync-project-assets.js",
+    "validate-html": "node src/ci/validate-html/main.js"
   },
   "dependencies": {
     "@next/third-parties": "^15.4.5",
