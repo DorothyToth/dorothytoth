@@ -2,29 +2,36 @@
   "name": "dorothytoth-site",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky",
+    "sync-project-assets": "node src/sync-project-assets.js"
   },
   "dependencies": {
     "@next/third-parties": "^15.4.5",
     "classnames": "^2.5.1",
+    "glob": "^13.0.0",
     "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.1",
     "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "sass": "^1.87.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "chalk-template": "^1.1.2",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
     "html-validate": "^10.5.0",
     "husky": "^9.1.7"
   },
-  "packageManager": "pnpm@10.14.0"
+  "packageManager": "pnpm@10.27.0"
 }

@@ -1,0 +1,129 @@
+#about-page {
+  background-color: #ffffff80;
+  padding: 150px 0 100px 0;
+}
+
+.about-page-content {
+  margin: 0px 5%;
+}
+
+.intro-text {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#about-intro {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+  gap: 40px;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.aboutBox {
+  background-image: url("/images/pencils.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:#ffffff;
+  height: 500px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  transition: .3s;
+  @media only screen and (max-width: 1000px) {
+    height: 100%;
+  }
+}
+
+#aboutSkill {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  transition: 0.3s;
+  background-color: #ffffff92;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  //border: 1px solid #63636443;
+  @media only screen and (max-width: 1000px) {
+    margin-top: 70px;
+    width: auto;
+  }
+}
+
+#scroll-header {
+  color: #367095;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#vert-scroll {
+  height: 400px;
+  overflow-y:scroll;
+}
+#vert-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#aboutGrid {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "user content project toolbox";
+  grid-gap: 50px;
+  margin: 80px 0;
+  transition: 0.3s;
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "user content"
+    "project toolbox";
+  }
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "user"
+    "content"
+    "project"
+    "toolbox";
+  }
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.blockquote {
+  font-size: 44px;
+  font-weight: 400;
+  color: #367095;
+}
+
+.author {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  color: #367095;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  #quote {
+    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+}

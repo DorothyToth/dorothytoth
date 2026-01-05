@@ -7,26 +7,29 @@ const projectsDirectory = path.join(process.cwd(), 'projects')
 
 export default async function getAllProjects() {
 
-    const projectsFiles = await fs.readdir(projectsDirectory)
+    let projectDirectories = await fs.readdir(projectsDirectory)
 
-    const projectEntries = await Promise.all( projectsFiles.map( async dirEntry => { 
+    if( process.env.INCLUDE_PROJECT_TEMPLATE !== 'true' ) {
+        projectDirectories = projectDirectories.filter( directory => !directory.startsWith('_') )
+    }
+
+    const projectEntries = await Promise.all( projectDirectories.map( async dirEntry => { 
 
         const stats = await fs.lstat( path.join( projectsDirectory, dirEntry ) );
-        const isDir = stats.isDirectory();
 
         // catching things like .DS_store and other non-entry-files
-        if( !isDir && !dirEntry.endsWith( '.md' ) ) {
+        if( !stats.isDirectory()  ) {
+            console.log( `Skipping non-directory entry in projects folder: ${dirEntry}` )
             return;
         }
 
-        const slugPartial = isDir ? dirEntry : dirEntry.replace( '.md', '' );
-        const project = await parseProject(slugPartial)
+        const project = await parseProject(dirEntry)
 
         return {
-            slugPartial,
+            slugPartial: dirEntry,
             filename: dirEntry,
             ...project,
-            slug: `/projects/${slugPartial}`,
+            slug: `/projects/${dirEntry}`,
         }
 
     } ) )
