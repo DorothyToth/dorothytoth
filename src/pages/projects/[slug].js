@@ -13,7 +13,9 @@ export default function Project({ title, description, cardImgAltText, heroImg, c
 
                 <div className="proj-heading">
 
-					<Link href="/projects"><button className="tert"><FaAngleLeft /><h6>all projects</h6></button></Link>
+					<div className="buttons">
+						<Link href="/projects" className="btn-tert"><FaAngleLeft />all projects</Link>
+					</div>
 
                     <h1>{ title }</h1>
 

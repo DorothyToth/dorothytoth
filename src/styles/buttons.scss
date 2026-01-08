@@ -1,48 +1,41 @@
 .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+
+	a {
+		padding: 6px 16px;
+		border-radius: 10px;
+		transition: 0.3s;
+		color: white;
+		font-size: 16px;
+		font-family: Kanit, sans-serif;
+		// to handle when links have icons
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.btn-pri {
+		background-color: #367095;
+		&:hover {
+			background-color: #3670957c;
+		}
+	}
+
+	.btn-sec {
+		background-color: #636364;
+		&:hover {
+			background-color: #6363647c;
+		}
+	}
+
+	.btn-tert {
+		color: #636364;
+		&:hover {
+			background-color: white;
+		}
+	}
 }
 
-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 0px 16px;
-  border: none;
-  border-radius: 10px;
-  width: fit-content;
-  max-height: fit-content;
-  cursor: pointer;
-  transition: 0.3s;
-  h6 {
-    color: white;
-    font-size: 16px;
-  }
-}
-
-.pri {
-    background-color: #367095;
-    &:hover {
-      background-color: #3670957c;
-    }
-}
-.sec {
-    background-color: #636364;
-    &:hover {
-      background-color: #6363647c;
-    }
-}
-
-.tert {
-    background-color: transparent;
-    color: #636364;
-    h6 {
-      color: #636364;
-    }
-    //border: 1px solid #63636428;
-    &:hover {
-      background-color: white;
-    }
-}
+// see project-page.scss / .proj-overview / .buttons for button style within overview section
