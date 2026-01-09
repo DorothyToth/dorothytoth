@@ -16,32 +16,25 @@
 
 #navigation {
   margin-left: 5%;
-  padding-top: 5px;
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
-#navigation p {
+#navigation a {
   font-family: 'Kanit', sans-serif;
   font-weight: 500;
   color: #636364;
   transition: 0.3s;
+  text-decoration: none;
+  font-size: 18px;
   @media only screen and (max-width: 600px) {
       font-size: 14px;
   }
-}
-
-#navigation a:visited, a:link {
-  cursor: pointer;
-  text-decoration: none;
-  color: #636364
-}
-
-#navigation p:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: #367095;
+  &:hover {
+    text-decoration: underline;
+    color: #367095;
+  }
 }
 
 .icons {
