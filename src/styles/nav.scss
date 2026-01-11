@@ -37,28 +37,6 @@
   }
 }
 
-.icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 30px;
-  margin-right: 5%;
-  @media only screen and (max-width: 600px) {
-      display: none;
-  }
-}
-
-.icons img {
-  width: 30px;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: 0.3s
-}
-
-.icons img:hover {
-  opacity: .9;
-}
-
 .carrot {
   width: 30px;
   cursor: pointer;

@@ -1,0 +1,26 @@
+.header-external-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin-right: 5%;
+
+    .header-external-link {
+        border-radius: 50%;
+        background: #787a7b;
+        color: white;
+        height: 1.8rem;
+        line-height: 2rem;
+        transition: 0.3s;
+
+        svg {
+            width: 30px;
+            fill: currentColor;
+        }
+
+        &:hover {
+            background: #333;
+        }
+    }
+
+}
