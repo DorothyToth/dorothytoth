@@ -27,9 +27,9 @@ export default function App({ Component, pageProps }) {
 				<nav id="navBar">
     
 					<div id="navigation">
-						<Link className="navLink" href="/"><p>dorothy toth</p></Link>
-						<Link className="navLink" href="/projects"><p>projects</p></Link>
-						<Link className="navLink" href="/about"><p>about</p></Link>
+						<Link className="navLink" href="/">dorothy toth</Link>
+						<Link className="navLink" href="/projects">projects</Link>
+						<Link className="navLink" href="/about">about</Link>
 					</div>
 
 					<div className="icons">
