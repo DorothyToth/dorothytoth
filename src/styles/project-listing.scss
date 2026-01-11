@@ -8,14 +8,11 @@
     transition: 0.3s;
 }
 
-.proj-card-row {
+.proj-card-grid {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 10px;
-}
-
-.proj-card-column {
+    margin-top: 30px;
     transition: 0.3s;
 }
 
