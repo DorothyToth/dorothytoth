@@ -15,18 +15,18 @@ export default function ProjectListing( { projects, filters } ) {
 
                 <h1>projects</h1>
             
-                <div className='proj-card-row'>
+                <div className='proj-card-grid'>
 
                     {
                         filteredProjects.map( p => {
                             return (
-                                <div key={ p.slug } className="proj-card-column">
-                                    <a href={ p.slug } className="proj-card">
-                                        <div className='img-container'>
-                                            <img src={ `${ p.slug }/${ p.heroImg }` } alt={ p.cardImgAltText}/>
-                                        </div>
-                                        <h5>{ p.title }</h5>
-                                    </a>
+                                <div key={ p.slug }>
+                                <a href={ p.slug } className="proj-card">
+                                    <div className='img-container'>
+                                        <img src={ `${ p.slug }/${ p.heroImg }` } alt={ p.cardImgAltText}/>
+                                    </div>
+                                    <h5>{ p.title }</h5>
+                                </a>
                                 </div>
                             )
                         } ) 
