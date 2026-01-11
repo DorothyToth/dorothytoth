@@ -122,6 +122,7 @@
 }
 .proj-nav-left, .proj-nav-right {
   display: flex;
+  align-items: center;
   flex: 1 0 50%;
   gap: 10px;
   color: #636364;
@@ -129,5 +130,8 @@
   font-size: 22px;
   &:hover {
     color: #367095;
+  }
+  a:visited {
+    color: #636364;
   }
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from 'next/head'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { FaChevronUp, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa";
 
 import scrollToElement from "@/utils/scroll-to-element";
 import Footer from "@/components/footer";
@@ -8,6 +9,7 @@ import Footer from "@/components/footer";
 import "@/styles/about.scss"
 import "@/styles/featured-projects.scss"
 import "@/styles/footer.scss"
+import "@/styles/header.scss"
 import "@/styles/home.scss"
 import "@/styles/layout.scss"
 import "@/styles/nav.scss"
@@ -32,14 +34,20 @@ export default function App({ Component, pageProps }) {
 						<Link className="navLink" href="/about">about</Link>
 					</div>
 
-					<div className="icons">
-						<a href="mailto:dorothytoth@me.com"><img src="/images/DT-comm-email-gray.svg" /></a>
-						<a href="https://www.linkedin.com/in/dorothy-toth/" target="_blank"><img src="/images/DT-comm-linkedin-gray.svg" /></a>
+					<div className="header-external-links">
+						<a href="mailto:dorothytoth@me.com" className="header-external-link" >
+							<FaRegEnvelope title="An envelope icon indicating this link is to open a mail application to send Dorothy an email" />
+						</a>
+						<a href="https://www.linkedin.com/in/dorothy-toth/" className="header-external-link" target="_blank">
+							<FaLinkedinIn title="A LinkedIn icon indicating this link is to open Dorothy's LinkedIn profile" />
+						</a>
 					</div>
 					
 				</nav>
 
-				<Link className="navLink" href="#navBar" onClick={ e => scrollToElement( e ) }><img id="upToTop" src="/images/DT-carrot-grayUp.svg" /></Link>
+				<Link id="upToTop" href="#navBar" onClick={ e => scrollToElement( e ) }>
+					<FaChevronUp title="A chevron pointing up indicating this link scrolls the user to the top of the page" />
+				</Link>
 
 			</header>
 			<Component {...pageProps} />
