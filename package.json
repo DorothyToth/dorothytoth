@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "sync-project-assets": "node src/sync-project-assets.js"
+    "sync-project-assets": "node src/sync-project-assets.js",
+    "validate-html": "node src/ci/validate-html/main.js"
   },
   "dependencies": {
     "@next/third-parties": "^15.4.5",
@@ -30,6 +31,7 @@
     "chalk-template": "^1.1.2",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
+    "html-validate": "^10.5.0",
     "husky": "^9.1.7"
   },
   "packageManager": "pnpm@10.27.0"
