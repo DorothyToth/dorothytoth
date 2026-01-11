@@ -13,7 +13,7 @@ export default function HomeFeaturedCard( { slugPartial, title, description, car
 
     return (
         <div id={ slugPartial } className={ classes }>
-            <Link href={ `/projects/${ slugPartial }` }>
+            <Link href={ `/projects/${ slugPartial }` } className='img-container'>
                 <img 
                     src={ imageLocation } 
                     alt={ cardImgAltText }
