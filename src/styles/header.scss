@@ -1,25 +1,29 @@
 .header-external-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 30px;
     margin-right: 5%;
 
     .header-external-link {
         border-radius: 50%;
-        background: #787a7b;
-        color: white;
+        background: #747475;
         height: 1.8rem;
         line-height: 2rem;
         transition: 0.3s;
 
         svg {
+            color: white;
             width: 30px;
             fill: currentColor;
         }
 
         &:hover {
-            background: #333;
+            background: #367095;
+        }
+
+        @media only screen and (max-width: 600px) {
+            display: none;
         }
     }
 

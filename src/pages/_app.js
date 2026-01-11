@@ -45,8 +45,8 @@ export default function App({ Component, pageProps }) {
 					
 				</nav>
 
-				<Link className="navLink" href="#navBar" onClick={ e => scrollToElement( e ) }>
-					<FaChevronUp id="upToTop" title="A chevron pointing up indicating this link scrolls the user to the top of the page" />
+				<Link id="upToTop" href="#navBar" onClick={ e => scrollToElement( e ) }>
+					<FaChevronUp title="A chevron pointing up indicating this link scrolls the user to the top of the page" />
 				</Link>
 
 			</header>
