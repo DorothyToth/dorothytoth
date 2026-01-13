@@ -25,7 +25,8 @@ export default function HomeIntro() {
 
                     <a className="navLink" href="#case" onClick={ e => scrollToElement( e ) }>
                         <span className="CTAlink">
-                            <h4>featured projects</h4><FaAngleDown />
+                            <span>featured projects</span>
+                            <FaAngleDown />
                         </span>
                     </a>
                     
