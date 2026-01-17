@@ -73,17 +73,17 @@ video {
   cursor: pointer;
 }
 
-#CTA h4 {
-  font-size: 28px;
-}
-
 .CTAlink {
-  //opacity: 1;
   transition: 0.2s;
   display: flex;
   align-items: center;
   gap: 10px;
   color: white;
+  font-size: 28px;
+  font-weight: 400;
+  svg {
+    height: 16px;
+  }
 }
 
 .CTAlink:hover {
