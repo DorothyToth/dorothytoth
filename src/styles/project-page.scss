@@ -88,6 +88,20 @@
   margin: 0 0 80px 0;
 }
 
+.proj-image-right {
+  float: right;
+  width: 50%;
+  height: auto;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin: 0 0 20px 15px;
+  @media only screen and (max-width: 1000px) {
+    float: none;
+    width: 100%;
+    margin: 15px 0px;
+  }
+}
+
 .proj-impact {
   max-width: 100%;
   background-color: #367095;
