@@ -32,7 +32,7 @@
     <div class="text-wrapper">
         <div>
         <h6>challenge</h6>
-        <p>The initial task was to add a path in the existing system that would allow former single-sign on (SSO) employees access to their accounts. These SSO users were never required to create a password, so a method to identify them without authentication from our initial screen did not exist.</p>
+        <p>The initial task was to add a path in the existing system that would allow <i>former</i> single-sign on (SSO) employees access to their accounts. These SSO users were never required to create a password, so a method to identify them without authentication from our initial screen did not exist.</p>
         </div>
         
         <div>
@@ -69,9 +69,9 @@
     <h3>Assessing the Existing System</h3>
 
     <div><img src="pipes.jpg" alt="some alt text here" class="proj-image-right" />        
-        <p>As I dug into at the existing experience and began looking for solutions, the system seemed to be a patchwork of flows, pieced together without consideration of the overall process or user’s experience.</p>
+        <p>As I dug into at the existing experience and began thinking about solutions, the system seemed to be a patchwork of flows, pieced together without consideration of the overall process or user’s experience.</p>
 
-        <p>Preliminary ideas to solve the task felt like they were adding complication and user confusion:</p>
+        <p>Preliminary ideas felt like they were adding complication and user confusion:</p>
 
         <ul style="list-style-type:disc;">
             <li>Add a “former employee” link? The tone felt exclusive and out of place, especially if a current employee entered accidentally…</li>
@@ -80,8 +80,6 @@
         </ul>
     </div>
 
-    <!-- <img src="card-food.png" alt="some alt text here" class="proj-image" /> -->
-
 </div>
 
 
@@ -89,7 +87,7 @@
     
     <h3>Gaining Perspective, Pivoting…</h3>
     
-    <p>Bouncing these ideas off of our Product Architect, we quickly questioned if any addition was worth the effort – not only from an experience perspective, but from a development perspective as well.</p>
+    <p>Bouncing these ideas off of our Product Architect, we quickly questioned if any addition was worth the effort&mdash;not only from an experience perspective, but from a development perspective as well.</p>
     
     <img src="whiteboard-existing.jpg" alt="some alt text here" class="proj-image" />
 
@@ -102,11 +100,11 @@
     
     <h3>A Big Idea with Small Steps</h3>
     
-    <p>While now representing both experience and development, we reimagined a simple and streamlined system. Our concept strung together bite-sized user tasks into a sequence of isolated events, each informing the next. Any user could enter and we would be able to systematically guide them on an individualized path.</p>
+    <p>While now representing both user experience and underlying development, we reimagined a simple and streamlined system. Our concept strung together bite-sized user tasks into a sequence of isolated events, each informing the next. Any user could enter and we would be able to systematically guide them on an individualized path.</p>
+
+    <img src="lucid-early-basic-steps.png" alt="some alt text here" class="proj-image" />
     
     <p>Sharing the idea with stakeholders and product owners earned us the green light we needed to continue.</p>
-
-    <img src="card-food.png" alt="some alt text here" class="proj-image" />
 
 </div>
 
@@ -114,41 +112,59 @@
 
     <h3>Forward Together with Leaps and Bounds</h3>
 
-    <p>With our new process outlined, we zoomed in on each user step and volleyed for weeks to define development needs and inform design requirements:</p>
+    <p>With our new structure outlined, we zoomed in on each user step and volleyed for weeks to define development needs and inform design requirements. Together, we:</p>
     <ul style="list-style-type:disc;">
-	    <li>Collaborated in deep discussions connecting intricate technical situations with clear, easy-to-follow user experience steps</li>
-        <li>Worked through hundreds of micro-iterations in tandem, looking at each situation from any and all angles</li>
-        <li>Organized each step into order for users based on chronology, logic, and security</li>
+	    <li>Collaborated in deep discussions connecting intricate technical situations with clear, easy-to-follow user experience steps.</li>
+        <li>Worked through hundreds of micro-iterations in tandem, looking at each situation from any and all angles.</li>
+        <li>Organized each step into order for users based on chronology, logic, and security.</li>
     </ul>
 
-    <img src="card-food.png" alt="some alt text here" class="proj-image" />
+    <img src="Figjam-work.png" alt="some alt text here" class="proj-image" />
 
     <p>As each step became crystal clear, interface design came easy. A consistent layout was created to present each step.</p>
 
-    <img src="card-food.png" alt="some alt text here" class="proj-image" />
+    <img src="UI-step-lineup.png" alt="some alt text here" class="proj-image" />
 
 </div>
-
-<div class="proj-margin">
     
-    <h3>The Hallway for All Users</h3>
-    
-    <p>By working together - rather than one team informing the other - we were able to create a new system that accepts any user scenario and provides a scalable solution that can easily accommodate future iterations and additions.</p>
-
-</div>
-
 <div class="proj-impact">
+    <div class="text-wrapper">
 
-    <p class="impact-text">The impact lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    <h5>The Hallway for All Users</h5>
 
+    <h3>Positive User Impact</h3>
+
+        <ul style="list-style-type:disc;">
+            <li><b>Reduced Cognitive Load:</b> by removing all unnecessary interface options on the Welcome screen</li>
+            <li><b>Individual, Guided Experience:</b> by starting with a single piece of user information, we are able to guide the user efficiently, for their situation</li>
+            <li><b>Faster, Industry-standard Security:</b> by employing one-time passwords, we provide a modern, familiar method of verification that allows users to stay on the same browser page</li>
+        </ul>
+
+    <h3>Small Changes, Big Results</h3>
+        
+        <ul style="list-style-type:disc;">
+            <li><b>Moved highly-used SSO button</b> up to top</li>
+            <li><b>Added focus states</b> to reduce clicks and accelerate the process</li>
+            <li><b>Added progress states</b> and animation between steps to show a sense of progress</li>
+            <li><b>Eliminated countless error states</b></li>
+            <li><b>Sped up transitions</b> to routing destinations by simplifying the code to endpoints</li>
+        </ul>
+    </div>
 </div>
 
 <div class="proj-margin">
     
-    <h3>Next Steps</h3>
+    <h3>Future Releases</h3>
     
-    <p>Lorem ipsum dolor sit amet, <span class="bold">consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-    
-    <p>Lorem ipsum dolor sit amet, <span class="bold">consectetur adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    <p>The first release of this work was scaled down in order to be manageable, addressing only the steps necessary for current users. Soon, we will be coming back to develop and activate more checkpoints along our path to offer more access to more users, as well as other onboarding considerations like preferences and recovery information.</p>
 
 </div>
+
+<div class="proj-margin">
+
+    <h3>Final Thoughts</h3>
+    
+    <p>Collborating and working along-side our Product Architect on this highly-imaginitive and detailed structure was one of the most fun <i>and</i> rewarding projects I've ever taken part in. By working together&mdash;rather than one team informing the other&mdash;we were able to learn from eachother and create something bigger and better than either of us could alone. 😀</p>
+
+</div>
+

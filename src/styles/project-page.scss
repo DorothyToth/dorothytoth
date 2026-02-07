@@ -1,6 +1,9 @@
 #project-page {
   background-color: #ffffff80;
   padding: 130px 0 100px 0;
+  b {
+    font-weight: 500;
+  }
 }
 
 .proj-heading {
@@ -118,18 +121,17 @@
 
 .proj-impact {
   max-width: 100%;
-  background-color: #367095;
+  background-color: #ebebeb;
   padding: 80px 20%;
   margin: 0 0 80px 0;
   transition: 0.3s;
+  .text-wrapper {
+    gap: 60px;
+    transition: 0.3s;
+  }
   @media only screen and (max-width: 1000px) {
     padding: 80px 5%;
   }
-}
-
-.impact-text {
-  color:white;
-  font-size: 24px;
 }
 
 .proj-nav {
