@@ -27,16 +27,14 @@ export default function Project({ title, description, cardImgAltText, heroImg, c
 			<div className="proj-nav">
 				
 				{
-					prevProject &&
-					prevProject.slug &&
+					prevProject?.slug &&
 					<div className="proj-nav-left">
 						<FaAngleLeft />
 						<Link href={ prevProject.slug }>{ prevProject.title }</Link>
 					</div>
 				}
 				{
-					nextProject &&
-					nextProject.slug &&
+					nextProject?.slug &&
 					<div className="proj-nav-right">
 						<Link href={ nextProject.slug }>{ nextProject.title }</Link>
 						<FaAngleRight />
