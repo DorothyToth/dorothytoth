@@ -1,0 +1,182 @@
+<div class="proj-author">
+
+    <div>
+    <h6>team</h6>
+    <p><b>Adam Dehnel</b> Product Architecture</p>
+    <p><b>Dorothy Toth</b> User Experience Design</p>
+    </div>
+
+    <div>
+    <h6>client</h6>
+    <p>BI Worldwide</p>
+    </div>
+
+    <div>
+    <h6>date</h6>
+    <p>Q2&ndash;Q3 2025</p>
+    </div>
+
+    <div>
+    <h6>timeframe</h6>
+    <p>6 Months</p>
+    </div>
+    
+</div>
+
+
+<img src="{{ heroImg }}" alt="{{ cardImgAltText }}" class="proj-image-full"/>
+
+
+<div class="proj-overview">
+
+    <div class="text-wrapper">
+        <div>
+            <h6>challenge</h6>
+            <p>The initial task was to add a path in the existing system that would allow <i>former</i> single-sign on (SSO) employees access to their accounts. These SSO users were never required to create a password, so a method to identify them without authentication from our initial screen did not exist.</p>
+        </div>
+        
+        <div>
+            <h6>solution</h6>
+            <p>While solving for our original challenge, we ended up creating a single path that guides any and all users through successive checkpoints, beginning with one piece of identification, and pausing only when information is needed to continue.</p>
+        </div>
+    </div>
+
+    <!-- <div class="buttons">
+
+        <a href="#" target="_blank" class="btn-pri">
+            prototype
+        </a>
+
+    </div> -->
+
+</div>
+
+
+<div class="proj-margin">
+
+    <h3>The Door for Our Users</h3>
+
+        <figure><img src="tamil-nadu-temple.jpg" alt="surrounding buildings and trees flanking full view of colorful temple in Tamil Nadu, India during bright sunset" /><figcaption>This temple in Tamil Nadu, India looks like a beutiful dreamworld I'd like to visit one day.</figcaption></figure>
+
+        <p>Kadhavu, meaning <i>door</i> in Tamil, is the name of the sign on, or session initialization, process on our platform. Since we have a team in Tamil Nadu, India that created our first release, Kadhavu is the name we use to represent this entry point to our product.</p>
+        
+        <p>Because we have several different sign in methods, company configurations, and user situations, Kadhavu manages password bypass options, access to multiple Marketplaces, and all onboarding considerations (username recovery, password expiration, recovery email, contact preferences, etc.).</p>
+
+</div>
+
+<div class="proj-margin">
+    
+    <h3>Assessing the Existing System</h3>
+        
+    <p>As I dug into the existing experience and began thinking about solutions, the system seemed to be a patchwork of flows, pieced together without consideration of the overall process or user’s experience.</p>
+
+    <p>Preliminary ideas felt like they were adding complication and user confusion:</p>
+
+    <ul style="list-style-type:disc;">
+        <li>Add a “former employee” link? The tone felt exclusive and out of place, especially if a current employee entered accidentally…</li>
+        <li>Create an off-shoot experience? This added tech debt to be maintained separately from everything else…</li>
+        <li>Leverage user attributes? How, in the existing system?…</li>
+    </ul>
+
+    <figure><img src="pipes.jpg" alt="copper, alloy, and corrugated pipes entangled in a tight, intricate system of various directions and orientations" /><figcaption>Get the wrenches out?</figcaption></figure>
+
+</div>
+
+
+<div class="proj-margin">
+    
+    <h3>Gaining Perspective, Pivoting…</h3>
+    
+    <p>Bouncing these ideas off of our Product Architect, we quickly questioned if any addition was worth the effort&mdash;not only from an experience perspective, but from a development perspective as well.</p>
+    
+    <p>With a rough whiteboard of what we knew about the system, we quickly shifted the focus away from solving for a small group of users, to understanding the broader system for all users.</p>
+
+    <figure><img src="whiteboard-existing.jpg" alt="black marker sketch on whiteboard illustrating two main entry points with added flow creating a bottleneck" class="proj-image" />
+    <figcaption>Adding a solution into the existing system would create another problem for us.</figcaption></figure>
+
+</div>
+
+
+<div class="proj-margin">
+    
+    <h3>A Big Idea with Small Steps</h3>
+    
+    <p>While now representing both user experience and underlying development, we reimagined a simple and streamlined system. Our concept strung together bite-sized user tasks into a sequence of isolated events, each informing the next. Any user could enter and we would be able to systematically guide them on an individualized path.</p>
+
+    <p>Sharing the idea with stakeholders and product owners earned us the green light we needed to continue. ✅</p>
+
+    <figure><img src="lucid-early-basic-steps.png" alt="simple computer generated user flow decpicting eight steps aligned horizontally with arrows connecting each step" /><figcaption>Users will not go through all of these steps&mdash;only the ones necessary for them.</figcaption></figure>
+    
+</div>
+
+<div class="proj-margin">
+
+    <h3>Forward Together with Leaps and Bounds</h3>
+
+    <p>With our new structure outlined, we zoomed in on each user step and volleyed for weeks to define development needs and inform design requirements. Together, we:</p>
+    <ul style="list-style-type:disc;">
+	    <li>collaborated in deep discussions, connecting intricate technical situations with clear, easy-to-follow user experience steps,...</li>
+        <li>worked through hundreds of micro-iterations in tandem, looking at each situation from any and all angles,... and,</li>
+        <li>organized each step for users based on chronology, logic, and security.</li>
+    </ul>
+
+    <figure><img src="Figjam-work.png" alt="several columns and rows of colorful postit notes organized by user step and interconnected across columns with arrows" /><figcaption>Keeping this Figjam file up-to-date was imparative and helped move this project directly into interface design.</figcaption></figure>
+
+</div>
+
+<div class="proj-margin">
+
+    <h3>Building the User Interface</h3>
+    
+    <p>As each step became crystal clear in Figjam, I knew that the interface design had been set up for success. A consistent layout was created to present each step and animation was wired up to tie them together. I poured over copy, rewriting to be consice and minimal, yet friendly and clear.</p> 
+
+    <p>Feedback from multiple sources helped guide decisions around clarity and simplicity. Unnecessary words and phrases were removed and components were optimized to show progress and reduce errors. I was able to confidently hand this off to developers to be taken to the next level.</p>
+
+    <figure><img src="UI-step-lineup.png" alt="eight panels of similar user interface layouts in a row comparing similarities and differences" /><figcaption>These interfaces will guide a user through each step of signing in.</figcaption></figure>
+
+    <!-- <video playsInline muted loop ><source src="identifying-you.mp4" type="video/mp4"/></video> -->
+
+</div>
+
+<div class="proj-impact">
+    <div class="text-wrapper">
+
+    <h5>The Hallway for All Users</h5>
+
+    <h3>Positive User Impact</h3>
+
+        <ul style="list-style-type:disc;">
+            <li><b>Reduced Cognitive Load:</b> by removing all unnecessary interface options on the Welcome screen</li>
+            <li><b>Individual, Guided Experience:</b> by starting with a single piece of user information, we are able to guide the user efficiently, for their situation</li>
+            <li><b>Faster, Industry-standard Security:</b> by employing one-time passwords, we provide a modern, familiar method of verification that allows users to stay on the same browser page</li>
+        </ul>
+
+    <h3>Small Changes, Big Results</h3>
+        
+        <ul style="list-style-type:disc;">
+            <li><b>Moved highly-used SSO button</b> up to top</li>
+            <li><b>Added focus states</b> to reduce clicks and accelerate the process</li>
+            <li><b>Added progress states</b> and animation between steps to show a sense of progress</li>
+            <li><b>Eliminated countless error states</b></li>
+            <li><b>Sped up transitions</b> to routing destinations by simplifying the code to endpoints</li>
+        </ul>
+    </div>
+</div>
+
+<div class="proj-margin">
+    
+    <h3>Future Releases</h3>
+    
+    <p>The first release of this work was scaled down in order to be manageable, addressing only the steps necessary for current users. When we are ready to activate more checkpoints along our path, adding this work to our roadmap will be easier because our solution lends itself to the iterative nature of development.</p>
+
+</div>
+
+<div class="proj-margin">
+
+    <h3>Final Thoughts</h3>
+    
+    <p>Collborating and working along-side our Product Architect on this highly-imaginitive and detailed structure was one of the most fun <i>and</i> rewarding projects I've ever taken part in. By working together&mdash;rather than one team informing the other&mdash;we were able to learn from eachother and create something bigger and better than either of us could alone. 😀</p>
+
+    <p class="legal">All work © BI Worldwide</p>
+</div>
+

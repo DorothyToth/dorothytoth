@@ -8,47 +8,42 @@ import projectContentVariableReplacement from "@/utils/project-content-variable-
 export default function Project({ title, description, cardImgAltText, heroImg, content, prevProject, nextProject }) {
 	const replacedContent = projectContentVariableReplacement(content, { title, description, cardImgAltText, heroImg });
 	return (
-		<>
-			<div id="project-page">
+		<div id="project-page">
 
-                <div className="proj-heading">
+			<div className="proj-heading">
 
-					<div className="buttons">
-						<Link href="/projects" className="btn-tert"><FaAngleLeft />all projects</Link>
+				<div className="buttons">
+					<Link href="/projects" className="btn-tert"><FaAngleLeft />all projects</Link>
+				</div>
+
+				<h1>{ title }</h1>
+
+				<h5>{ description }</h5>
+
+			</div>
+
+			<article dangerouslySetInnerHTML={{ __html: replacedContent }} />
+
+			<div className="proj-nav">
+				
+				{
+					prevProject?.slug &&
+					<div className="proj-nav-left">
+						<FaAngleLeft />
+						<Link href={ prevProject.slug }>{ prevProject.title }</Link>
 					</div>
+				}
+				{
+					nextProject?.slug &&
+					<div className="proj-nav-right">
+						<Link href={ nextProject.slug }>{ nextProject.title }</Link>
+						<FaAngleRight />
+					</div>
+				}
 
-                    <h1>{ title }</h1>
+			</div>
 
-                    <h5>{ description }</h5>
-
-                </div>
-
-				<article dangerouslySetInnerHTML={{ __html: replacedContent }} />
-
-				<div className="proj-nav">
-                    
-					{
-						prevProject &&
-						prevProject.slug &&
-						<div className="proj-nav-left">
-							<FaAngleLeft />
-							<Link href={ prevProject.slug }>{ prevProject.title }</Link>
-						</div>
-					}
-					{
-						nextProject &&
-						nextProject.slug &&
-						<div className="proj-nav-right">
-							<Link href={ nextProject.slug }>{ nextProject.title }</Link>
-							<FaAngleRight />
-						</div>
-					}
-
-                </div>
-
-            </div>
-			
-		</>
+		</div>
 	)
 }
 

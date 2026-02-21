@@ -1,10 +1,13 @@
 #project-page {
   background-color: #ffffff80;
   padding: 130px 0 100px 0;
+  b {
+    font-weight: 500;
+  }
 }
 
 .proj-heading {
-  margin: 0 15% 30px 15%;
+  margin: 0 20% 30px 20%;
   transition: 0.3s;
   h1 {
     margin-top: 15px;
@@ -18,7 +21,7 @@
 }
 
 .proj-author {
-  margin: 0 15% 40px 15%;
+  margin: 0 20% 40px 20%;
   display: flex;
   justify-content:space-between;
   transition: 0.3s;
@@ -29,7 +32,6 @@
   }
   p {
     margin-bottom: 2px;
-    //color: #636364;
     b {
       font-weight: 600;
     }
@@ -39,7 +41,7 @@
 .proj-overview {
   max-width: 100%;
   background-color: #ebebeb;
-  padding: 80px 15%;
+  padding: 80px 20%;
   margin: -84px 0 80px 0;
   transition: 0.3s;
   @media only screen and (max-width: 1000px) {
@@ -51,11 +53,14 @@
     gap: 60px;
     transition: 0.3s;
     div {
-      flex-grow: 1;
+      width: 50%;
       }
     @media only screen and (max-width: 1000px) {
       flex-direction: column;
       gap: 10px;
+      div {
+        width: 100%;
+        }
       }
   }
 
@@ -66,20 +71,22 @@
 }
 
 .proj-margin {
-  margin: 0 15% 80px 15%;
+  margin: 0 20% 80px 20%;
   transition: 0.3s;
   @media only screen and (max-width: 1000px) {
     margin: 0 5% 80px 5%;
   }
 }
 
-.proj-image {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
+figure {
   transition: 0.3s;
-  border-radius: 10px;
   margin: 15px 0px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
 }
 
 .proj-image-full {
@@ -90,25 +97,31 @@
 
 .proj-impact {
   max-width: 100%;
-  background-color: #367095;
-  padding: 80px 15%;
+  background-color: #ebebeb;
+  padding: 80px 20%;
   margin: 0 0 80px 0;
   transition: 0.3s;
+  h5 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  h3 {
+    color: #367095;
+  }
+  .text-wrapper {
+    gap: 60px;
+    transition: 0.3s;
+  }
   @media only screen and (max-width: 1000px) {
     padding: 80px 5%;
   }
-}
-
-.impact-text {
-  color:white;
-  font-size: 24px;
 }
 
 .proj-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 15%;
+  margin: 0 20%;
   transition: 0.3s;
   @media only screen and (max-width: 1000px) {
     margin: 0 5%;
@@ -134,4 +147,10 @@
   a:visited {
     color: #636364;
   }
+}
+
+.legal {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
 }
