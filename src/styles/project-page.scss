@@ -36,6 +36,19 @@
       font-weight: 600;
     }
   }
+  a {
+  text-decoration: underline;
+  text-decoration-thickness: .5px;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: .5px;
+    opacity: 60%;
+  }
+  &:visited {
+    color: black;
+  }
+}
+
 }
 
 .proj-overview {
