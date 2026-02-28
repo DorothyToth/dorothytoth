@@ -5,9 +5,9 @@ import path from 'path';
 
 const srcDir = path.resolve( import.meta.dirname, '../projects' )
 const destDir = path.resolve( import.meta.dirname, '../public/projects' )
-const projectAssets = await glob( `${ srcDir }/**/*.{jpg,jpeg,png,pdf}` );
+const projectAssets = await glob( `${ srcDir }/**/*.{jpg,jpeg,png,pdf,mp4}` );
 
-console.log( '\n👉 Syncing project assets (jpg, jpeg, png, pdf) to the public directory so they actually end up on the site' );
+console.log( '\n👉 Syncing project assets (jpg, jpeg, png, pdf, mp4) to the public directory so they actually end up on the site' );
 
 for ( const srcPath of projectAssets ) {
 
