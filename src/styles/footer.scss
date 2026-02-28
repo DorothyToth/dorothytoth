@@ -39,3 +39,30 @@
   color: #367095;
   transition: 0.3s;
 }
+
+.footer-external-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-right: 5%;
+
+    .footer-external-link {
+        border-radius: 50%;
+        background: #747475;
+        height: 1.8rem;
+        line-height: 2rem;
+        transition: 0.3s;
+
+        svg {
+            color: white;
+            width: 30px;
+            fill: currentColor;
+        }
+
+        &:hover {
+            background: #367095;
+        }
+
+    }
+}

@@ -1,11 +1,11 @@
-.header-external-links {
+.external-links {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
     margin-right: 5%;
 
-    .header-external-link {
+    .external-link {
         border-radius: 50%;
         background: #747475;
         height: 1.8rem;
@@ -26,5 +26,4 @@
             display: none;
         }
     }
-
 }

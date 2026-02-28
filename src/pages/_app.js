@@ -35,14 +35,14 @@ export default function App({ Component, pageProps }) {
 						<Link className="navLink" href="/about">about</Link>
 					</div>
 
-					<div className="header-external-links">
-						<a href="mailto:dorothytoth@me.com" className="header-external-link" >
+					<div className="external-links">
+						<a href="mailto:dorothytoth@me.com" className="external-link" >
 							<FaRegEnvelope title="An envelope icon indicating this link is to open a mail application to send Dorothy an email" />
 						</a>
-						<a href="https://www.linkedin.com/in/dorothy-toth/" className="header-external-link" target="_blank">
+						<a href="https://www.linkedin.com/in/dorothy-toth/" className="external-link" target="_blank">
 							<FaLinkedinIn title="A LinkedIn icon indicating this link is to open Dorothy's LinkedIn profile" />
 						</a>						
-						<a href="https://github.com/DorothyToth" className="header-external-link" target="_blank">
+						<a href="https://github.com/DorothyToth" className="external-link" target="_blank">
 							<FaGithub title="A GitHub icon indicating this link is to open Dorothy's GitHub profile" />
 						</a>
 					</div>
