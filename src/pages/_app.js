@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from 'next/head'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import { FaChevronUp, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa";
+import { FaChevronUp, FaLinkedinIn, FaGithub, FaRegEnvelope } from "react-icons/fa";
 
 import scrollToElement from "@/utils/scroll-to-element";
 import Footer from "@/components/footer";
@@ -41,6 +41,9 @@ export default function App({ Component, pageProps }) {
 						</a>
 						<a href="https://www.linkedin.com/in/dorothy-toth/" className="header-external-link" target="_blank">
 							<FaLinkedinIn title="A LinkedIn icon indicating this link is to open Dorothy's LinkedIn profile" />
+						</a>						
+						<a href="https://github.com/DorothyToth" className="header-external-link" target="_blank">
+							<FaGithub title="A GitHub icon indicating this link is to open Dorothy's GitHub profile" />
 						</a>
 					</div>
 					
