@@ -6,9 +6,6 @@ export default function HomeFeatured({ projects }) {
 
 	return (
 		<>
-			<div className="section-start">
-			</div>
-
 			<section id="case" className="case-studies-homepage">
 				{
 					featuredProjects.map( p => <HomeFeaturedCard key={ p.slugPartial } { ...p } />)

@@ -3,5 +3,5 @@ description: Team venture that brings the Minnesota Hiking Club program to a fea
 heroImg: hero-hiking.jpg
 doubleWideImg: hero-double-hiking.jpg
 cardImgAltText: four mobile phones displaying hiking log, park detail, parks list, and parks map screens of the Minnesota Hiking Club app in front of a green collage background of hiking photos
-homepageLocation: secondary-1
-projectListingOrder: 2
+homepageLocation: featured
+projectListingOrder: 1

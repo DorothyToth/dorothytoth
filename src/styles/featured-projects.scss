@@ -1,6 +1,7 @@
 .case-studies-homepage {
-    margin: 0 5%;
+    margin: 100px 5%;
     display: grid;
+    transition: .3s;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 60px;
     grid-template-areas: 
