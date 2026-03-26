@@ -13,7 +13,6 @@
 
 #footerCopy {
   display: flex;
-  max-width: 320px;
   flex-direction: column;
 }
 
@@ -46,6 +45,7 @@
     align-items: center;
     gap: 30px;
     margin-top: 10px;
+    margin-bottom: 20px;
 
     .footer-external-link {
         border-radius: 50%;
