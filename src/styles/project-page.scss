@@ -104,6 +104,11 @@ figure {
     margin-bottom: 5px;
   }
 }
+figcaption {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
 
 .proj-image {
   width: 100%;
@@ -170,10 +175,4 @@ figure {
   a:visited {
     color: #636364;
   }
-}
-
-.legal {
-  font-size: 16px;
-  font-weight: 300;
-  font-style: italic;
 }
