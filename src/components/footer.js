@@ -19,6 +19,8 @@ export default function Footer() {
                                                 <FaGithub title="A GitHub icon indicating this link is to open Dorothy's GitHub profile" />
                                             </a>
                     </div>
+                    <p className="legal">© Dorothy Toth {new Date().getFullYear()}. Built in Partnership with <a href="https://arsdehnel.com" target="_blank">Adam Dehnel</a>.</p>
+
                 </div>
                 <div id="links">
                     <a href="mailto:dorothytoth@me.com"><h5>Email</h5></a>
