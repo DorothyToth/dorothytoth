@@ -75,3 +75,23 @@ strong {
   font-weight: 300;
   font-style: normal;
 }
+
+// a:link {
+//   text-decoration: underline;
+//   text-decoration-thickness: .5px;
+//   &:hover {
+//     cursor: pointer;
+//     text-decoration: underline;
+//     text-decoration-thickness: .5px;
+//     opacity: 60%;
+//   }
+//   &:visited {
+//     color: black;
+//   }
+// }
+
+a {
+    &:visited {
+    color: black;
+  }
+}
