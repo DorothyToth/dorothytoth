@@ -87,13 +87,15 @@
 }
 
 .proj-margin {
-  margin: 0 20% 80px 20%;
-  // margin: 0 auto 80px auto;
-  // width: 60%;
-  transition: 0.3s;
-  @media only screen and (max-width: 1000px) {
+  // margin: 0 20% 80px 20%;
+  margin: 0 auto 80px auto;
+  width: 60%;
+  min-width: 1000px;
+  // transition: 0.3s;
+  @media only screen and (max-width: 1120px) {
     margin: 0 5% 80px 5%;
-    // width: 90%
+    width: 90%;
+    min-width: auto;
   }
 }
 
