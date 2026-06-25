@@ -52,27 +52,28 @@
 }
 
 .proj-overview {
-  max-width: 100%;
   background-color: #ebebeb;
-  padding: 80px 20%;
-  margin: -84px 0 80px 0;
+  margin: -84px auto 80px auto;
+  padding: 80px 0;
   transition: 0.3s;
   h3 {
     color: #367095;
   }
-  @media only screen and (max-width: 1000px) {
-    padding: 80px 5%;
-  }
+  
   
   .text-wrapper {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 1000px;
     display: flex;
     gap: 60px;
-    transition: 0.3s;
     div {
       width: 50%;
       }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1120px) {
       flex-direction: column;
+      min-width: auto;
+      width: 90%;
       gap: 10px;
       div {
         width: 100%;
@@ -87,11 +88,9 @@
 }
 
 .proj-margin {
-  // margin: 0 20% 80px 20%;
   margin: 0 auto 80px auto;
   width: 60%;
   min-width: 1000px;
-  // transition: 0.3s;
   @media only screen and (max-width: 1120px) {
     margin: 0 5% 80px 5%;
     width: 90%;
