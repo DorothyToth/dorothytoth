@@ -1,5 +1,7 @@
 .case-studies-homepage {
-    margin: 100px 5%;
+    margin: 100px auto;
+    padding: 0 5%;
+    max-width: 1800px;
     display: grid;
     transition: .3s;
     grid-template-columns: repeat(1, 1fr);
