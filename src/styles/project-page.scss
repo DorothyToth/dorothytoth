@@ -130,19 +130,19 @@ figcaption {
   margin-bottom: 80px;
 }
 
-.text-slide {
+.text-figure {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 30px;
   margin-bottom: 80px;
   .text {
     margin-top: 25px;
-    width: 40%;
+    width: 35%;
   }
   figure {
-    width: 60%;
+    width: 65%;
   }
-  @media only screen and (max-width: 1120px) {
+  @media only screen and (max-width: 900px) {
     flex-direction: column;
     gap: 0px;
     .text {
