@@ -88,9 +88,13 @@
 }
 
 .proj-margin {
-  margin: 0 auto 80px auto;
+  margin: auto;
   width: 60%;
   min-width: 1000px;
+  margin-bottom: 80px;
+  h3 {
+    margin-top: 80px;
+  }
   @media only screen and (max-width: 1120px) {
     width: 90%;
     min-width: auto;
