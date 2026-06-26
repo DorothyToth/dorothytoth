@@ -102,7 +102,7 @@
 }
 
 figure {
-  transition: 0.3s;
+  // transition: 0.3s;
   margin: 15px 0px;
   img {
     width: 100%;
@@ -121,13 +121,38 @@ figcaption {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
 }
 
 .proj-image-full {
   width: 100%;
   height: auto;
-  margin: 0 0 80px 0;
+  margin-bottom: 80px;
+}
+
+.text-slide {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 80px;
+  .text {
+    margin-top: 25px;
+    width: 40%;
+  }
+  figure {
+    width: 60%;
+  }
+  @media only screen and (max-width: 1120px) {
+    flex-direction: column;
+    gap: 0px;
+    .text {
+      margin-bottom: -10px;
+      width: 100%;
+    }
+    figure {
+      width: 100%;
+    }
+  }
 }
 
 .proj-impact {
