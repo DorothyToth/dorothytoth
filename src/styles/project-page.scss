@@ -102,7 +102,6 @@
 }
 
 figure {
-  // transition: 0.3s;
   margin: 15px 0px;
   img {
     width: 100%;
@@ -132,21 +131,21 @@ figcaption {
 
 .text-figure {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 30px;
   margin-bottom: 80px;
   .text {
-    margin-top: 25px;
     width: 35%;
   }
   figure {
+    margin-top: 0px;
     width: 65%;
   }
   @media only screen and (max-width: 900px) {
     flex-direction: column;
     gap: 0px;
     .text {
-      margin-bottom: -10px;
+      margin-bottom: 5px;
       width: 100%;
     }
     figure {
