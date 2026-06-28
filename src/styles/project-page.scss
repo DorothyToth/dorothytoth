@@ -131,11 +131,14 @@ figcaption {
 
 .text-figure {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   gap: 30px;
   margin-bottom: 80px;
   .text {
     width: 35%;
+    h3 {
+      margin-top: 0px;
+    }
   }
   figure {
     margin-top: 0px;
