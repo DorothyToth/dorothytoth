@@ -131,7 +131,7 @@ figcaption {
 
 .text-figure {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 30px;
   margin-bottom: 80px;
   .text {
