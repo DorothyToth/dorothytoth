@@ -7,13 +7,15 @@
 }
 
 .proj-heading {
-  margin: 0 20% 30px 20%;
-  transition: 0.3s;
+  margin: 0 auto 30px auto;
+  width: 60%;
+  min-width: 1000px;
   h1 {
     margin-top: 15px;
   }
-  @media only screen and (max-width: 1000px) {
-    margin: 0 5% 30px 5%;
+  @media only screen and (max-width: 1120px) {
+    width: 90%;
+    min-width: auto;
     h1 {
       font-size: 48px;
     }
@@ -21,12 +23,14 @@
 }
 
 .proj-author {
-  margin: 0 20% 40px 20%;
+  margin: 0 auto 40px auto;
+  width: 60%;
+  min-width: 1000px;
   display: flex;
-  justify-content:space-between;
-  transition: 0.3s;
-    @media only screen and (max-width: 1000px) {
-    margin: 0 5% 40px 5%;
+  gap: 50px;
+    @media only screen and (max-width: 1120px) {
+    width: 90%;
+    min-width: auto;
     flex-direction: column;
     gap: 10px;
   }
@@ -52,34 +56,31 @@
 }
 
 .proj-overview {
-  max-width: 100%;
   background-color: #ebebeb;
-  padding: 80px 20%;
-  margin: -84px 0 80px 0;
-  transition: 0.3s;
+  margin: -84px auto 80px auto;
+  padding: 80px 0;
   h3 {
     color: #367095;
   }
-  @media only screen and (max-width: 1000px) {
-    padding: 80px 5%;
-  }
-  
   .text-wrapper {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 1000px;
     display: flex;
     gap: 60px;
-    transition: 0.3s;
     div {
       width: 50%;
       }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1120px) {
       flex-direction: column;
+      min-width: auto;
+      width: 90%;
       gap: 10px;
       div {
         width: 100%;
         }
       }
   }
-
   .buttons // more styling in buttons.scss
   {
     margin-top: 40px;
@@ -87,15 +88,20 @@
 }
 
 .proj-margin {
-  margin: 0 20% 80px 20%;
-  transition: 0.3s;
-  @media only screen and (max-width: 1000px) {
-    margin: 0 5% 80px 5%;
+  margin: auto;
+  width: 60%;
+  min-width: 1000px;
+  margin-bottom: 80px;
+  h3 {
+    margin-top: 80px;
+  }
+  @media only screen and (max-width: 1120px) {
+    width: 90%;
+    min-width: auto;
   }
 }
 
 figure {
-  transition: 0.3s;
   margin: 15px 0px;
   img {
     width: 100%;
@@ -114,34 +120,67 @@ figcaption {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
 }
 
 .proj-image-full {
   width: 100%;
   height: auto;
-  margin: 0 0 80px 0;
+  margin-bottom: 80px;
+}
+
+.text-figure {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  margin-bottom: 80px;
+  .text {
+    width: 35%;
+    h3 {
+      margin-top: 0px;
+    }
+  }
+  figure {
+    margin-top: 0px;
+    width: 65%;
+  }
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    gap: 0px;
+    .text {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    figure {
+      width: 100%;
+    }
+  }
 }
 
 .proj-impact {
-  max-width: 100%;
   background-color: #ebebeb;
-  padding: 80px 20%;
-  margin: 0 0 80px 0;
-  transition: 0.3s;
-  h5 {
+  padding: 80px 0;
+  margin: 0 auto 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text-wrapper {
+    width: 60%;
+    min-width: 1000px;
+    h5 {
     font-size: 36px;
     font-weight: 600;
-  }
-  h3 {
+    }
+    h3 {
     color: #367095;
+    }
   }
-  .text-wrapper {
-    gap: 60px;
-    transition: 0.3s;
-  }
-  @media only screen and (max-width: 1000px) {
-    padding: 80px 5%;
+  @media only screen and (max-width: 1120px) {
+    .text-wrapper {
+      width: 90%;
+      min-width: auto;
+    }
+
   }
 }
 
@@ -149,10 +188,12 @@ figcaption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 20%;
-  transition: 0.3s;
-  @media only screen and (max-width: 1000px) {
-    margin: 0 5%;
+  width: 60%;
+  min-width: 1000px;
+  margin: auto;
+  @media only screen and (max-width: 1120px) {
+    width: 90%;
+    min-width: auto;
     flex-direction: column;
     align-items: center;
     gap: 20px;
